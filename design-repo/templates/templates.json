@@ -1,0 +1,1340 @@
+{
+ "$comment": "One entry per distinct page shape. Node lists are in real render order. Derived from the project IA (ia/ia.json, 24 templates) plus the fallback; every delta from the IA is stated in iaDelta.",
+ "templatesVersion": "1.0.0",
+ "templates": {
+  "template.home": {
+   "id": "template.home",
+   "name": "Homepage",
+   "family": "home",
+   "source": "src/pages/Home.jsx:17-37",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.home-banner",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.intro-carousel",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "media.experience-video",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.connected-products",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.why-choose",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.impact-counter",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.logo-marquee",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.roi-card",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "media.featured-video",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.solution-cards",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.integrations",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.case-study",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.careers-card",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.chronicle",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.product": {
+   "id": "template.product",
+   "name": "Product page (study variant)",
+   "family": "product",
+   "source": "src/pages/product/ProductPage.jsx:46-87",
+   "routeCount": 4,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.product-split",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.feature-grid",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.highlight-split",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.study-preview",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.quote-carousel",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.cta-band",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.product-assignments": {
+   "id": "template.product-assignments",
+   "name": "Product page (study + overview variant)",
+   "family": "product",
+   "source": "src/pages/product/ProductPage.jsx:46-87",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.product-split",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.feature-grid",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.highlight-split",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.study-preview",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.overview-image",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.quote-carousel",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.cta-band",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.product-oral": {
+   "id": "template.product-oral",
+   "name": "Product page (oral variant)",
+   "family": "product",
+   "source": "src/pages/product/ProductPage.jsx:46-87",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.product-split",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.feature-grid",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.partnership-image-card",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.phase-release",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.chronicle-two-col",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.overview-image",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": true,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "section": "conversion.webinar-image-card",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.logo-marquee",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.cta-band",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ],
+   "iaDelta": "IA lists content.two-column-rows once; ProductPage.jsx:77-79 always renders two TwoColumnRows containers and both are non-empty on Oral (measured), so the node is repeatable x2."
+  },
+  "template.product-overview": {
+   "id": "template.product-overview",
+   "name": "Product overview",
+   "family": "product",
+   "source": "src/pages/product/ProductOverview.jsx:17-41",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.image-centered",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.feature-grid",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "media.seamless-slide",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.single-column",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.integrations",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.case-study",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ],
+   "iaDelta": "IA lists content.two-column-rows once; ProductOverview.jsx:31 and :35 render it before and after SingleColumn, so it appears as two separate nodes in real order."
+  },
+  "template.pricing": {
+   "id": "template.pricing",
+   "name": "Pricing",
+   "family": "pricing",
+   "source": "src/pages/product/Pricing.jsx:14-29",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "pricing.plans-hero",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "pricing.licence-row",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "pricing.getting-started",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.solution-cards",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.integrations",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.testimonials",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.impact-counter",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.logo-marquee",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.faq",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.solutions-universities": {
+   "id": "template.solutions-universities",
+   "name": "Solutions: universities",
+   "family": "solutions",
+   "source": "src/pages/company/Universities.jsx:16-32",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.photo-banner",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.logo-marquee",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.why-choose",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.bullet-points",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.integrations",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.case-study-carousel",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.cta-band",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.solutions-educators": {
+   "id": "template.solutions-educators",
+   "name": "Solutions: educators",
+   "family": "solutions",
+   "source": "src/pages/company/Educators.jsx:14-29",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.product-split",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.why-choose",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.delivery-types",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.expert-list",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.integrations",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.quote-carousel",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.cta-band",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.solutions-students": {
+   "id": "template.solutions-students",
+   "name": "Solutions: students",
+   "family": "solutions",
+   "source": "src/pages/company/Students.jsx:13-31",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.product-split",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.why-choose",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.bullet-points",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.support-cards",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.quote-carousel",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.cta-band",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.about": {
+   "id": "template.about",
+   "name": "About",
+   "family": "company",
+   "source": "src/pages/company/About.jsx:15-49",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.about-banner",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.impact-counter",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.logo-marquee",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.values",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.timeline",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.mission-card",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.careers-card",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.chronicle",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.cta-band",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.careers": {
+   "id": "template.careers",
+   "name": "Careers",
+   "family": "company",
+   "source": "src/pages/company/CareersPage.jsx:15-31",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.photo-banner",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.intro-split",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.reasons",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.values",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.leaders",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.impact-counter",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.positions",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.team-quotes",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.cta-band",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.contact": {
+   "id": "template.contact",
+   "name": "Contact",
+   "family": "conversion-form",
+   "source": "src/pages/company/Contact.jsx:11-22",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.title-banner",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.two-column-rows",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.contact-form",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.why-choose",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.request-demo": {
+   "id": "template.request-demo",
+   "name": "Request demo",
+   "family": "conversion-form",
+   "source": "src/pages/company/RequestDemo.jsx:8-16",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.title-banner",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.contact-form",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.trust-centre": {
+   "id": "template.trust-centre",
+   "name": "Trust centre",
+   "family": "company",
+   "source": "src/pages/company/TrustCentre.jsx:11-23",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.small-banner",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.intro-split",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.policies",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.values",
+     "required": true,
+     "repeatable": true,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ],
+   "iaDelta": "IA lists content.values once; TrustCentre.jsx:18-19 renders two consecutive Values grids, modelled as one repeatable node (x2)."
+  },
+  "template.news-listing": {
+   "id": "template.news-listing",
+   "name": "News listing",
+   "family": "listing",
+   "source": "src/pages/content/Listings.jsx:31-48",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.news-banner",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.category-filter",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.news-grid",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.image-cta-band",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.case-studies-listing": {
+   "id": "template.case-studies-listing",
+   "name": "Case studies listing",
+   "family": "listing",
+   "source": "src/pages/content/Listings.jsx:50-80",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.listing-photo-card",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.category-filter",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.study-grid",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.image-cta-band",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.study-popup",
+     "required": false,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.teacher-guides-listing": {
+   "id": "template.teacher-guides-listing",
+   "name": "Teacher guides listing",
+   "family": "listing",
+   "source": "src/pages/content/Listings.jsx:82-105",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.listing-photo-card",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.guide-grid",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.image-cta-band",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.video-tutorials-listing": {
+   "id": "template.video-tutorials-listing",
+   "name": "Video tutorials listing",
+   "family": "listing",
+   "source": "src/pages/content/Listings.jsx:127-153",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.listing-maroon",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.guide-types",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "listing.video-grid",
+     "required": true,
+     "repeatable": true,
+     "min": 2,
+     "max": 2
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ],
+   "iaDelta": "IA lists listing.video-grid once; Listings.jsx:137-150 renders VideoSection twice (teacher then student), modelled as one repeatable node (x2)."
+  },
+  "template.news-detail": {
+   "id": "template.news-detail",
+   "name": "News article",
+   "family": "article",
+   "source": "src/pages/content/Details.jsx:33-59",
+   "routeCount": 76,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.hero",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.share-download",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.body-chapter",
+     "required": true,
+     "repeatable": true,
+     "min": 1,
+     "max": 40
+    },
+    {
+     "section": "article.original-link",
+     "required": true,
+     "repeatable": false,
+     "modes": [
+      "reference"
+     ]
+    },
+    {
+     "section": "article.categories",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.more-row",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ],
+   "routePattern": "/news/:slug",
+   "collection": {
+    "source": "src/pages/content/data/news.js",
+    "items": 76
+   },
+   "iaDelta": "R6 decomposition: the IA section article.body held most of the page, so it is split into heading-bounded repeatable chapter/section nodes plus a reference-only original-link node."
+  },
+  "template.study-detail": {
+   "id": "template.study-detail",
+   "name": "Case study article",
+   "family": "article",
+   "source": "src/pages/content/Details.jsx:62-78",
+   "routeCount": 36,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.hero",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.share-download",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.highlights",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.body-chapter",
+     "required": true,
+     "repeatable": true,
+     "min": 1,
+     "max": 40
+    },
+    {
+     "section": "article.original-link",
+     "required": true,
+     "repeatable": false,
+     "modes": [
+      "reference"
+     ]
+    },
+    {
+     "section": "article.categories",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.more-row",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ],
+   "routePattern": "/study/:slug",
+   "collection": {
+    "source": "src/pages/content/data/studies.js",
+    "items": 36
+   },
+   "iaDelta": "R6 decomposition: the IA section article.body held most of the page, so it is split into heading-bounded repeatable chapter/section nodes plus a reference-only original-link node."
+  },
+  "template.guide-detail": {
+   "id": "template.guide-detail",
+   "name": "Teaching guide article",
+   "family": "article",
+   "source": "src/pages/content/Details.jsx:81-110",
+   "routeCount": 13,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.hero",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.share",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.body-chapter",
+     "required": true,
+     "repeatable": true,
+     "min": 1,
+     "max": 40
+    },
+    {
+     "section": "article.original-link",
+     "required": true,
+     "repeatable": false,
+     "modes": [
+      "reference"
+     ]
+    },
+    {
+     "section": "article.categories",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.more-row",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ],
+   "routePattern": "/guides/:slug",
+   "collection": {
+    "source": "src/pages/content/data/guides.js",
+    "items": 13
+   },
+   "iaDelta": "R6 decomposition: the IA section article.body held most of the page, so it is split into heading-bounded repeatable chapter/section nodes plus a reference-only original-link node."
+  },
+  "template.video-detail": {
+   "id": "template.video-detail",
+   "name": "Video tutorial",
+   "family": "video-detail",
+   "source": "src/pages/content/Details.jsx:113-136",
+   "routeCount": 33,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.video-detail",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ],
+   "routePattern": "/video/:slug",
+   "collection": {
+    "source": "src/pages/content/data/videos.js",
+    "items": 33,
+    "listed": 29,
+    "unlisted": 4,
+    "unlistedRoutes": [
+     "/video/mitigating-course-repetition-x-student-success",
+     "/video/aacsb-conference-snapshot",
+     "/video/kcl-teaching-learning-forum",
+     "/video/aacsb-student-success-at-scale"
+    ]
+   }
+  },
+  "template.roi-study": {
+   "id": "template.roi-study",
+   "name": "ROI study",
+   "family": "report",
+   "source": "src/pages/content/Details.jsx:139-158",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.roi",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.roi-why",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "proof.quote-banner",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "media.roi-video",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "conversion.roi-form",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  },
+  "template.privacy": {
+   "id": "template.privacy",
+   "name": "Privacy policy (information)",
+   "family": "legal",
+   "source": "src/pages/content/Details.jsx:161-169",
+   "routeCount": 1,
+   "generatedModeAllowed": true,
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.small-banner",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "article.policy-section",
+     "required": true,
+     "repeatable": true,
+     "min": 1,
+     "max": 40
+    },
+    {
+     "section": "article.original-link",
+     "required": true,
+     "repeatable": false,
+     "modes": [
+      "reference"
+     ]
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ],
+   "iaDelta": "R6 decomposition: the IA section article.information-body held most of the page, so it is split into heading-bounded repeatable chapter/section nodes plus a reference-only original-link node."
+  },
+  "template.not-built-fallback": {
+   "id": "template.not-built-fallback",
+   "name": "Not-built fallback (path *)",
+   "family": "fallback",
+   "source": "src/App.jsx:24-24",
+   "routeCount": 0,
+   "routePattern": "*",
+   "generatedModeAllowed": false,
+   "note": "Catch-all for unknown paths and unknown collection slugs (Details.jsx renders NotBuilt for a missing slug). Not in the IA (no enumerable routes). It links out to the live site, so it is reference-only and never a generation target.",
+   "nodes": [
+    {
+     "section": "shell.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "utility.not-built",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer",
+     "required": true,
+     "repeatable": false
+    }
+   ]
+  }
+ }
+}

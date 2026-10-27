@@ -1,0 +1,12 @@
+/* Company page group styles (specs/pages-company.md). Imported by the company pages only.
+   No new colours: every colour used here is an existing token. */
+
+/* Trust Centre policies: the same arrow as .arrow-button::after (pages-company §0, §2.19). 40x17. */
+.arrow-icon {
+  width: 40px;
+  aspect-ratio: 2.31;
+  background-image: var(--svg-arrow);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,733 @@
+{
+ "$comment": "Every enumerable route the clone serves, mapped to exactly one template. Collection routes come from the content data files at build time. The fallback pattern is listed separately.",
+ "routes": [
+  {
+   "route": "/",
+   "template": "template.home"
+  },
+  {
+   "route": "/product/exams",
+   "template": "template.product"
+  },
+  {
+   "route": "/product/group-work",
+   "template": "template.product"
+  },
+  {
+   "route": "/product/learning-analytics",
+   "template": "template.product"
+  },
+  {
+   "route": "/product/marking-feedback",
+   "template": "template.product"
+  },
+  {
+   "route": "/product/assignments",
+   "template": "template.product-assignments"
+  },
+  {
+   "route": "/product/oral_assessment",
+   "template": "template.product-oral"
+  },
+  {
+   "route": "/product-overview",
+   "template": "template.product-overview"
+  },
+  {
+   "route": "/pricing",
+   "template": "template.pricing"
+  },
+  {
+   "route": "/solutions/universities",
+   "template": "template.solutions-universities"
+  },
+  {
+   "route": "/solutions/educators",
+   "template": "template.solutions-educators"
+  },
+  {
+   "route": "/solutions/students",
+   "template": "template.solutions-students"
+  },
+  {
+   "route": "/about",
+   "template": "template.about"
+  },
+  {
+   "route": "/careers",
+   "template": "template.careers"
+  },
+  {
+   "route": "/contact",
+   "template": "template.contact"
+  },
+  {
+   "route": "/request-demo",
+   "template": "template.request-demo"
+  },
+  {
+   "route": "/trust-centre",
+   "template": "template.trust-centre"
+  },
+  {
+   "route": "/news",
+   "template": "template.news-listing"
+  },
+  {
+   "route": "/case-studies",
+   "template": "template.case-studies-listing"
+  },
+  {
+   "route": "/teacher-guides",
+   "template": "template.teacher-guides-listing"
+  },
+  {
+   "route": "/video-tutorials",
+   "template": "template.video-tutorials-listing"
+  },
+  {
+   "route": "/news/why-ai-proofing-assessments-misses-the-point",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/why-ai-demands-a-redesign-of-assessment",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/the-degree-has-always-been-a-signal-ai-is-changing-how-we-verify-it",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/group-work-is-not-the-problem-poor-design-is",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/how-to-reduce-marking-time-without-compromising-feedback-quality",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/using-data-to-identify-at-risk-students-early",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/why-universities-agree-with-design-led-integritybut-still-struggle-to-move-beyond",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/what-a-design-led-model-of-academic-integrity-actually-looks-like-in-practice",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/why-detection-first-integrity-strategies-are-becoming-a-sunk-cost-for-universities",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/data-at-cadmus",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/introducing-cadmus-oral-assessment-scalable-assurance-for-an-aienabled-world",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/the-hidden-lever-for-student-success-assessment-design",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/cadmus-oral-assessment-working-group",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/from-bold-ideas-to-real-assessment-change-what-we-heard-at-ua",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/cadmus-roi-analysis",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/secure-assessment-from-policy-to-practice",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/detection-to-design-why-secure-assessment-now-demands-oral-assurance",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/beyond-proctoring-how-cadmus-is-redefining-secure-assessment",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/process-driven-assessment-isnt-more-work-its-better-design",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/learning-centred-rubrics-in-the-age-of-ai",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/your-guide-to-designing-assessments-in-the-age-of-gen-ai",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/academic-integrity-in-2026-moving-beyond-detection-tools",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/cadmus-takes-first-place-in-apuc-framework-agreement",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/the-future-of-assessment-in-a-shifting-higher-education-landscape",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/cadmus-secures-backing-to-safeguard-university-learning-in-the-age-of-ai",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/reimagining-assessment-in-the-age-of-generative-ai-the-strategic-role-of-cadmus",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/weekend-reading-from-ai-prohibition-to-integration-or-why-universities-must-pick",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/ai-in-education-navigating-risks-opportunities-and-the-future-of-learning",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/ai-for-everyone-but-not-everything",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/how-can-teachers-support-students-through-exams",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/how-the-university-of-melbourne-moved-to-digital-in-place-exams-at-scale",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/using-ai-to-think-with-students-not-for-them",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/the-world-s-leading-universities-invest-in-cadmus-to-support-student-success-in-a",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/cadmus-established-ai-detection-capabilities-combat-chatgpt",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/how-michael-uses-cadmus-for-authentic-connection-with-his-students",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/identifying-and-mitigating-risks-of-ai-in-authentic-assessment-practices",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/how-do-students-benefit-from-using-cadmus",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/3-tips-for-introducing-students-to-cadmus",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/a-students-perspective-immersion-engagement-in-online-learning",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/4-ways-cadmus-can-save-time-and-stress-for-large-student-cohorts",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/unpacking-rubrics-a-guide-to-best-practice-and-common-types",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/the-importance-of-support-and-teacher-training-in-the-rise-of-edtech",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/our-top-tips-for-students-working-in-cadmus",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/using-cadmus-to-support-students-affected-by-covid-19",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/scaffolding-strategies-to-guide-student-learning",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/academic-integrity-with-cadmus",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/cadmus-templates-explained",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/support-at-cadmus",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/4-benefits-of-using-cadmus-for-more-than-exam-alternatives",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/can-your-technology-choices-create-better-online-learning-spaces",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/choosing-the-right-assessment-platform",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/designing-assessment-templates-with-jess-ashman",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/what-is-assessment-for-learning",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/student-perspectives-on-online-learning",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/5-features-your-assessment-platform-needs-to-support-learning",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/lessons-on-privacy-proctoring-and-online-exams",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/cadmus-joins-aws-edstart",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/introducing-cadmus-insights",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/prioritising-online-teaching-into-china",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/say-hello-to-the-new-teacher-environment",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/academic-skills-with-international-students",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/thinking-about-using-cadmus",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/3-ways-to-improve-scientific-report-assessments",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/the-cost-of-a-flawed-approach-to-academic-integrity",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/how-can-we-be-more-learning-oriented",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/how-often-do-you-assess-your-assessments",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/can-assessment-boost-student-engagement",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/step-students-through-scaffolded-assessment-with-cadmus",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/attitudes-towards-assessment-moving-away-from-exams",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/using-cadmus-to-improve-your-assessments",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/summative-meets-formative-time-limited-assessment-in-cadmus",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/keep-students-engaged-continuous-assessment-in-cadmus",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/lessons-from-working-with-leading-global-institutions",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/reducing-educator-workload-starts-with-assessment-design",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/greater-visibility-across-the-assessment-journey",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/news/lessons-from-the-waikato-forum-2026",
+   "template": "template.news-detail"
+  },
+  {
+   "route": "/study/the-university-of-notre-dame-australia-enables-agile-assurance-of-learning",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/how-larissa-strengthened-integrity-and-confidence-in-large-scale-nursing-assessment",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/toi-ohomai-makes-group-work-visible-accountable-teachable",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/queen-mary-university-of-london-transforms-assessment-for-the-ai-era",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/how-stephen-strengthened-team-based-assessment-in-medicine",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/how-michelle-strengthened-reflective-assessment-in-education",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/how-kosta-strengthened-authentic-assessment-in-social-justice",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/zayed-university-assessment-innovation",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/bond-university-increases-student-support",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/the-university-of-melbourne-runs-in-place-digital-exams-at-scale-in-exam-halls",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/the-university-of-western-australia-runs-in-place-digital-exams",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/the-university-of-notre-dame-runs-in-place-digital-exams",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/the-university-of-newcastle-delivers-in-place-invigilated-digital-exams-in-comput",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/case-study-the-university-of-notre-dame",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/case-study-edith-cowan-university",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/case-study-the-university-of-manchester",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/case-study-charles-sturt-university",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-ross-monaghan",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/case-study-the-university-of-melbourne-enhancing-digital-quality",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-paul-jensen",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-sheona-thomson",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-alice-payne",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-michael-vitale",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-andrew-ewing",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-megan-lloyd",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-lois-balmer",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-gina-richards",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-loretta-smith",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-trisha-downing",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-andrew-zur",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/teacher-stories-jenny-kaighin",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/rmit-university",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/case-study-the-university-of-western-australia",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/case-study-the-university-of-canberra",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/case-study-the-university-of-newcastle",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/study/case-study-the-university-of-melbourne-digital-exams",
+   "template": "template.study-detail"
+  },
+  {
+   "route": "/guides/what-is-best-practice-assessment",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/understanding-cadmus-templates",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/marking-and-moderation-with-groups",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/using-insights-to-support-your-teaching",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/provide-extra-support-with-resources",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/managing-your-class-pre-submission",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/using-cadmus-analytics",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/your-pre-release-checklist",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/embed-more-learning-into-assessments",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/creating-your-first-cadmus-assessment",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/using-drafts-for-formative-feedback",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/effective-feedback-ideas-with-cadmus",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/guides/principles-of-good-feedback",
+   "template": "template.guide-detail"
+  },
+  {
+   "route": "/video/intro-into-cadmus",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/setting-up",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/grading-and-feedback",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/insights",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/accessing-cadmus-canvas",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/accessing-cadmus-blackboard",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/accessing-cadmus-d2l",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/accessing-cadmus-moodle",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/intro-to-the-student-environment",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/submitting",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/grades-and-feedback",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/why-should-i-work-in-cadmus",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/getting-started-for-students",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/requirements-canvas",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/requirements-blackboard-moodle-d2l",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/instructions",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/customising-templates",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/resources",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/releasing-and-editing",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/drafting",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/setting-up-exams",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/introducing-students-to-cadmus",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/marking-with-turnitin-and-cadmus",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/marking-with-speedgrader-cadmus",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/anonymous-marking",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/setting-up-groups",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/importing-groups-from-a-spreadsheet",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/using-activity-reports-for-academic-integrity",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/using-assessment-reports-for-academic-integrity",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/mitigating-course-repetition-x-student-success",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/aacsb-conference-snapshot",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/kcl-teaching-learning-forum",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/video/aacsb-student-success-at-scale",
+   "template": "template.video-detail"
+  },
+  {
+   "route": "/study/2026-Cadmus-ROI-study",
+   "template": "template.roi-study"
+  },
+  {
+   "route": "/information/privacy-policy-au",
+   "template": "template.privacy"
+  }
+ ],
+ "fallback": {
+  "pattern": "*",
+  "template": "template.not-built-fallback"
+ }
+}

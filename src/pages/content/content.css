@@ -1,0 +1,110 @@
+/* Content page group (specs/pages-content.md). Only rules that the shared stylesheet (src/index.css)
+   does not already provide. Colours come from tailwind.config.cjs tokens via theme(). */
+
+/* N1 NewsBanner background art */
+.news--background {
+  grid-area: 1 / 1;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 9 / 5;
+  margin: 60px auto 80px;
+  background: url('/assets/news-28b75d4aff69441c8f234ffe6e32ab06.svg') center / contain no-repeat;
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .news--background { max-width: 100%; }
+}
+
+/* N10 HeroImageBanner "alt" (video tutorials) decorative art */
+.video--background::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 75%;
+  height: 100%;
+  background: url('/assets/videos-6577752a69196bbaeb790fd48d44f324.svg') center / cover no-repeat;
+  opacity: 0.5;
+  pointer-events: none;
+}
+@media (max-width: 990px) {
+  .video--background::after { width: 100%; }
+}
+
+/* N11 CaseStudyPopup */
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+  background: theme('colors.backdrop');
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  transition: all 0.65s ease;
+}
+.popup-backdrop.active { opacity: 1; visibility: visible; }
+.popup-container {
+  position: fixed;
+  top: 112px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  width: calc(100% - 180px);
+  transform: translateX(calc(100% + 20px));
+  pointer-events: none;
+  transition: transform 0.85s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.popup-container.active { transform: translateX(0); pointer-events: auto; }
+@media (max-width: 980px) {
+  .popup-container { top: 85px; left: 20px; width: calc(100% - 40px); }
+}
+.popup-content { height: 100%; overflow-y: auto; scrollbar-width: none; -ms-overflow-style: none; }
+.popup-content::-webkit-scrollbar { display: none; }
+
+/* N13c ROI video thumbnail play button */
+.roi-video__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: theme('colors.play-white');
+  box-shadow: theme('boxShadow.play');
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+.roi-video__play::after {
+  content: '';
+  margin-left: 4px;
+  border-style: solid;
+  border-width: 14px 0 14px 24px;
+  border-color: transparent transparent transparent theme('colors.navy');
+}
+.roi-video__thumbnail:hover .roi-video__play { transform: translate(-50%, -50%) scale(1.05); }
+@media (max-width: 768px) {
+  .roi-video__play { width: 56px; height: 56px; }
+  .roi-video__play::after { border-width: 10px 0 10px 17px; }
+}
+
+/* Rich-text bodies (sections/RichBody.jsx). Scoped to .content-rich so other page groups are unaffected.
+   Live: list markers are visible (preflight removes them), <em> is upright w500 (not italic),
+   the quote attribution has 10px left padding. */
+.content-rich .article--content ul { list-style: disc outside; }
+.content-rich .article--content ol { list-style: decimal outside; }
+.content-rich .article--content em { font-style: normal; }
+.content-rich .quote-author { padding-left: 10px; }
+.rich-box { height: var(--hd); }
+@media (max-width: 768px) {
+  .rich-box { height: var(--hm); }
+}
