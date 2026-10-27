@@ -1,0 +1,16 @@
+{
+ "id": "component.study-card",
+ "kind": "component",
+ "title": "Case study card",
+ "purpose": "Card for a case study in the listing grid; opens the panel on desktop.",
+ "source": {
+  "file": "src/pages/content/sections/Cards.jsx",
+  "lines": "57-87",
+  "anchor": "export function StudyCard",
+  "anchorLine": 57
+ },
+ "props": {},
+ "tokens": [
+  "radius.img"
+ ]
+}

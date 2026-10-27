@@ -1,0 +1,59 @@
+{
+ "note": "Foundation tokens derived by script from the clone source; value + category; cite is path:line in the clone and match is text that must appear on that line (extraction/verify_all.py CITATIONS).",
+ "tokens": {
+  "elevation.card": {
+   "value": "rgba(207,192,176,0.12) 1px 8px 12px 0px",
+   "category": "elevation",
+   "cite": "tailwind.config.cjs:110",
+   "match": "rgba(207,192,176,0.12) 1px 8px 12px 0px"
+  },
+  "elevation.bar": {
+   "value": "rgba(209,189,173,0.15) 1px 8px 12px 0px",
+   "category": "elevation",
+   "cite": "tailwind.config.cjs:111",
+   "match": "rgba(209,189,173,0.15) 1px 8px 12px 0px"
+  },
+  "elevation.tag": {
+   "value": "rgba(207,192,176,0.36) 0 0 1px, rgba(207,192,176,0.15) 0 1px 3px",
+   "category": "elevation",
+   "cite": "tailwind.config.cjs:112",
+   "match": "rgba(207,192,176,0.36) 0 0 1px, rgba(207"
+  },
+  "elevation.input": {
+   "value": "0 1px 2px rgba(16,24,40,0.05)",
+   "category": "elevation",
+   "cite": "tailwind.config.cjs:114",
+   "match": "0 1px 2px rgba(16,24,40,0.05)"
+  },
+  "elevation.input-focus": {
+   "value": "0 1px 2px rgba(16,24,40,0.05), 0 0 0 4px rgba(4,25,31,0.08)",
+   "category": "elevation",
+   "cite": "tailwind.config.cjs:115",
+   "match": "0 1px 2px rgba(16,24,40,0.05), 0 0 0 4px"
+  },
+  "elevation.roi-image": {
+   "value": "rgba(0,0,0,0.2) 0 4px 20px",
+   "category": "elevation",
+   "cite": "tailwind.config.cjs:117",
+   "match": "rgba(0,0,0,0.2) 0 4px 20px"
+  },
+  "elevation.glass-lg": {
+   "value": "rgba(207,192,176,0.12) 2px 16px 23px",
+   "category": "elevation",
+   "cite": "tailwind.config.cjs:118",
+   "match": "rgba(207,192,176,0.12) 2px 16px 23px"
+  },
+  "elevation.badge": {
+   "value": "rgba(22,19,19,0.3) 0 0 0.28px, rgba(22,19,19,0.15) 0 0.56px 1.69px",
+   "category": "elevation",
+   "cite": "tailwind.config.cjs:119",
+   "match": "rgba(22,19,19,0.3) 0 0 0.28px, rgba(22,1"
+  },
+  "elevation.play": {
+   "value": "rgba(0,0,0,0.15) 0 4px 16px",
+   "category": "elevation",
+   "cite": "tailwind.config.cjs:120",
+   "match": "rgba(0,0,0,0.15) 0 4px 16px"
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "id": "primitive.play-overlay",
+ "kind": "primitive",
+ "title": "Play overlay",
+ "purpose": "Centred 60px (40px mobile) play icon drawn over a click-to-play frame.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "211-211",
+  "anchor": "  .with--play {",
+  "anchorLine": 211
+ },
+ "props": {},
+ "tokens": []
+}

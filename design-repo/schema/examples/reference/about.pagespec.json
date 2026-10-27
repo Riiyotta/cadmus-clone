@@ -1,0 +1,726 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "reference",
+ "template": "template.about",
+ "route": "/about",
+ "theme": "light",
+ "brand": {
+  "name": "Reference Source"
+ },
+ "copyRole": "copy.neutral-placeholder",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Signal"
+     },
+     {
+      "title": "Summit"
+     },
+     {
+      "title": "Grove"
+     },
+     {
+      "title": "Fjord"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Horizon trace",
+      "href": "/product-overview",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Nimbus falcon",
+      "href": "/product/assignments",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Summit signal",
+      "href": "/product/exams",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Tidal prism",
+      "href": "/product/group-work",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Current kettle",
+      "href": "/product/marking-feedback",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Lantern delta",
+      "href": "/product/learning-analytics",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Measure walnut",
+      "href": "/product/oral_assessment",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Map lantern",
+      "href": "/pricing",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Steer harbor",
+      "href": "/solutions/universities",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Sort juniper",
+      "href": "/solutions/educators",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Horizon horizon",
+      "href": "/solutions/students",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Map linen",
+      "href": "/case-studies",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Orbit beacon",
+      "href": "/news",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Horizon cinder",
+      "href": "https://support.cadmus.io",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Fjord thistle",
+      "href": "/teacher-guides",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Sprout pillar",
+      "href": "/video-tutorials",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Sprout saffron",
+      "href": "/contact",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Lantern tidal",
+      "href": "/request-demo",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Steer horizon",
+      "href": "/about",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Harvest lantern",
+      "href": "/careers",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Beacon sort",
+      "href": "/contact",
+      "linkRole": "link.site-route"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.wordmark",
+      "ref": "inline:logo--main"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.about-banner",
+   "variant": "default",
+   "content": {
+    "heading": "Weigh harbor pillar marble sketch current bundle bundle ledger",
+    "media": [
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1750939194-group-1000006108.png"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "proof.impact-counter",
+   "variant": "orange",
+   "content": {
+    "eyebrow": "Lantern signal trace",
+    "items": [
+     {
+      "title": "Thistle",
+      "text": "Lum"
+     },
+     {
+      "title": "Delta",
+      "text": "Emb"
+     },
+     {
+      "title": "Summit",
+      "text": "Sum"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "counter.count-up",
+    "reducedMotionFallback": "final-value"
+   }
+  },
+  {
+   "section": "proof.logo-marquee",
+   "variant": "orange",
+   "content": {
+    "heading": "Delta thread meadow plan beacon lumen",
+    "media": [
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754544021-rmit_university_logo-2.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543992-usq-logo.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543959-bondlogo_primary_fullcolour_cmyk-1-1.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543932-zayed-university-1.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543906-acu-logo-300x139-1-1.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543854-logo-uon-1.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543826-094c1cda-c156-4dd5-8954d27f1cc7b52c-1.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543150-kcl-logo.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543130-maynooth.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543096-094c1cda-c156-4dd5-8954d27f1cc7b52c-1.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543084-avd9ij1nl.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543065-uog_colour-1.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543028-manchester_university_logo-2-1.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754543008-uni-of-canberra-logo.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754542990-university-of-melbourne.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754542974-university_of_western_australia_logo-freelogovectors-net.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754542957-flinders_university_logo_horizontal_rgb_master-1.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754542894-liverpool-john-moores-university.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754542826-images-2-1.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754542743-logusc.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754542675-university-of-notre-dame-australia-transp-logo.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754542661-rmit_university_logo-1.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754542557-adelaide_university_logo-svg.png"
+     },
+     {
+      "assetRole": "customer.logo",
+      "ref": "/assets/1754542545-626ba0db1dc4c3b537787e04-1.png"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "marquee.loop",
+    "reducedMotionFallback": "paused-static-row"
+   }
+  },
+  {
+   "section": "content.values",
+   "variant": "light-orange",
+   "content": {
+    "heading": "Atlas beacon",
+    "lead": "Shape orbit sketch measure copper tidy horizon basil nimbus tidy cinder pillar compass saffron steer grove prism fjord shape quarry tidy",
+    "items": [
+     {
+      "title": "Gather measure measure thread",
+      "text": "Ember lantern current ledger refine cedar cinder nimbus orchard steer linen ledger meadow orchard pebble kettle falcon sketch walnut orchard linen"
+     },
+     {
+      "title": "Velvet cinder juniper cobalt",
+      "text": "Shape ledger pillar gather atlas marble cinder lumen ledger map kettle cobalt cobalt harvest sprout prism measure sprout orbit grove orbit"
+     },
+     {
+      "title": "Meadow quarry basil anchor",
+      "text": "Sketch tidy sort horizon beacon measure ledger ember fjord horizon horizon thistle walnut steer refine compass map ripple grove quarry harbor"
+     },
+     {
+      "title": "Nimbus copper bundle pebble",
+      "text": "Rowan sprout share summit ember gather tidal nimbus notice orchard gather grove prism orchard map signal measure share copper lumen quarry"
+     },
+     {
+      "title": "Orchard shape sprout delta",
+      "text": "Marble field nimbus orchard marble sketch delta ledger measure velvet compass delta grove compass thread quarry tidy weigh summit orchard signal"
+     },
+     {
+      "title": "Bundle kettle linen cedar",
+      "text": "Nimbus compass field cobalt sort beacon harvest bundle compass sprout linen quarry cinder ember field plan cedar signal pebble measure tidy"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "icon.source",
+      "ref": "/assets/1753010925-star.svg"
+     },
+     {
+      "assetRole": "icon.source",
+      "ref": "/assets/1753010937-clap.svg"
+     },
+     {
+      "assetRole": "icon.source",
+      "ref": "/assets/1753010687-shooting-star.svg"
+     },
+     {
+      "assetRole": "icon.source",
+      "ref": "/assets/1753010910-heart.svg"
+     },
+     {
+      "assetRole": "icon.source",
+      "ref": "/assets/1753010947-lightbulb.svg"
+     },
+     {
+      "assetRole": "icon.source",
+      "ref": "/assets/1753010966-handshake.svg"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.two-column-rows",
+   "variant": "sheet",
+   "content": {
+    "heading": "Plan thistle meadow rowan ember prism plan linen",
+    "note": "Juniper measure tidal atlas orbit weigh linen pebble share orchard quarry falcon saffron ember compass atlas walnut anchor trace refine sketch cobalt walnut velvet lumen meadow trace orchard thread orbit pillar prism lantern atlas beacon tidal summit orbit trace delta pebble",
+    "items": [
+     {
+      "title": "Map walnut orbit kettle beacon",
+      "text": "Notice cedar anchor ember prism anchor marble pebble summit nimbus anchor meadow delta current compass cinder anchor basil ripple weigh plan copper thread juniper current steer linen walnut sort steer pillar orbit current ember notice cinder signal marble refine linen falcon"
+     },
+     {
+      "title": "Harbor thread harvest tidy lantern",
+      "text": "Walnut refine orchard horizon prism signal summit thread shape ribbon cinder ledger refine quarry marble tidy ribbon field walnut bundle falcon cedar rowan compass tidy atlas ribbon copper ripple walnut walnut cedar thread copper cinder current saffron walnut willow orchard basil"
+     },
+     {
+      "title": "Sketch tidy orbit tidal orchard",
+      "text": "Nimbus shape summit prism delta cobalt shape orchard compass ribbon orchard linen trace orbit gather orbit bundle current cinder horizon orchard willow compass refine falcon willow notice pebble tidal pebble delta measure quarry cinder refine sketch orbit summit falcon harvest basil"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "product.screenshot",
+      "ref": "/assets/1751189182-title.png"
+     },
+     {
+      "assetRole": "product.screenshot",
+      "ref": "/assets/1751189227-tadwitle.png"
+     },
+     {
+      "assetRole": "product.screenshot",
+      "ref": "/assets/1751189417-frame-1430105575.png"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Nimbus atlas",
+      "href": "/",
+      "linkRole": "link.site-route"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.timeline",
+   "variant": "default",
+   "content": {
+    "heading": "Willow sort",
+    "items": [
+     {
+      "title": "Lantern",
+      "text": "Orchard weigh lumen orbit orbit thread bundle trace willow bundle falcon refine ledger ember willow weigh share tidal measure walnut marble harbor current ember thread lantern orchard ripple marble pebble beacon sketch anchor field weigh harvest"
+     },
+     {
+      "title": "Walnut",
+      "text": "Cedar sketch juniper cedar velvet ribbon thread atlas cedar ledger velvet beacon falcon grove sprout kettle anchor cinder ribbon kettle walnut pillar rowan harvest plan weigh cinder copper sprout cedar bundle share falcon nimbus map sketch willow"
+     },
+     {
+      "title": "Rowan",
+      "text": "Ripple marble pebble current orbit trace atlas meadow copper plan delta bundle copper thread plan willow beacon ledger velvet shape ember compass measure weigh map harvest current saffron willow sort steer cedar copper pillar atlas mosaic prism"
+     },
+     {
+      "title": "Rowan",
+      "text": "Quarry prism measure thread saffron lumen rowan ripple saffron juniper nimbus ember orbit ledger copper cedar fjord beacon prism summit walnut walnut harbor orbit fjord orbit meadow trace marble kettle trace tidy sketch orchard ripple shape thistle"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "timeline.loop",
+    "reducedMotionFallback": "show-all-static"
+   }
+  },
+  {
+   "section": "content.mission-card",
+   "variant": "default",
+   "content": {
+    "heading": "Horizon quarry",
+    "lead": "Pillar ripple gather grove kettle ripple walnut kettle compass cedar juniper tidal compass gather lumen harvest beacon pebble fjord trace thread tidal delta weigh weigh thistle quarry shape thread walnut compass copper share grove basil saffron",
+    "media": [
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754472416-cadmus-event-june-2025-496-2-copy.jpg"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.careers-card",
+   "variant": "default",
+   "content": {
+    "eyebrow": "Notice",
+    "heading": "Quarry copper quarry cedar compass delta refine measure tidal",
+    "actions": [
+     {
+      "label": "Mosaic",
+      "href": "/careers",
+      "linkRole": "link.site-route"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754472361-cadmus-event-june-2025-467-copy.jpg"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "listing.chronicle",
+   "variant": "default",
+   "content": {
+    "heading": "Harbor measure",
+    "items": [
+     {
+      "title": "Harbor juniper trace ember mosaic bundle trace rowan gather delta horizon"
+     },
+     {
+      "title": "Ribbon willow current falcon anchor willow thread ribbon juniper velvet"
+     },
+     {
+      "title": "Shape summit current quarry pebble gather sketch quarry horizon atlas copper"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Weigh",
+      "href": "/news",
+      "linkRole": "link.site-route"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1778212941-pexels-cottonbro-63337352.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1778213101-surface-xarmm8ffapo-unsplash-2.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1778213038-adobestock_354893802-jpg-2.jpg"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "conversion.cta-band",
+   "variant": "brand",
+   "content": {
+    "heading": "Rowan summit harbor copper juniper summit tidal prism quarry",
+    "lead": "Signal sprout juniper sort ribbon bundle linen mosaic lantern shape nimbus bundle gather willow trace thread mosaic grove marble juniper refine bundle share basil",
+    "actions": [
+     {
+      "label": "Falcon gather ledger",
+      "href": "/",
+      "linkRole": "link.site-route"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Velvet falcon pebble",
+    "items": [
+     {
+      "title": "Tidal"
+     },
+     {
+      "title": "Nimbus"
+     },
+     {
+      "title": "Nimbus"
+     },
+     {
+      "title": "Weigh"
+     },
+     {
+      "title": "Meadow"
+     },
+     {
+      "title": "Copper"
+     },
+     {
+      "title": "Velvet"
+     },
+     {
+      "title": "Walnut"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Atlas falcon linen prism",
+      "href": "https://www.linkedin.com/company/cadmus-io",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Field orbit tidal gather",
+      "href": "https://x.com/cadmus_io",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Fjord refine orbit ledger",
+      "href": "https://www.facebook.com/cadmus.io",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Rowan orchard tidal measure",
+      "href": "https://lovework.studio",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Rowan velvet cinder willow",
+      "href": "/product-overview",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Harvest tidy sort grove share",
+      "href": "/product/assignments",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Meadow compass fjord cedar",
+      "href": "/product/exams",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Grove willow nimbus walnut",
+      "href": "/product/group-work",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Share gather marble prism",
+      "href": "/product/marking-feedback",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Prism lumen mosaic orchard",
+      "href": "/product/learning-analytics",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Refine copper measure harbor",
+      "href": "/product/oral_assessment",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Current field tidy weigh",
+      "href": "/pricing",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Summit grove pebble copper",
+      "href": "/solutions/universities",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Tidal grove ribbon lantern",
+      "href": "/solutions/educators",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Notice tidy pillar shape",
+      "href": "/solutions/students",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Notice sketch ribbon plan map",
+      "href": "/case-studies",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Signal refine anchor sketch",
+      "href": "/news",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Compass saffron lumen fjord",
+      "href": "/teacher-guides",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Ledger beacon juniper notice",
+      "href": "/video-tutorials",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Cedar rowan beacon nimbus",
+      "href": "/request-demo",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Ribbon gather prism gather",
+      "href": "https://support.cadmus.io/kb-tickets/new",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Current cedar measure harbor",
+      "href": "https://support.cadmus.io",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Saffron tidy basil field",
+      "href": "/about",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Ember summit basil weigh",
+      "href": "/careers",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Measure falcon thread ripple",
+      "href": "/information/privacy-policy-au",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Horizon steer notice nimbus",
+      "href": "/trust-centre",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Gather ripple lantern sprout",
+      "href": "/",
+      "linkRole": "link.site-route"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.wordmark",
+      "ref": "inline:logo--footer"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "id": "conversion.contact-form",
+ "title": "Contact form",
+ "semantic": {
+  "id": "conversion.contact-form",
+  "category": "CONVERSION"
+ },
+ "source": {
+  "id": "ContactForm:section@34",
+  "file": "src/pages/company/sections/ContactForm.jsx",
+  "tag": "section",
+  "lines": "14-120",
+  "tagLine": 34,
+  "tagLineSha1": "23314358c9259ab5",
+  "anchor": "export default function ContactForm",
+  "anchorLine": 14
+ },
+ "additionalSources": [],
+ "purpose": "Stand-in contact form with native validation and a thank-you overlay; it submits nowhere.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/contact",
+    "/request-demo"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "actions",
+   "heading",
+   "items"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 4,
+    "maxChars": 16,
+    "observedIn": 2,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 21,
+    "maxChars": 178,
+    "observedIn": 2,
+    "basis": "max over measured units: paragraphs"
+   },
+   "note": {
+    "type": "text",
+    "maxWords": 21,
+    "maxChars": 178,
+    "observedIn": 2,
+    "basis": "max over measured units: paragraphs"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 4,
+    "maxChars": 16,
+    "observedIn": 2,
+    "basis": "max over measured units: title"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 21,
+    "maxChars": 178,
+    "observedIn": 2,
+    "basis": "max over measured units: paragraphs"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 1,
+    "maxChars": 6,
+    "observedIn": 2,
+    "basis": "max over measured units: ctas"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    4
+   ],
+   "actions": [
+    1,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {},
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "alignment changes",
+   "cite": "src/pages/company/sections/ContactForm.jsx:107"
+  },
+  {
+   "range": "<=768",
+   "behavior": "element is shown",
+   "cite": "src/pages/company/sections/ContactForm.jsx:107"
+  },
+  {
+   "range": "<=768",
+   "behavior": "items stack vertically",
+   "cite": "src/pages/company/sections/ContactForm.jsx:107"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/pages/company/sections/ContactForm.jsx:103"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/company/sections/ContactForm.jsx:34"
+  }
+ ],
+ "runtimeUi": [
+  "thank-you overlay replaces the form after a local submit",
+  "the form posts to no endpoint"
+ ],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 2,
+   "minPx": 818,
+   "maxPx": 818,
+   "medianPx": 818.0,
+   "sample": {
+    "/contact": 818,
+    "/request-demo": 818
+   }
+  },
+  "768": {
+   "nodes": 2,
+   "minPx": 960,
+   "maxPx": 960,
+   "medianPx": 960.0,
+   "sample": {
+    "/contact": 960,
+    "/request-demo": 960
+   }
+  },
+  "390": {
+   "nodes": 2,
+   "minPx": 1002,
+   "maxPx": 1002,
+   "medianPx": 1002.0,
+   "sample": {
+    "/contact": 1002,
+    "/request-demo": 1002
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.contact",
+  "template.request-demo"
+ ],
+ "evidence": [
+  "src/pages/company/sections/ContactForm.jsx:14-120"
+ ]
+}

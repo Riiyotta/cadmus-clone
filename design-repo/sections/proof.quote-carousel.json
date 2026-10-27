@@ -1,0 +1,228 @@
+{
+ "id": "proof.quote-carousel",
+ "title": "Quote card with portrait",
+ "semantic": {
+  "id": "proof.quote-carousel",
+  "category": "PROOF"
+ },
+ "source": {
+  "id": "QuoteCarousel:section@21",
+  "file": "src/sections/QuoteCarousel.jsx",
+  "tag": "section",
+  "lines": "19-47",
+  "tagLine": 21,
+  "tagLineSha1": "90459129a877ef84",
+  "anchor": "export default function QuoteCarousel",
+  "anchorLine": 19
+ },
+ "additionalSources": [],
+ "purpose": "Single quote card: portrait beside a quote, author and role, over a coloured band.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "blue": {
+   "description": "blue page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/learning-analytics"
+   ]
+  },
+  "brand": {
+   "description": "brand (maroon and orange) scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/solutions/educators",
+    "/solutions/students"
+   ]
+  },
+  "green": {
+   "description": "green page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/marking-feedback"
+   ]
+  },
+  "lavender": {
+   "description": "lavender page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/exams"
+   ]
+  },
+  "pink": {
+   "description": "pink page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/group-work"
+   ]
+  },
+  "yellow": {
+   "description": "yellow page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/assignments"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "attribution",
+   "media",
+   "note"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 13,
+    "maxChars": 78,
+    "observedIn": 7,
+    "basis": "max over measured units: title (font-size filter {'min_size': 30})"
+   },
+   "note": {
+    "type": "text",
+    "maxWords": 48,
+    "maxChars": 318,
+    "observedIn": 7,
+    "basis": "max over measured units: title + paragraphs (font-size filter {'max_size': 30})"
+   },
+   "attribution": {
+    "type": "text",
+    "maxWords": 15,
+    "maxChars": 111,
+    "observedIn": 7,
+    "basis": "max over measured units: attributions"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 4,
+    "maxChars": 31,
+    "observedIn": 7,
+    "basis": "max over measured units: labels"
+   }
+  },
+  "listSizes": {
+   "media": [
+    1,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "person.photo"
+    ],
+    "generatedRoles": [
+     "person.fictional-avatar"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "person.fictional-avatar"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "aspect ratio changes",
+   "cite": "src/sections/QuoteCarousel.jsx:32"
+  },
+  {
+   "range": "<=768",
+   "behavior": "element takes the full width",
+   "cite": "src/sections/QuoteCarousel.jsx:31"
+  },
+  {
+   "range": "<=768",
+   "behavior": "items wrap onto new lines",
+   "cite": "src/sections/QuoteCarousel.jsx:30"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/sections/QuoteCarousel.jsx:38"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/sections/QuoteCarousel.jsx:23"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding removed",
+   "cite": "src/sections/QuoteCarousel.jsx:29"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 7,
+   "minPx": 620,
+   "maxPx": 707,
+   "medianPx": 707,
+   "sample": {
+    "/product/assignments": 707,
+    "/product/exams": 707,
+    "/product/group-work": 707
+   }
+  },
+  "768": {
+   "nodes": 4,
+   "minPx": 820,
+   "maxPx": 907,
+   "medianPx": 878.5,
+   "sample": {
+    "/product/assignments": 907,
+    "/product/exams": 907,
+    "/solutions/educators": 850
+   }
+  },
+  "390": {
+   "nodes": 4,
+   "minPx": 817,
+   "maxPx": 1017,
+   "medianPx": 919.5,
+   "sample": {
+    "/product/assignments": 1017,
+    "/product/exams": 962,
+    "/solutions/educators": 877
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.product",
+  "template.product-assignments",
+  "template.solutions-educators",
+  "template.solutions-students"
+ ],
+ "evidence": [
+  "src/sections/QuoteCarousel.jsx:19-47"
+ ]
+}

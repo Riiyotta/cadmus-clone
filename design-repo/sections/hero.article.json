@@ -1,0 +1,175 @@
+{
+ "id": "hero.article",
+ "title": "Article header",
+ "semantic": {
+  "id": "hero.article",
+  "category": "HERO"
+ },
+ "source": {
+  "id": "ArticleHero:div@19",
+  "file": "src/pages/content/sections/Article.jsx",
+  "tag": "div",
+  "lines": "17-41",
+  "tagLine": 19,
+  "tagLineSha1": "fb43bcb1954c66e0",
+  "anchor": "export function ArticleHero",
+  "anchorLine": 17
+ },
+ "additionalSources": [],
+ "purpose": "Opening box of an article page: tall rounded photo with a white card holding the overline, title and optional caption.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/guides/creating-your-first-cadmus-assessment",
+    "/guides/effective-feedback-ideas-with-cadmus",
+    "/guides/embed-more-learning-into-assessments",
+    "/guides/managing-your-class-pre-submission"
+   ],
+   "observedOnCount": 125
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "media"
+  ],
+  "fields": {
+   "eyebrow": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 15,
+    "observedIn": 125,
+    "basis": "max over measured units: labels"
+   },
+   "heading": {
+    "type": "text",
+    "maxWords": 45,
+    "maxChars": 350,
+    "observedIn": 125,
+    "basis": "max over measured units: title",
+    "maxLines1440": 12
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 55,
+    "maxChars": 381,
+    "observedIn": 125,
+    "basis": "max over measured units: paragraphs"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 15,
+    "observedIn": 125,
+    "basis": "max over measured units: labels"
+   }
+  },
+  "listSizes": {
+   "media": [
+    1,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "photo.source-scene"
+    ],
+    "generatedRoles": [
+     "photo.generated-scene"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "photo.generated-scene"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/pages/content/sections/Article.jsx:30"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/content/sections/Article.jsx:19"
+  },
+  {
+   "range": "<=768",
+   "behavior": "type size or spacing changes",
+   "cite": "src/pages/content/sections/Article.jsx:36"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 125,
+   "minPx": 630,
+   "maxPx": 1070,
+   "medianPx": 630,
+   "sample": {
+    "/news/why-ai-proofing-assessments-misses-the-point": 630,
+    "/news/why-ai-demands-a-redesign-of-assessment": 630,
+    "/news/the-degree-has-always-been-a-signal-ai-is-changing-how-we-verify-it": 630
+   }
+  },
+  "768": {
+   "nodes": 3,
+   "minPx": 717,
+   "maxPx": 717,
+   "medianPx": 717,
+   "sample": {
+    "/news/why-ai-proofing-assessments-misses-the-point": 717,
+    "/study/the-university-of-notre-dame-australia-enables-agile-assurance-of-learning": 717,
+    "/guides/what-is-best-practice-assessment": 717
+   }
+  },
+  "390": {
+   "nodes": 3,
+   "minPx": 591,
+   "maxPx": 591,
+   "medianPx": 591,
+   "sample": {
+    "/news/why-ai-proofing-assessments-misses-the-point": 591,
+    "/study/the-university-of-notre-dame-australia-enables-agile-assurance-of-learning": 591,
+    "/guides/what-is-best-practice-assessment": 591
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.guide-detail",
+  "template.news-detail",
+  "template.study-detail"
+ ],
+ "evidence": [
+  "src/pages/content/sections/Article.jsx:17-41"
+ ]
+}

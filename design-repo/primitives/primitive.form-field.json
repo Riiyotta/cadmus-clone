@@ -1,0 +1,20 @@
+{
+ "id": "primitive.form-field",
+ "kind": "primitive",
+ "title": "Form field",
+ "purpose": "White input with a 1px border, 8px radius, soft shadow and a dark focus ring; select, textarea and custom checkbox share the look.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "483-486",
+  "anchor": "  .contact-input {",
+  "anchorLine": 483
+ },
+ "props": {
+  "type": "text | email | select | textarea | checkbox"
+ },
+ "tokens": [
+  "radius.input",
+  "color.border.form",
+  "elevation.input"
+ ]
+}

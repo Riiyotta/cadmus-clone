@@ -1,0 +1,249 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.study-detail",
+ "route": "/article-cinder",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Field"
+     },
+     {
+      "title": "Orchard"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Grove gather",
+      "href": "https://fernhollow.example/current",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Falcon thistle",
+      "href": "https://fernhollow.example/cinder",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:tidy-cedar-saffron",
+      "alt": "Atlas"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.article",
+   "variant": "default",
+   "content": {
+    "eyebrow": "Bundle",
+    "heading": "Harbor thread rowan rowan basil orbit basil ribbon",
+    "lead": "Cedar atlas tidy pillar ripple ribbon tidal velvet",
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:ripple-ripple-weigh",
+      "alt": "Shape"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "article.share-download",
+   "variant": "default",
+   "content": {
+    "note": "Bundle prism beacon lantern prism compass orchard horizon",
+    "attribution": "Saffron weigh field lumen thread linen compass",
+    "actions": [
+     {
+      "label": "Lantern gather",
+      "href": "https://fernhollow.example/field",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Harbor notice",
+      "href": "https://fernhollow.example/sprout",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Ribbon kettle",
+      "href": "https://fernhollow.example/share",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Marble mosaic",
+      "href": "https://fernhollow.example/plan",
+      "linkRole": "link.placeholder"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "article.highlights",
+   "variant": "default",
+   "content": {
+    "eyebrow": "Beacon cobalt velvet lantern basil",
+    "items": [
+     {
+      "title": "Map current",
+      "text": "Harvest"
+     },
+     {
+      "title": "Anchor tidy",
+      "text": "Pillar"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "article.body-chapter",
+   "variant": "default",
+   "content": {
+    "heading": "Bundle cinder beacon shape saffron prism quarry shape",
+    "items": [
+     {
+      "text": "Signal pillar delta ripple harbor tidy pillar share"
+     },
+     {
+      "text": "Meadow rowan plan quarry lumen signal willow map"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:signal-fjord-ripple"
+     },
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:sketch-walnut-steer"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "article.categories",
+   "variant": "default",
+   "content": {
+    "bullets": [
+     "Gather velvet",
+     "Lantern willow"
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "article.more-row",
+   "variant": "default",
+   "content": {
+    "heading": "Bundle cinder cinder ember sort tidal quarry",
+    "items": [
+     {
+      "title": "Field summit lumen juniper harvest measure quarry"
+     },
+     {
+      "title": "Bundle summit rowan thread pillar orbit marble"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Beacon",
+      "href": "https://fernhollow.example/lumen",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:nimbus-bundle-fjord",
+      "alt": "Ribbon juniper"
+     },
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:notice-walnut-copper",
+      "alt": "Field linen"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Atlas tidal lantern",
+    "items": [
+     {
+      "title": "Pebble"
+     },
+     {
+      "title": "Field"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Refine cobalt compass",
+      "href": "https://fernhollow.example/weigh",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Tidy current orchard",
+      "href": "https://fernhollow.example/sort",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:thistle-mosaic-willow",
+      "alt": "Field"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:thread-atlas-harbor",
+      "alt": "Field"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

@@ -1,0 +1,178 @@
+{
+ "id": "media.seamless-slide",
+ "title": "Seamless slide",
+ "semantic": {
+  "id": "media.seamless-slide",
+  "category": "MEDIA"
+ },
+ "source": {
+  "id": "SeamlessSlide:div@15",
+  "file": "src/pages/product/sections/SeamlessSlide.jsx",
+  "tag": "div",
+  "lines": "13-34",
+  "tagLine": 15,
+  "tagLineSha1": "61c2b2ea268b13ec",
+  "anchor": "export default function SeamlessSlide",
+  "anchorLine": 13
+ },
+ "additionalSources": [],
+ "purpose": "Orange sheet: centred heading, then a slide with a sub-heading, half-width body and a looping muted video (a different clip on mobile).",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product-overview"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "lead",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 41,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 2
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 31,
+    "maxChars": 221,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "note": {
+    "type": "text",
+    "maxWords": 31,
+    "maxChars": 221,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 41,
+    "observedIn": 1,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "media": [
+    1,
+    2
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "product.screenshot"
+    ],
+    "generatedRoles": [
+     "video.placeholder-poster",
+     "product.generated-visual"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "video.placeholder-poster",
+  "product.generated-visual"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "media.loop-video"
+  ],
+  "requiredPatterns": [
+   "media.loop-video"
+  ],
+  "reducedMotionFallback": {
+   "media.loop-video": "poster-static"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "element is hidden",
+   "cite": "src/pages/product/sections/SeamlessSlide.jsx:23"
+  },
+  {
+   "range": "<=768",
+   "behavior": "element is shown",
+   "cite": "src/pages/product/sections/SeamlessSlide.jsx:26"
+  },
+  {
+   "range": "<=768",
+   "behavior": "element takes the full width",
+   "cite": "src/pages/product/sections/SeamlessSlide.jsx:22"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/pages/product/sections/SeamlessSlide.jsx:16"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/product/sections/SeamlessSlide.jsx:15"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 809,
+   "maxPx": 809,
+   "medianPx": 809,
+   "sample": {
+    "/product-overview": 809
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 1995,
+   "maxPx": 1995,
+   "medianPx": 1995,
+   "sample": {
+    "/product-overview": 1995
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 1243,
+   "maxPx": 1243,
+   "medianPx": 1243,
+   "sample": {
+    "/product-overview": 1243
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.product-overview"
+ ],
+ "evidence": [
+  "src/pages/product/sections/SeamlessSlide.jsx:13-34"
+ ]
+}

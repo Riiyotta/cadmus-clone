@@ -1,0 +1,223 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.roi-study",
+ "route": "/report-thistle",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Walnut"
+     },
+     {
+      "title": "Map"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Ripple grove",
+      "href": "https://fernhollow.example/thread",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Grove shape",
+      "href": "https://fernhollow.example/rowan",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:willow-cinder-cobalt",
+      "alt": "Copper"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.roi",
+   "variant": "default",
+   "content": {
+    "heading": "Map",
+    "lead": "Walnut measure pebble gather juniper harbor lantern kettle",
+    "items": [
+     {
+      "title": "Juniper plan notice",
+      "text": "Horizon fjord delta"
+     },
+     {
+      "title": "Notice ledger quarry",
+      "text": "Marble compass tidal"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Steer ledger",
+      "href": "https://fernhollow.example/quarry",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:anchor-sketch-mosaic",
+      "alt": "Quarry fjord trace"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.roi-why",
+   "variant": "default",
+   "content": {
+    "heading": "Pill",
+    "lead": "Marble velvet thistle fjord fjord anchor velvet share",
+    "items": [
+     {
+      "title": "Cobalt lantern",
+      "text": "Cedar grove gather"
+     },
+     {
+      "title": "Meadow lumen",
+      "text": "Bundle pebble rowan"
+     }
+    ],
+    "bullets": [
+     "Cedar sketch tidy current notice current nimbus walnut",
+     "Anchor orchard beacon pillar atlas orbit walnut juniper"
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:signal-nimbus-ember",
+      "alt": "Cobalt falcon"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "proof.quote-banner",
+   "variant": "default",
+   "content": {
+    "note": "Sketch nimbus lumen delta cobalt fjord walnut weigh",
+    "attribution": "Ripple marble shape anchor trace steer"
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "media.roi-video",
+   "variant": "default",
+   "content": {
+    "heading": "Juniper gather anchor saffron",
+    "lead": "Falcon notice harbor thread walnut trace walnut orchard",
+    "media": [
+     {
+      "assetRole": "video.placeholder-poster",
+      "ref": "generate:harbor-atlas-pillar",
+      "alt": "Quarry tidy notice falcon"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "media.click-to-play",
+    "reducedMotionFallback": "poster-with-controls"
+   }
+  },
+  {
+   "section": "conversion.roi-form",
+   "variant": "default",
+   "content": {
+    "heading": "Sketch cedar tidy shape",
+    "lead": "Current thistle map pillar pillar quarry share harbor",
+    "note": "Basil weigh signal velvet signal current ember meadow",
+    "items": [
+     {
+      "title": "Kettle horizon sort measure",
+      "text": "Cedar refine sketch juniper ember quarry gather meadow"
+     },
+     {
+      "title": "Plan pillar saffron shape",
+      "text": "Shape copper falcon willow mosaic fjord falcon cedar"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Atlas",
+      "href": "https://fernhollow.example/trace",
+      "linkRole": "link.placeholder"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Falcon plan kettle",
+    "items": [
+     {
+      "title": "Trace"
+     },
+     {
+      "title": "Falcon"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Marble compass shape",
+      "href": "https://fernhollow.example/grove",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Velvet lumen atlas",
+      "href": "https://fernhollow.example/lumen",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:horizon-atlas-walnut",
+      "alt": "Kettle"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:beacon-harvest-walnut",
+      "alt": "Field"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

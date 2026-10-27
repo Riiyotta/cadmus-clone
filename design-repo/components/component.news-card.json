@@ -1,0 +1,18 @@
+{
+ "id": "component.news-card",
+ "kind": "component",
+ "title": "News card",
+ "purpose": "Linked 4:3 image tile with optional tags, title, excerpt, author and date.",
+ "source": {
+  "file": "src/components/Chronicle.jsx",
+  "lines": "36-69",
+  "anchor": "export function NewsCard",
+  "anchorLine": 36
+ },
+ "props": {
+  "extended": "boolean"
+ },
+ "tokens": [
+  "radius.img"
+ ]
+}

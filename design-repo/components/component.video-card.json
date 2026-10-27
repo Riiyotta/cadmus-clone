@@ -1,0 +1,16 @@
+{
+ "id": "component.video-card",
+ "kind": "component",
+ "title": "Video card",
+ "purpose": "Card for a video tutorial with thumbnail, title and duration.",
+ "source": {
+  "file": "src/pages/content/sections/Cards.jsx",
+  "lines": "103-119",
+  "anchor": "export function VideoCard",
+  "anchorLine": 103
+ },
+ "props": {},
+ "tokens": [
+  "radius.img"
+ ]
+}

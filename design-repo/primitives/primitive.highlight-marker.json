@@ -1,0 +1,18 @@
+{
+ "id": "primitive.highlight-marker",
+ "kind": "primitive",
+ "title": "Highlight marker",
+ "purpose": "Orange (or pink, lavender, blue by position) highlighter stripe behind half the height of a label or number.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "331-331",
+  "anchor": "  .marker {",
+  "anchorLine": 331
+ },
+ "props": {
+  "accent": "by position"
+ },
+ "tokens": [
+  "color.orange"
+ ]
+}

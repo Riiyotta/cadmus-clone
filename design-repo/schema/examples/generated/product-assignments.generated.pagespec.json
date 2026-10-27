@@ -1,0 +1,315 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.product-assignments",
+ "route": "/product-refine",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Summit"
+     },
+     {
+      "title": "Cobalt"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Pillar velvet",
+      "href": "https://fernhollow.example/thread",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Nimbus walnut",
+      "href": "https://fernhollow.example/sketch",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:sort-gather-notice",
+      "alt": "Horizon"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.product-split",
+   "variant": "yellow",
+   "content": {
+    "eyebrow": "Orbit sketch",
+    "heading": "Current tidy thread prism thistle",
+    "lead": "Cinder ribbon cedar thistle sketch compass sprout mosaic",
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:delta-field-atlas",
+      "alt": "Lumen measure"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.feature-grid",
+   "variant": "default",
+   "content": {
+    "heading": "Harbor orchard cobalt delta orbit",
+    "items": [
+     {
+      "title": "Field gather map compass harbor",
+      "text": "Tidal bundle trace grove orbit saffron cobalt horizon"
+     },
+     {
+      "title": "Kettle quarry thread linen cobalt",
+      "text": "Bundle share fjord horizon steer prism trace anchor"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "icon.generic",
+      "ref": "generate:ledger-refine-steer",
+      "alt": "Compass delta shape fjord share"
+     },
+     {
+      "assetRole": "icon.generic",
+      "ref": "generate:field-falcon-ledger",
+      "alt": "Current prism ledger steer anchor"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "conversion.highlight-split",
+   "variant": "default",
+   "content": {
+    "heading": "Lumen lumen velvet summit",
+    "lead": "Ledger meadow gather ledger sprout sort map ember",
+    "actions": [
+     {
+      "label": "Field cinder",
+      "href": "https://fernhollow.example/atlas",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Grove falcon",
+      "href": "https://fernhollow.example/linen",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:meadow-plan-walnut",
+      "alt": "Summit nimbus cobalt sprout"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "proof.study-preview",
+   "variant": "yellow",
+   "content": {
+    "eyebrow": "Summit shape",
+    "heading": "Basil falcon field pebble",
+    "note": "Map linen trace tidy gather nimbus summit orbit",
+    "attribution": "Ember current basil harbor basil quarry lumen summit",
+    "actions": [
+     {
+      "label": "Willow walnut field",
+      "href": "https://fernhollow.example/field",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:rowan-tidy-gather",
+      "alt": "Basil delta"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.overview-image",
+   "variant": "default",
+   "content": {
+    "heading": "Gather trace velvet steer",
+    "lead": "Refine orbit ledger compass pebble tidy lumen mosaic",
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:signal-anchor-copper",
+      "alt": "Thread notice fjord thread"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.two-column-rows",
+   "variant": "sheet",
+   "content": {
+    "eyebrow": "Ledger pebble walnut signal horizon cinder field nimbus",
+    "heading": "Juniper ember notice sprout velvet",
+    "note": "Pillar copper notice pebble measure sort sort harvest",
+    "items": [
+     {
+      "title": "Thistle walnut lumen saffron prism",
+      "text": "Measure notice thread beacon cedar falcon kettle refine"
+     },
+     {
+      "title": "Ripple ripple kettle steer weigh",
+      "text": "Ember ripple sort pillar refine delta tidy willow"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Lumen",
+      "href": "https://fernhollow.example/kettle",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Beacon",
+      "href": "https://fernhollow.example/willow",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:pillar-anchor-horizon",
+      "alt": "Velvet walnut current steer rowan juniper ribbon signal"
+     },
+     {
+      "assetRole": "icon.generic",
+      "ref": "generate:map-signal-share",
+      "alt": "Orchard weigh mosaic nimbus fjord cobalt cobalt velvet"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "proof.quote-carousel",
+   "variant": "yellow",
+   "content": {
+    "heading": "Harvest ripple current rowan current marble ember",
+    "note": "Basil cedar lumen pebble delta falcon ribbon trace",
+    "attribution": "Saffron cinder marble walnut lantern atlas nimbus trace",
+    "media": [
+     {
+      "assetRole": "person.fictional-avatar",
+      "ref": "generate:tidy-anchor-cobalt",
+      "alt": "Willow current"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "conversion.cta-band",
+   "variant": "yellow",
+   "content": {
+    "heading": "Refine ripple prism current tidy",
+    "lead": "Lantern bundle cedar atlas pillar lumen fjord mosaic",
+    "actions": [
+     {
+      "label": "Juniper sort",
+      "href": "https://fernhollow.example/tidal",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Ledger tidy",
+      "href": "https://fernhollow.example/meadow",
+      "linkRole": "link.placeholder"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Orchard current cinder",
+    "items": [
+     {
+      "title": "Cinder"
+     },
+     {
+      "title": "Bundle"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Lumen tidy willow",
+      "href": "https://fernhollow.example/signal",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Anchor meadow velvet",
+      "href": "https://fernhollow.example/linen",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:refine-gather-meadow",
+      "alt": "Harvest"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:fjord-refine-tidy",
+      "alt": "Measure"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

@@ -1,0 +1,196 @@
+{
+ "id": "content.connected-products",
+ "title": "Connected products tabs",
+ "semantic": {
+  "id": "content.connected-products",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "ConnectedProducts:div@70",
+  "file": "src/components/ConnectedProducts.jsx",
+  "tag": "div",
+  "lines": "61-128",
+  "tagLine": 70,
+  "tagLineSha1": "d0d5392cf2a7d553",
+  "anchor": "export default function ConnectedProducts",
+  "anchorLine": 61
+ },
+ "additionalSources": [],
+ "purpose": "Tabbed product switcher: a tab strip whose active tab swaps the panel title, body, image and section colour.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "actions",
+   "heading",
+   "items",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 23,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 7,
+    "maxChars": 46,
+    "observedIn": 1,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 29,
+    "maxChars": 209,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 10,
+    "observedIn": 1,
+    "basis": "max over measured units: ctas"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 28,
+    "observedIn": 1,
+    "basis": "max over measured units: labels"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    5
+   ],
+   "actions": [
+    1,
+    5
+   ],
+   "media": [
+    1,
+    10
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "photo.source-scene",
+     "icon.source"
+    ],
+    "generatedRoles": [
+     "photo.generated-scene",
+     "icon.generic"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "photo.generated-scene",
+  "icon.generic"
+ ],
+ "style": {
+  "props": {
+   "surface": {
+    "allowed": [
+     "color.surface.tab-yellow",
+     "color.surface.tab-lavender",
+     "color.surface.tab-pink",
+     "color.surface.tab-green",
+     "color.surface.tab-blue"
+    ],
+    "evidence": "src/components/ConnectedProducts.jsx:13"
+   }
+  },
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "tabs.fade"
+  ],
+  "requiredPatterns": [
+   "tabs.fade"
+  ],
+  "reducedMotionFallback": {
+   "tabs.fade": "instant-swap"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=990",
+   "behavior": "padding changes",
+   "cite": "src/components/ConnectedProducts.jsx:83"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/components/ConnectedProducts.jsx:75"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/components/ConnectedProducts.jsx:72"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 873,
+   "maxPx": 873,
+   "medianPx": 873,
+   "sample": {
+    "/": 873
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 1064,
+   "maxPx": 1064,
+   "medianPx": 1064,
+   "sample": {
+    "/": 1064
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 889,
+   "maxPx": 889,
+   "medianPx": 889,
+   "sample": {
+    "/": 889
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.home"
+ ],
+ "evidence": [
+  "src/components/ConnectedProducts.jsx:61-128"
+ ]
+}

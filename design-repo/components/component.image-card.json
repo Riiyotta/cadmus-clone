@@ -1,0 +1,21 @@
+{
+ "id": "component.image-card",
+ "kind": "component",
+ "title": "Image card",
+ "purpose": "Wide image offset 130px with a white content card floating bottom-left (bottom-right when flipped); below 991px the image goes full width 5:4 and the card drops into flow overlapping by 60px.",
+ "source": {
+  "file": "src/components/ImageCard.jsx",
+  "lines": "20-48",
+  "anchor": "export default function ImageCard",
+  "anchorLine": 20
+ },
+ "props": {
+  "flipped": "boolean",
+  "ratio": "2.6/1 | 2/1"
+ },
+ "tokens": [
+  "radius.img",
+  "radius.card",
+  "elevation.card"
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "id": "primitive.spacer",
+ "kind": "primitive",
+ "title": "Spacer",
+ "purpose": "100px vertical block (60px variant on mobile) used inside sheets.",
+ "source": {
+  "file": "src/components/Spacer.jsx",
+  "lines": "8-11",
+  "anchor": "export default function Spacer",
+  "anchorLine": 8
+ },
+ "props": {
+  "mobile60": "boolean"
+ },
+ "tokens": [
+  "spacing.100"
+ ]
+}

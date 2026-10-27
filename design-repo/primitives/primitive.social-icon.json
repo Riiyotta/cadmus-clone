@@ -1,0 +1,18 @@
+{
+ "id": "primitive.social-icon",
+ "kind": "primitive",
+ "title": "Social icon",
+ "purpose": "20px square icon background for LinkedIn, X and Facebook links.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "196-196",
+  "anchor": "  .social-icon {",
+  "anchorLine": 196
+ },
+ "props": {
+  "network": "linkedin | twitter | facebook"
+ },
+ "tokens": [
+  "iconSize.social"
+ ]
+}

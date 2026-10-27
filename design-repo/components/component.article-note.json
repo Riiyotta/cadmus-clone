@@ -1,0 +1,18 @@
+{
+ "id": "component.article-note",
+ "kind": "component",
+ "title": "Article note",
+ "purpose": "Coloured callout card with a pin icon in blue, pink, orange or green.",
+ "source": {
+  "file": "src/pages/content/sections/Article.jsx",
+  "lines": "46-56",
+  "anchor": "export function Note",
+  "anchorLine": 46
+ },
+ "props": {
+  "colour": "blue | pink | orange | green"
+ },
+ "tokens": [
+  "radius.card"
+ ]
+}

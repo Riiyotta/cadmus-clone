@@ -1,0 +1,18 @@
+{
+ "id": "component.pricing-card",
+ "kind": "component",
+ "title": "Pricing card",
+ "purpose": "White card with a chip, plan name, caption, bullet list and an arrow button.",
+ "source": {
+  "file": "src/pages/product/sections/PricingCard.jsx",
+  "lines": "10-29",
+  "anchor": "export default function PricingCard",
+  "anchorLine": 10
+ },
+ "props": {
+  "twoCol": "boolean"
+ },
+ "tokens": [
+  "radius.card"
+ ]
+}

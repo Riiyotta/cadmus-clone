@@ -1,0 +1,27 @@
+{
+ "note": "Component-scoped tokens -> foundation / semantic / layout tokens.",
+ "tokens": {
+  "button.solid.surface": "color.surface.ink",
+  "button.header.surface": "color.surface.brand",
+  "button.radius": "radius.btn",
+  "button.hover-duration": "motion.duration.hover",
+  "sheet.radius": "radius.sheet",
+  "sheet.overlap": "layout.sheet.overlap",
+  "card.radius": "radius.card",
+  "card.surface": "color.surface.card",
+  "card.shadow": "elevation.card",
+  "image.radius": "radius.img",
+  "tag.radius": "radius.btn",
+  "tag.border": "color.border.tag",
+  "input.radius": "radius.input",
+  "input.border": "color.border.form",
+  "input.shadow": "elevation.input",
+  "header.surface": "color.surface.card",
+  "header.shadow": "elevation.bar",
+  "header.radius": "radius.card",
+  "footer.surface": "color.surface.brand",
+  "footer.text": "color.text.footer",
+  "chip.surface": "color.surface.warm-soft",
+  "divider.color": "color.border.divider"
+ }
+}

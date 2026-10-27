@@ -1,0 +1,383 @@
+{
+ "note": "Foundation tokens derived by script from the clone source; value + category; cite is path:line in the clone and match is text that must appear on that line (extraction/verify_all.py CITATIONS).",
+ "tokens": {
+  "color.accordion-icon": {
+   "value": "rgba(22,19,19,0.8)",
+   "category": "color",
+   "cite": "tailwind.config.cjs:76",
+   "match": "'rgba(22,19,19,0.8)'"
+  },
+  "color.backdrop": {
+   "value": "rgba(0,0,0,0.4)",
+   "category": "color",
+   "cite": "tailwind.config.cjs:75",
+   "match": "'rgba(0,0,0,0.4)'"
+  },
+  "color.blue": {
+   "value": "#B6DBFF",
+   "category": "color",
+   "cite": "tailwind.config.cjs:27",
+   "match": "'#B6DBFF'"
+  },
+  "color.case-blue": {
+   "value": "#123D69",
+   "category": "color",
+   "cite": "tailwind.config.cjs:56",
+   "match": "'#123D69'"
+  },
+  "color.case-green": {
+   "value": "#455017",
+   "category": "color",
+   "cite": "tailwind.config.cjs:60",
+   "match": "'#455017'"
+  },
+  "color.case-lavender": {
+   "value": "#262258",
+   "category": "color",
+   "cite": "tailwind.config.cjs:59",
+   "match": "'#262258'"
+  },
+  "color.case-red": {
+   "value": "#580C1D",
+   "category": "color",
+   "cite": "tailwind.config.cjs:57",
+   "match": "'#580C1D'"
+  },
+  "color.case-yellow": {
+   "value": "#3E2E2C",
+   "category": "color",
+   "cite": "tailwind.config.cjs:58",
+   "match": "'#3E2E2C'"
+  },
+  "color.cream": {
+   "value": "#FCF7EF",
+   "category": "color",
+   "cite": "tailwind.config.cjs:18",
+   "match": "'#FCF7EF'"
+  },
+  "color.divider": {
+   "value": "rgba(22,19,19,0.376)",
+   "category": "color",
+   "cite": "tailwind.config.cjs:40",
+   "match": "'rgba(22,19,19,0.376)'"
+  },
+  "color.footer-text": {
+   "value": "rgba(246,243,238,0.8)",
+   "category": "color",
+   "cite": "tailwind.config.cjs:37",
+   "match": "'rgba(246,243,238,0.8)'"
+  },
+  "color.form-border": {
+   "value": "#D0D5DD",
+   "category": "color",
+   "cite": "tailwind.config.cjs:68",
+   "match": "'#D0D5DD'"
+  },
+  "color.form-icon": {
+   "value": "#6B7280",
+   "category": "color",
+   "cite": "tailwind.config.cjs:70",
+   "match": "'#6B7280'"
+  },
+  "color.form-placeholder": {
+   "value": "#667085",
+   "category": "color",
+   "cite": "tailwind.config.cjs:69",
+   "match": "'#667085'"
+  },
+  "color.glass": {
+   "value": "rgba(246,243,238,0.5)",
+   "category": "color",
+   "cite": "tailwind.config.cjs:42",
+   "match": "'rgba(246,243,238,0.5)'"
+  },
+  "color.glass-border": {
+   "value": "#FCFBF9",
+   "category": "color",
+   "cite": "tailwind.config.cjs:43",
+   "match": "'#FCFBF9'"
+  },
+  "color.green": {
+   "value": "#D1E375",
+   "category": "color",
+   "cite": "tailwind.config.cjs:29",
+   "match": "'#D1E375'"
+  },
+  "color.ink": {
+   "value": "#04191F",
+   "category": "color",
+   "cite": "tailwind.config.cjs:17",
+   "match": "'#04191F'"
+  },
+  "color.lavender": {
+   "value": "#C5C5FF",
+   "category": "color",
+   "cite": "tailwind.config.cjs:28",
+   "match": "'#C5C5FF'"
+  },
+  "color.light-orange": {
+   "value": "#FFE7DB",
+   "category": "color",
+   "cite": "tailwind.config.cjs:23",
+   "match": "'#FFE7DB'"
+  },
+  "color.maroon": {
+   "value": "#580C1D",
+   "category": "color",
+   "cite": "tailwind.config.cjs:21",
+   "match": "'#580C1D'"
+  },
+  "color.navy": {
+   "value": "#123D69",
+   "category": "color",
+   "cite": "tailwind.config.cjs:62",
+   "match": "'#123D69'"
+  },
+  "color.note-blue": {
+   "value": "#E8E8FF",
+   "category": "color",
+   "cite": "tailwind.config.cjs:78",
+   "match": "'#E8E8FF'"
+  },
+  "color.note-blue-icon": {
+   "value": "#262258",
+   "category": "color",
+   "cite": "tailwind.config.cjs:80",
+   "match": "'#262258'"
+  },
+  "color.note-blue-icon-bg": {
+   "value": "#C5C5FF",
+   "category": "color",
+   "cite": "tailwind.config.cjs:79",
+   "match": "'#C5C5FF'"
+  },
+  "color.note-green": {
+   "value": "#FAFFE8",
+   "category": "color",
+   "cite": "tailwind.config.cjs:87",
+   "match": "'#FAFFE8'"
+  },
+  "color.note-green-icon": {
+   "value": "#455017",
+   "category": "color",
+   "cite": "tailwind.config.cjs:89",
+   "match": "'#455017'"
+  },
+  "color.note-green-icon-bg": {
+   "value": "#E7F7A3",
+   "category": "color",
+   "cite": "tailwind.config.cjs:88",
+   "match": "'#E7F7A3'"
+  },
+  "color.note-orange": {
+   "value": "#FFF0E8",
+   "category": "color",
+   "cite": "tailwind.config.cjs:84",
+   "match": "'#FFF0E8'"
+  },
+  "color.note-orange-icon": {
+   "value": "#580C1D",
+   "category": "color",
+   "cite": "tailwind.config.cjs:86",
+   "match": "'#580C1D'"
+  },
+  "color.note-orange-icon-bg": {
+   "value": "#FFD7C3",
+   "category": "color",
+   "cite": "tailwind.config.cjs:85",
+   "match": "'#FFD7C3'"
+  },
+  "color.note-pink": {
+   "value": "#FFE8FB",
+   "category": "color",
+   "cite": "tailwind.config.cjs:81",
+   "match": "'#FFE8FB'"
+  },
+  "color.note-pink-icon": {
+   "value": "#C95699",
+   "category": "color",
+   "cite": "tailwind.config.cjs:83",
+   "match": "'#C95699'"
+  },
+  "color.note-pink-icon-bg": {
+   "value": "#FFC3F0",
+   "category": "color",
+   "cite": "tailwind.config.cjs:82",
+   "match": "'#FFC3F0'"
+  },
+  "color.offwhite": {
+   "value": "#FFFDFA",
+   "category": "color",
+   "cite": "tailwind.config.cjs:19",
+   "match": "'#FFFDFA'"
+  },
+  "color.orange": {
+   "value": "#FFC8AE",
+   "category": "color",
+   "cite": "tailwind.config.cjs:22",
+   "match": "'#FFC8AE'"
+  },
+  "color.pale-yellow": {
+   "value": "#FFF5D4",
+   "category": "color",
+   "cite": "tailwind.config.cjs:24",
+   "match": "'#FFF5D4'"
+  },
+  "color.pink": {
+   "value": "#FFC3F0",
+   "category": "color",
+   "cite": "tailwind.config.cjs:26",
+   "match": "'#FFC3F0'"
+  },
+  "color.placeholder": {
+   "value": "rgba(0,0,0,0.1)",
+   "category": "color",
+   "cite": "tailwind.config.cjs:39",
+   "match": "'rgba(0,0,0,0.1)'"
+  },
+  "color.play-white": {
+   "value": "rgba(255,255,255,0.9)",
+   "category": "color",
+   "cite": "tailwind.config.cjs:66",
+   "match": "'rgba(255,255,255,0.9)'"
+  },
+  "color.product-blue": {
+   "value": "#123D69",
+   "category": "color",
+   "cite": "tailwind.config.cjs:51",
+   "match": "'#123D69'"
+  },
+  "color.product-green": {
+   "value": "#455017",
+   "category": "color",
+   "cite": "tailwind.config.cjs:52",
+   "match": "'#455017'"
+  },
+  "color.product-lavender": {
+   "value": "#262258",
+   "category": "color",
+   "cite": "tailwind.config.cjs:49",
+   "match": "'#262258'"
+  },
+  "color.product-maroon": {
+   "value": "#87160D",
+   "category": "color",
+   "cite": "tailwind.config.cjs:53",
+   "match": "'#87160D'"
+  },
+  "color.product-pink": {
+   "value": "#820049",
+   "category": "color",
+   "cite": "tailwind.config.cjs:50",
+   "match": "'#820049'"
+  },
+  "color.product-yellow": {
+   "value": "#3E2E2C",
+   "category": "color",
+   "cite": "tailwind.config.cjs:48",
+   "match": "'#3E2E2C'"
+  },
+  "color.pure-white": {
+   "value": "#FFFFFF",
+   "category": "color",
+   "cite": "tailwind.config.cjs:20",
+   "match": "'#FFFFFF'"
+  },
+  "color.roi-badge-border": {
+   "value": "#5A9CE0",
+   "category": "color",
+   "cite": "tailwind.config.cjs:64",
+   "match": "'#5A9CE0'"
+  },
+  "color.roi-pale": {
+   "value": "#E0F0FF",
+   "category": "color",
+   "cite": "tailwind.config.cjs:63",
+   "match": "'#E0F0FF'"
+  },
+  "color.roi-quote-line": {
+   "value": "rgba(255,255,255,0.5)",
+   "category": "color",
+   "cite": "tailwind.config.cjs:65",
+   "match": "'rgba(255,255,255,0.5)'"
+  },
+  "color.selection": {
+   "value": "#D2FD78",
+   "category": "color",
+   "cite": "tailwind.config.cjs:41",
+   "match": "'#D2FD78'"
+  },
+  "color.share-bg": {
+   "value": "#ECE6DF",
+   "category": "color",
+   "cite": "tailwind.config.cjs:74",
+   "match": "'#ECE6DF'"
+  },
+  "color.tab-blue": {
+   "value": "#E0F0FF",
+   "category": "color",
+   "cite": "tailwind.config.cjs:35",
+   "match": "'#E0F0FF'"
+  },
+  "color.tab-green": {
+   "value": "#F0F5D5",
+   "category": "color",
+   "cite": "tailwind.config.cjs:34",
+   "match": "'#F0F5D5'"
+  },
+  "color.tab-lavender": {
+   "value": "#E8E8FF",
+   "category": "color",
+   "cite": "tailwind.config.cjs:32",
+   "match": "'#E8E8FF'"
+  },
+  "color.tab-pink": {
+   "value": "#FFE8FB",
+   "category": "color",
+   "cite": "tailwind.config.cjs:33",
+   "match": "'#FFE8FB'"
+  },
+  "color.tab-yellow": {
+   "value": "#FFF5D4",
+   "category": "color",
+   "cite": "tailwind.config.cjs:31",
+   "match": "'#FFF5D4'"
+  },
+  "color.tag-border": {
+   "value": "rgba(22,19,19,0.2)",
+   "category": "color",
+   "cite": "tailwind.config.cjs:72",
+   "match": "'rgba(22,19,19,0.2)'"
+  },
+  "color.ul-link": {
+   "value": "rgba(22,19,19,0.8)",
+   "category": "color",
+   "cite": "tailwind.config.cjs:73",
+   "match": "'rgba(22,19,19,0.8)'"
+  },
+  "color.vellum": {
+   "value": "#CFC0B0",
+   "category": "color",
+   "cite": "tailwind.config.cjs:36",
+   "match": "'#CFC0B0'"
+  },
+  "color.warm-white": {
+   "value": "#F7F4F0",
+   "category": "color",
+   "cite": "tailwind.config.cjs:38",
+   "match": "'#F7F4F0'"
+  },
+  "color.yellow": {
+   "value": "#FFE388",
+   "category": "color",
+   "cite": "tailwind.config.cjs:25",
+   "match": "'#FFE388'"
+  },
+  "color.ink-selection-text": {
+   "value": "#000",
+   "category": "color",
+   "cite": "src/index.css:71",
+   "match": "color: #000;"
+  }
+ }
+}

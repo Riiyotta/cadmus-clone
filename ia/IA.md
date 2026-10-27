@@ -1,14 +1,14 @@
 # cadmus.io clone: information architecture
 
-Source: Local React + Vite clone at /Users/riyaghosh/V3/cadmus (src/routes.jsx, src/pages/**); specs/*.md and CLONE_SPEC.md as secondary reference
+Source: Local React + Vite clone of the Cadmus marketing site (src/routes.jsx, src/pages/**); specs/*.md and CLONE_SPEC.md as secondary reference
 Status: **measured-from-code** · production approved: **false**
-181 routes · 24 templates · 80 unique sections
+181 routes · 25 templates · 82 unique sections
 
 > Generated from `ia.json` by `build.mjs`. Edit the JSON, not this file.
 
 ## Shape of the site
 
-The largest 3 templates (News article, Case study article, Video tutorial) account for 145 of 181 routes (80%). The remaining 36 routes span 21 templates.
+The largest 3 templates (News article, Case study article, Video tutorial) account for 145 of 181 routes (80%). The remaining 36 routes span 22 templates.
 
 | template | routes | share |
 |---|---:|---:|
@@ -36,10 +36,11 @@ The largest 3 templates (News article, Case study article, Video tutorial) accou
 | Video tutorials listing | 1 | 1% |
 | ROI study | 1 | 1% |
 | Privacy policy (information) | 1 | 1% |
+| Router fallback (not found) | 0 | 0% |
 
 ## Page chrome
 
-**181 routes carry chrome = `full`** — Homepage, Product page (study variant), Product page (study + overview variant), Product page (oral variant), Product overview, Pricing, Solutions: universities, Solutions: educators, Solutions: students, About, Careers, Contact, Request demo, Trust centre, News listing, Case studies listing, Teacher guides listing, Video tutorials listing, News article, Case study article, Teaching guide article, Video tutorial, ROI study, Privacy policy (information).
+**181 routes carry chrome = `full`** — Homepage, Product page (study variant), Product page (study + overview variant), Product page (oral variant), Product overview, Pricing, Solutions: universities, Solutions: educators, Solutions: students, About, Careers, Contact, Request demo, Trust centre, News listing, Case studies listing, Teacher guides listing, Video tutorials listing, News article, Case study article, Teaching guide article, Video tutorial, ROI study, Privacy policy (information), Router fallback (not found).
 
 ## Sections by reuse
 
@@ -48,12 +49,13 @@ component library or stays local to its page.
 
 | section | category | templates | routes | implementation | scope |
 |---|---|---:|---:|---|---|
-| `shell.header` | SHELL | 24 | 181 | `src/components/Header.jsx` | Mounted by App.jsx above the page transition on every route: 181 routes. |
-| `shell.footer` | SHELL | 24 | 181 | `src/components/Footer.jsx` | Mounted by App.jsx after main on every route: 181 routes. |
-| `article.hero` | ARTICLE | 3 | 125 | `src/pages/content/sections/Article.jsx > ArticleHero` | News, case-study and guide detail routes: 125 routes. |
-| `article.body` | ARTICLE | 3 | 125 | `src/pages/content/sections/RichBody.jsx; fallback src/pages/content/sections/Article.jsx > ArticleBody` | News, case-study and guide detail routes: 125 routes. |
+| `shell.header` | SHELL | 25 | 181 | `src/components/Header.jsx` | Mounted by App.jsx above the page transition on every route: 181 routes. |
+| `shell.footer` | SHELL | 25 | 181 | `src/components/Footer.jsx` | Mounted by App.jsx after main on every route: 181 routes. |
+| `article.original-link` | ARTICLE | 4 | 126 | `src/pages/content/sections/common.jsx > OriginalLink` | News, case-study, guide detail routes and the privacy page when their body is not empty. |
 | `article.categories` | ARTICLE | 3 | 125 | `src/pages/content/sections/Article.jsx > Categories` | News, case-study and guide detail routes: 125 routes. |
 | `article.more-row` | ARTICLE | 3 | 125 | `src/pages/content/sections/Article.jsx > MoreRow` | News, case-study and guide detail routes: 125 routes. |
+| `hero.article` | HERO | 3 | 125 | `src/pages/content/sections/Article.jsx > ArticleHero` | News, case-study and guide detail routes: 125 routes. |
+| `article.body-chapter` | ARTICLE | 3 | 125 | `src/pages/content/sections/RichBody.jsx; fallback src/pages/content/sections/Article.jsx > ArticleBody` | News, case-study and guide detail routes: 125 routes. |
 | `article.share-download` | ARTICLE | 2 | 112 | `src/pages/content/sections/ShareBar.jsx > ShareWithDownload` | News and case-study detail routes: 112 routes. |
 | `article.highlights` | ARTICLE | 1 | 36 | `src/pages/content/sections/Article.jsx > Highlights` | Case-study detail routes: 36 routes. |
 | `article.video-detail` | ARTICLE | 1 | 33 | `src/pages/content/sections/VideoDetail.jsx` | Video detail routes, listed and unlisted: 33 routes. |
@@ -114,7 +116,7 @@ component library or stays local to its page.
 | `media.featured-video` | MEDIA | 1 | 1 | `src/components/FeaturedVideo.jsx` | Homepage only: 1 route. |
 | `media.seamless-slide` | MEDIA | 1 | 1 | `src/pages/product/sections/SeamlessSlide.jsx` | Product overview only: 1 route. |
 | `media.roi-video` | MEDIA | 1 | 1 | `src/pages/content/sections/Roi.jsx > RoiVideo` | ROI study page only: 1 route. |
-| `pricing.plans-hero` | PRICING | 1 | 1 | `src/pages/product/sections/PricingHero.jsx` | Pricing only: 1 route. |
+| `pricing.plans-hero` | HERO | 1 | 1 | `src/pages/product/sections/PricingHero.jsx` | Pricing only: 1 route. |
 | `pricing.licence-row` | PRICING | 1 | 1 | `src/pages/product/sections/LicenceRow.jsx` | Pricing only: 1 route. |
 | `pricing.getting-started` | PRICING | 1 | 1 | `src/pages/product/sections/GettingStarted.jsx` | Pricing only: 1 route. |
 | `conversion.webinar-image-card` | CONVERSION | 1 | 1 | `src/components/Careers.jsx (imageCard2 props, ratio=2/1)` | Oral assessment product page only: 1 route. |
@@ -127,11 +129,12 @@ component library or stays local to its page.
 | `listing.guide-grid` | LISTING | 1 | 1 | `src/pages/content/sections/CardGrid.jsx (variant=guide) + src/pages/content/sections/Cards.jsx > GuideCard` | Teacher-guides listing only: 1 route. |
 | `listing.guide-types` | LISTING | 1 | 1 | `src/pages/content/sections/GuideTypes.jsx` | Video-tutorials listing only: 1 route. |
 | `listing.video-grid` | LISTING | 1 | 1 | `src/pages/content/Listings.jsx > VideoSection (CardGrid variant=video)` | Video-tutorials listing only (rendered once per audience): 1 route. |
-| `article.information-body` | ARTICLE | 1 | 1 | `src/pages/content/sections/Information.jsx > InformationBody` | Privacy information page only: 1 route. |
+| `article.policy-section` | ARTICLE | 1 | 1 | `src/pages/content/sections/Information.jsx > InformationBody` | Privacy information page only: 1 route. |
+| `utility.not-built` | UTILITY | 1 | 0 | `src/pages/NotBuilt.jsx` | Unknown paths and unknown collection slugs; no enumerable route. |
 
-**33 shared sections** appear in more than one template and belong in a component library.
+**34 shared sections** appear in more than one template and belong in a component library.
 
-**47 single-use sections** appear in exactly one template. Building these
+**48 single-use sections** appear in exactly one template. Building these
 as "reusable" components up front would be speculative — keep them page-local
 until a second caller actually appears.
 
@@ -143,7 +146,7 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.home-banner` | page-local |
 | 3 | CONTENT | `content.intro-carousel` | page-local |
 | 4 | MEDIA | `media.experience-video` | page-local |
@@ -159,7 +162,7 @@ until a second caller actually appears.
 | 14 | PROOF | `proof.case-study` | shared ×2 |
 | 15 | CONTENT | `content.careers-card` | shared ×2 |
 | 16 | LISTING | `listing.chronicle` | shared ×2 |
-| 17 | SHELL | `shell.footer` | shared ×24 |
+| 17 | SHELL | `shell.footer` | shared ×25 |
 
 ### Product page (study variant) — `template.product`
 
@@ -167,7 +170,7 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.product-split` | shared ×5 |
 | 3 | CONTENT | `content.feature-grid` | shared ×4 |
 | 4 | CONVERSION | `conversion.highlight-split` | shared ×2 |
@@ -175,7 +178,7 @@ until a second caller actually appears.
 | 6 | CONTENT | `content.two-column-rows` | shared ×11 |
 | 7 | PROOF | `proof.quote-carousel` | shared ×4 |
 | 8 | CONVERSION | `conversion.cta-band` | shared ×8 |
-| 9 | SHELL | `shell.footer` | shared ×24 |
+| 9 | SHELL | `shell.footer` | shared ×25 |
 
 ### Product page (study + overview variant) — `template.product-assignments`
 
@@ -183,7 +186,7 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.product-split` | shared ×5 |
 | 3 | CONTENT | `content.feature-grid` | shared ×4 |
 | 4 | CONVERSION | `conversion.highlight-split` | shared ×2 |
@@ -192,7 +195,7 @@ until a second caller actually appears.
 | 7 | CONTENT | `content.two-column-rows` | shared ×11 |
 | 8 | PROOF | `proof.quote-carousel` | shared ×4 |
 | 9 | CONVERSION | `conversion.cta-band` | shared ×8 |
-| 10 | SHELL | `shell.footer` | shared ×24 |
+| 10 | SHELL | `shell.footer` | shared ×25 |
 
 ### Product page (oral variant) — `template.product-oral`
 
@@ -200,7 +203,7 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.product-split` | shared ×5 |
 | 3 | CONTENT | `content.feature-grid` | shared ×4 |
 | 4 | CONTENT | `content.partnership-image-card` | page-local |
@@ -208,10 +211,11 @@ until a second caller actually appears.
 | 6 | LISTING | `listing.chronicle-two-col` | page-local |
 | 7 | CONTENT | `content.overview-image` | shared ×2 |
 | 8 | CONTENT | `content.two-column-rows` | shared ×11 |
-| 9 | CONVERSION | `conversion.webinar-image-card` | page-local |
-| 10 | PROOF | `proof.logo-marquee` | shared ×5 |
-| 11 | CONVERSION | `conversion.cta-band` | shared ×8 |
-| 12 | SHELL | `shell.footer` | shared ×24 |
+| 9 | CONTENT | `content.two-column-rows` | shared ×11 |
+| 10 | CONVERSION | `conversion.webinar-image-card` | page-local |
+| 11 | PROOF | `proof.logo-marquee` | shared ×5 |
+| 12 | CONVERSION | `conversion.cta-band` | shared ×8 |
+| 13 | SHELL | `shell.footer` | shared ×25 |
 
 ### Product overview — `template.product-overview`
 
@@ -219,15 +223,16 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.image-centered` | page-local |
 | 3 | CONTENT | `content.feature-grid` | shared ×4 |
 | 4 | MEDIA | `media.seamless-slide` | page-local |
 | 5 | CONTENT | `content.two-column-rows` | shared ×11 |
 | 6 | CONTENT | `content.single-column` | page-local |
-| 7 | CONTENT | `content.integrations` | shared ×5 |
-| 8 | PROOF | `proof.case-study` | shared ×2 |
-| 9 | SHELL | `shell.footer` | shared ×24 |
+| 7 | CONTENT | `content.two-column-rows` | shared ×11 |
+| 8 | CONTENT | `content.integrations` | shared ×5 |
+| 9 | PROOF | `proof.case-study` | shared ×2 |
+| 10 | SHELL | `shell.footer` | shared ×25 |
 
 ### Pricing — `template.pricing`
 
@@ -235,8 +240,8 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
-| 2 | PRICING | `pricing.plans-hero` | page-local |
+| 1 | SHELL | `shell.header` | shared ×25 |
+| 2 | HERO | `pricing.plans-hero` | page-local |
 | 3 | PRICING | `pricing.licence-row` | page-local |
 | 4 | PRICING | `pricing.getting-started` | page-local |
 | 5 | CONTENT | `content.solution-cards` | shared ×2 |
@@ -245,7 +250,7 @@ until a second caller actually appears.
 | 8 | PROOF | `proof.impact-counter` | shared ×4 |
 | 9 | PROOF | `proof.logo-marquee` | shared ×5 |
 | 10 | CONTENT | `content.faq` | page-local |
-| 11 | SHELL | `shell.footer` | shared ×24 |
+| 11 | SHELL | `shell.footer` | shared ×25 |
 
 ### Solutions: universities — `template.solutions-universities`
 
@@ -253,7 +258,7 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.photo-banner` | shared ×2 |
 | 3 | PROOF | `proof.logo-marquee` | shared ×5 |
 | 4 | CONTENT | `content.why-choose` | shared ×5 |
@@ -262,7 +267,7 @@ until a second caller actually appears.
 | 7 | CONTENT | `content.integrations` | shared ×5 |
 | 8 | PROOF | `proof.case-study-carousel` | page-local |
 | 9 | CONVERSION | `conversion.cta-band` | shared ×8 |
-| 10 | SHELL | `shell.footer` | shared ×24 |
+| 10 | SHELL | `shell.footer` | shared ×25 |
 
 ### Solutions: educators — `template.solutions-educators`
 
@@ -270,7 +275,7 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.product-split` | shared ×5 |
 | 3 | CONTENT | `content.why-choose` | shared ×5 |
 | 4 | CONTENT | `content.delivery-types` | page-local |
@@ -279,7 +284,7 @@ until a second caller actually appears.
 | 7 | CONTENT | `content.integrations` | shared ×5 |
 | 8 | PROOF | `proof.quote-carousel` | shared ×4 |
 | 9 | CONVERSION | `conversion.cta-band` | shared ×8 |
-| 10 | SHELL | `shell.footer` | shared ×24 |
+| 10 | SHELL | `shell.footer` | shared ×25 |
 
 ### Solutions: students — `template.solutions-students`
 
@@ -287,7 +292,7 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.product-split` | shared ×5 |
 | 3 | CONTENT | `content.why-choose` | shared ×5 |
 | 4 | CONTENT | `content.two-column-rows` | shared ×11 |
@@ -295,7 +300,7 @@ until a second caller actually appears.
 | 6 | CONTENT | `content.support-cards` | page-local |
 | 7 | PROOF | `proof.quote-carousel` | shared ×4 |
 | 8 | CONVERSION | `conversion.cta-band` | shared ×8 |
-| 9 | SHELL | `shell.footer` | shared ×24 |
+| 9 | SHELL | `shell.footer` | shared ×25 |
 
 ### About — `template.about`
 
@@ -303,7 +308,7 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.about-banner` | page-local |
 | 3 | PROOF | `proof.impact-counter` | shared ×4 |
 | 4 | PROOF | `proof.logo-marquee` | shared ×5 |
@@ -314,7 +319,7 @@ until a second caller actually appears.
 | 9 | CONTENT | `content.careers-card` | shared ×2 |
 | 10 | LISTING | `listing.chronicle` | shared ×2 |
 | 11 | CONVERSION | `conversion.cta-band` | shared ×8 |
-| 12 | SHELL | `shell.footer` | shared ×24 |
+| 12 | SHELL | `shell.footer` | shared ×25 |
 
 ### Careers — `template.careers`
 
@@ -322,7 +327,7 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.photo-banner` | shared ×2 |
 | 3 | CONTENT | `content.intro-split` | shared ×2 |
 | 4 | CONTENT | `content.reasons` | page-local |
@@ -333,7 +338,7 @@ until a second caller actually appears.
 | 9 | LISTING | `listing.positions` | page-local |
 | 10 | PROOF | `proof.team-quotes` | page-local |
 | 11 | CONVERSION | `conversion.cta-band` | shared ×8 |
-| 12 | SHELL | `shell.footer` | shared ×24 |
+| 12 | SHELL | `shell.footer` | shared ×25 |
 
 ### Contact — `template.contact`
 
@@ -341,12 +346,12 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.title-banner` | shared ×2 |
 | 3 | CONTENT | `content.two-column-rows` | shared ×11 |
 | 4 | CONVERSION | `conversion.contact-form` | shared ×2 |
 | 5 | CONTENT | `content.why-choose` | shared ×5 |
-| 6 | SHELL | `shell.footer` | shared ×24 |
+| 6 | SHELL | `shell.footer` | shared ×25 |
 
 ### Request demo — `template.request-demo`
 
@@ -354,10 +359,10 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.title-banner` | shared ×2 |
 | 3 | CONVERSION | `conversion.contact-form` | shared ×2 |
-| 4 | SHELL | `shell.footer` | shared ×24 |
+| 4 | SHELL | `shell.footer` | shared ×25 |
 
 ### Trust centre — `template.trust-centre`
 
@@ -365,12 +370,13 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.small-banner` | shared ×2 |
 | 3 | CONTENT | `content.intro-split` | shared ×2 |
 | 4 | CONTENT | `content.policies` | page-local |
 | 5 | CONTENT | `content.values` | shared ×3 |
-| 6 | SHELL | `shell.footer` | shared ×24 |
+| 6 | CONTENT | `content.values` | shared ×3 |
+| 7 | SHELL | `shell.footer` | shared ×25 |
 
 ### News listing — `template.news-listing`
 
@@ -378,12 +384,12 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.news-banner` | page-local |
 | 3 | LISTING | `listing.category-filter` | shared ×2 |
 | 4 | LISTING | `listing.news-grid` | page-local |
 | 5 | CONVERSION | `conversion.image-cta-band` | shared ×3 |
-| 6 | SHELL | `shell.footer` | shared ×24 |
+| 6 | SHELL | `shell.footer` | shared ×25 |
 
 ### Case studies listing — `template.case-studies-listing`
 
@@ -391,13 +397,13 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.listing-photo-card` | shared ×2 |
 | 3 | LISTING | `listing.category-filter` | shared ×2 |
 | 4 | LISTING | `listing.study-grid` | page-local |
 | 5 | CONVERSION | `conversion.image-cta-band` | shared ×3 |
 | 6 | LISTING | `listing.study-popup` | page-local |
-| 7 | SHELL | `shell.footer` | shared ×24 |
+| 7 | SHELL | `shell.footer` | shared ×25 |
 
 ### Teacher guides listing — `template.teacher-guides-listing`
 
@@ -405,11 +411,11 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.listing-photo-card` | shared ×2 |
 | 3 | LISTING | `listing.guide-grid` | page-local |
 | 4 | CONVERSION | `conversion.image-cta-band` | shared ×3 |
-| 5 | SHELL | `shell.footer` | shared ×24 |
+| 5 | SHELL | `shell.footer` | shared ×25 |
 
 ### Video tutorials listing — `template.video-tutorials-listing`
 
@@ -417,11 +423,12 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.listing-maroon` | page-local |
 | 3 | LISTING | `listing.guide-types` | page-local |
 | 4 | LISTING | `listing.video-grid` | page-local |
-| 5 | SHELL | `shell.footer` | shared ×24 |
+| 5 | LISTING | `listing.video-grid` | page-local |
+| 6 | SHELL | `shell.footer` | shared ×25 |
 
 ### News article — `template.news-detail`
 
@@ -429,13 +436,14 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
-| 2 | ARTICLE | `article.hero` | shared ×3 |
+| 1 | SHELL | `shell.header` | shared ×25 |
+| 2 | HERO | `hero.article` | shared ×3 |
 | 3 | ARTICLE | `article.share-download` | shared ×2 |
-| 4 | ARTICLE | `article.body` | shared ×3 |
-| 5 | ARTICLE | `article.categories` | shared ×3 |
-| 6 | ARTICLE | `article.more-row` | shared ×3 |
-| 7 | SHELL | `shell.footer` | shared ×24 |
+| 4 | ARTICLE | `article.body-chapter` | shared ×3 |
+| 5 | ARTICLE | `article.original-link` | shared ×4 |
+| 6 | ARTICLE | `article.categories` | shared ×3 |
+| 7 | ARTICLE | `article.more-row` | shared ×3 |
+| 8 | SHELL | `shell.footer` | shared ×25 |
 
 ### Case study article — `template.study-detail`
 
@@ -443,14 +451,15 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
-| 2 | ARTICLE | `article.hero` | shared ×3 |
+| 1 | SHELL | `shell.header` | shared ×25 |
+| 2 | HERO | `hero.article` | shared ×3 |
 | 3 | ARTICLE | `article.share-download` | shared ×2 |
 | 4 | ARTICLE | `article.highlights` | page-local |
-| 5 | ARTICLE | `article.body` | shared ×3 |
-| 6 | ARTICLE | `article.categories` | shared ×3 |
-| 7 | ARTICLE | `article.more-row` | shared ×3 |
-| 8 | SHELL | `shell.footer` | shared ×24 |
+| 5 | ARTICLE | `article.body-chapter` | shared ×3 |
+| 6 | ARTICLE | `article.original-link` | shared ×4 |
+| 7 | ARTICLE | `article.categories` | shared ×3 |
+| 8 | ARTICLE | `article.more-row` | shared ×3 |
+| 9 | SHELL | `shell.footer` | shared ×25 |
 
 ### Teaching guide article — `template.guide-detail`
 
@@ -458,13 +467,14 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
-| 2 | ARTICLE | `article.hero` | shared ×3 |
+| 1 | SHELL | `shell.header` | shared ×25 |
+| 2 | HERO | `hero.article` | shared ×3 |
 | 3 | ARTICLE | `article.share` | page-local |
-| 4 | ARTICLE | `article.body` | shared ×3 |
-| 5 | ARTICLE | `article.categories` | shared ×3 |
-| 6 | ARTICLE | `article.more-row` | shared ×3 |
-| 7 | SHELL | `shell.footer` | shared ×24 |
+| 4 | ARTICLE | `article.body-chapter` | shared ×3 |
+| 5 | ARTICLE | `article.original-link` | shared ×4 |
+| 6 | ARTICLE | `article.categories` | shared ×3 |
+| 7 | ARTICLE | `article.more-row` | shared ×3 |
+| 8 | SHELL | `shell.footer` | shared ×25 |
 
 ### Video tutorial — `template.video-detail`
 
@@ -472,9 +482,9 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | ARTICLE | `article.video-detail` | page-local |
-| 3 | SHELL | `shell.footer` | shared ×24 |
+| 3 | SHELL | `shell.footer` | shared ×25 |
 
 ### ROI study — `template.roi-study`
 
@@ -482,13 +492,13 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.roi` | page-local |
 | 3 | CONTENT | `content.roi-why` | page-local |
 | 4 | PROOF | `proof.quote-banner` | page-local |
 | 5 | MEDIA | `media.roi-video` | page-local |
 | 6 | CONVERSION | `conversion.roi-form` | page-local |
-| 7 | SHELL | `shell.footer` | shared ×24 |
+| 7 | SHELL | `shell.footer` | shared ×25 |
 
 ### Privacy policy (information) — `template.privacy`
 
@@ -496,10 +506,21 @@ until a second caller actually appears.
 
 | # | category | section | |
 |---:|---|---|---|
-| 1 | SHELL | `shell.header` | shared ×24 |
+| 1 | SHELL | `shell.header` | shared ×25 |
 | 2 | HERO | `hero.small-banner` | shared ×2 |
-| 3 | ARTICLE | `article.information-body` | page-local |
-| 4 | SHELL | `shell.footer` | shared ×24 |
+| 3 | ARTICLE | `article.policy-section` | page-local |
+| 4 | ARTICLE | `article.original-link` | shared ×4 |
+| 5 | SHELL | `shell.footer` | shared ×25 |
+
+### Router fallback (not found) — `template.not-built-fallback`
+
+0 routes · `*` · chrome: **full**
+
+| # | category | section | |
+|---:|---|---|---|
+| 1 | SHELL | `shell.header` | shared ×25 |
+| 2 | UTILITY | `utility.not-built` | page-local |
+| 3 | SHELL | `shell.footer` | shared ×25 |
 
 ## Section reference
 
@@ -517,7 +538,7 @@ _App-level chrome mounted once in src/App.jsx around every route, outside any pa
 
 ### HERO
 
-_The first block of a page: title-bearing banner or split hero that opens the route._
+_The first block of a page: the page-opening composition (title-bearing banner, split hero, pricing opener or article header)._
 
 **`hero.home-banner`** — Homepage opening banner (HomepageBanner): headline, caption and actions over the homepage art.
 
@@ -562,6 +583,14 @@ _The first block of a page: title-bearing banner or split hero that opens the ro
 **`hero.roi`** — ROI report opener: h1, body and a scroll-to-form button beside an image with a glass stat card.
 
 · ROI study page only: 1 route. · appears on 1 routes · implemented by `src/pages/content/sections/Roi.jsx > RoiHero`
+
+**`pricing.plans-hero`** — Orange pricing opener: centred heading block over a row of plan cards (the page-opening composition, so a HERO).
+
+· Pricing only: 1 route. · appears on 1 routes · implemented by `src/pages/product/sections/PricingHero.jsx`
+
+**`hero.article`** — Opening box of an article page: tall rounded photo with a white card holding overline, title and optional caption (the page-opening composition, so a HERO).
+
+· News, case-study and guide detail routes: 125 routes. · appears on 125 routes · implemented by `src/pages/content/sections/Article.jsx > ArticleHero`
 
 ### CONTENT
 
@@ -735,10 +764,6 @@ _Blocks whose primary payload is a video (inline loop or click-to-play embed)._
 
 _Plan cards and onboarding steps specific to the pricing route._
 
-**`pricing.plans-hero`** — Orange pricing opener: centred heading block over a row of plan cards.
-
-· Pricing only: 1 route. · appears on 1 routes · implemented by `src/pages/product/sections/PricingHero.jsx`
-
 **`pricing.licence-row`** — Continuation of the pricing opener: text column beside a licence card with list and button.
 
 · Pricing only: 1 route. · appears on 1 routes · implemented by `src/pages/product/sections/LicenceRow.jsx`
@@ -821,11 +846,7 @@ _Collection indexes and teasers: filters, card grids, news tiles, job lists, pop
 
 ### ARTICLE
 
-_Blocks inside the white article shell of a collection detail route._
-
-**`article.hero`** — Tall rounded photo box with a white card holding overline, title and optional caption.
-
-· News, case-study and guide detail routes: 125 routes. · appears on 125 routes · implemented by `src/pages/content/sections/Article.jsx > ArticleHero`
+_Blocks inside the white article shell of a collection detail route, plus the policy-document parts._
 
 **`article.share-download`** — Share links with a download action that expands an accordion lead form; optional author/about column.
 
@@ -839,10 +860,6 @@ _Blocks inside the white article shell of a collection detail route._
 
 · Case-study detail routes: 36 routes. · appears on 36 routes · implemented by `src/pages/content/sections/Article.jsx > Highlights`
 
-**`article.body`** — Reading-column rich text with headings, lists, notes and inline article quote cards (QuoteCard variant=article).
-
-· News, case-study and guide detail routes: 125 routes. · appears on 125 routes · implemented by `src/pages/content/sections/RichBody.jsx; fallback src/pages/content/sections/Article.jsx > ArticleBody`
-
 **`article.categories`** — Category label with a row of tag chips.
 
 · News, case-study and guide detail routes: 125 routes. · appears on 125 routes · implemented by `src/pages/content/sections/Article.jsx > Categories`
@@ -855,6 +872,22 @@ _Blocks inside the white article shell of a collection detail route._
 
 · Video detail routes, listed and unlisted: 33 routes. · appears on 33 routes · implemented by `src/pages/content/sections/VideoDetail.jsx`
 
-**`article.information-body`** — Policy body: numbered headed sections of placeholder rich text.
+**`article.body-chapter`** — One heading-bounded chapter of the reading column (heading, then paragraphs, lists, notes, inline images). Decomposed from the former whole-body section so no section holds most of the page.
+
+· News, case-study and guide detail routes: 125 routes. · appears on 125 routes · implemented by `src/pages/content/sections/RichBody.jsx; fallback src/pages/content/sections/Article.jsx > ArticleBody`
+
+**`article.policy-section`** — One heading-bounded part of a policy document (heading, then paragraphs and lists). Decomposed from the former whole-body section.
 
 · Privacy information page only: 1 route. · appears on 1 routes · implemented by `src/pages/content/sections/Information.jsx > InformationBody`
+
+**`article.original-link`** — Clone-only row linking to the original page of the live site; rendered after the body when the body is not empty. Reference-only in the design-repo.
+
+· News, case-study, guide detail routes and the privacy page when their body is not empty. · appears on 126 routes · implemented by `src/pages/content/sections/common.jsx > OriginalLink`
+
+### UTILITY
+
+_Router fallback states that are not designed page content (the not-found body)._
+
+**`utility.not-built`** — Router catch-all body: one short line and a link out to the live site. Not a designed page; retrieval-ineligible in the design-repo.
+
+· Unknown paths and unknown collection slugs; no enumerable route. · appears on 0 routes · implemented by `src/pages/NotBuilt.jsx`

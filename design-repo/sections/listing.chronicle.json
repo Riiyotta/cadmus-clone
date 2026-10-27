@@ -1,0 +1,185 @@
+{
+ "id": "listing.chronicle",
+ "title": "News teaser row",
+ "semantic": {
+  "id": "listing.chronicle",
+  "category": "LISTING"
+ },
+ "source": {
+  "id": "Chronicle:three-col:div@82",
+  "file": "src/components/Chronicle.jsx",
+  "tag": "div",
+  "lines": "71-107",
+  "tagLine": 82,
+  "tagLineSha1": "9c2aa48d9958defe",
+  "anchor": "export default function Chronicle",
+  "anchorLine": 71
+ },
+ "additionalSources": [],
+ "purpose": "Title, three news tiles and a see-more link to the news index.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/",
+    "/about"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "actions",
+   "heading",
+   "items",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 20,
+    "observedIn": 2,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 14,
+    "maxChars": 77,
+    "observedIn": 2,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 14,
+    "maxChars": 77,
+    "observedIn": 2,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 8,
+    "observedIn": 2,
+    "basis": "max over measured units: ctas"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 20,
+    "observedIn": 2,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    3
+   ],
+   "actions": [
+    1,
+    1
+   ],
+   "media": [
+    1,
+    3
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "photo.source-scene"
+    ],
+    "generatedRoles": [
+     "photo.generated-scene"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "photo.generated-scene"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=990",
+   "behavior": "grid collapses to one column",
+   "cite": "src/components/Chronicle.jsx:91"
+  },
+  {
+   "range": "<=768",
+   "behavior": "grid collapses to one column",
+   "cite": "src/components/Chronicle.jsx:92"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/components/Chronicle.jsx:82"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 2,
+   "minPx": 770,
+   "maxPx": 770,
+   "medianPx": 770.0,
+   "sample": {
+    "/": 770,
+    "/about": 770
+   }
+  },
+  "768": {
+   "nodes": 2,
+   "minPx": 2154,
+   "maxPx": 2154,
+   "medianPx": 2154.0,
+   "sample": {
+    "/": 2154,
+    "/about": 2154
+   }
+  },
+  "390": {
+   "nodes": 2,
+   "minPx": 1441,
+   "maxPx": 1441,
+   "medianPx": 1441.0,
+   "sample": {
+    "/": 1441,
+    "/about": 1441
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.about",
+  "template.home"
+ ],
+ "evidence": [
+  "src/components/Chronicle.jsx:71-107"
+ ]
+}

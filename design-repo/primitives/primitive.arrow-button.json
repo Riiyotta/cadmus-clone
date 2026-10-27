@@ -1,0 +1,20 @@
+{
+ "id": "primitive.arrow-button",
+ "kind": "primitive",
+ "title": "Arrow button",
+ "purpose": "Outline button ending in a 30px arrow glyph; variants: filled (black), transparent text link whose arrow nudges 10px on hover, down (rotates when active), previous.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "132-146",
+  "anchor": "  .arrow-button {",
+  "anchorLine": 132
+ },
+ "props": {
+  "variant": "outline | black | transparent | down | previous",
+  "tone": "default | white | orange"
+ },
+ "tokens": [
+  "radius.btn",
+  "motion.duration.hover"
+ ]
+}

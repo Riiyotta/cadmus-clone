@@ -1,0 +1,181 @@
+{
+ "id": "content.feature-grid",
+ "title": "Feature grid",
+ "semantic": {
+  "id": "content.feature-grid",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "FeatureGrid:div@35",
+  "file": "src/components/WhyChoose.jsx",
+  "tag": "div",
+  "lines": "31-51",
+  "tagLine": 35,
+  "tagLineSha1": "d62c260e50abf7b6",
+  "anchor": "function FeatureGrid",
+  "anchorLine": 31
+ },
+ "additionalSources": [],
+ "purpose": "Centred heading over a grid of cards, each with an icon, a short title and a serif description.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product-overview",
+    "/product/assignments",
+    "/product/exams",
+    "/product/group-work"
+   ],
+   "observedOnCount": 7
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "items",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 10,
+    "maxChars": 78,
+    "observedIn": 7,
+    "basis": "max over measured units: title",
+    "maxLines1440": 2
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 10,
+    "maxChars": 78,
+    "observedIn": 7,
+    "basis": "max over measured units: title"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 32,
+    "maxChars": 232,
+    "observedIn": 7,
+    "basis": "max over measured units: paragraphs"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 10,
+    "maxChars": 78,
+    "observedIn": 7,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    4
+   ],
+   "media": [
+    1,
+    4
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "icon.source"
+    ],
+    "generatedRoles": [
+     "icon.generic"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "icon.generic"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=990",
+   "behavior": "grid collapses to one column",
+   "cite": "src/components/WhyChoose.jsx:32"
+  },
+  {
+   "range": "<=768",
+   "behavior": "grid collapses to one column",
+   "cite": "src/components/WhyChoose.jsx:32"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/components/WhyChoose.jsx:35"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 7,
+   "minPx": 456,
+   "maxPx": 749,
+   "medianPx": 493,
+   "sample": {
+    "/product-overview": 556,
+    "/product/assignments": 513,
+    "/product/exams": 456
+   }
+  },
+  "768": {
+   "nodes": 4,
+   "minPx": 785,
+   "maxPx": 1320,
+   "medianPx": 820.0,
+   "sample": {
+    "/product-overview": 825,
+    "/product/assignments": 815,
+    "/product/exams": 785
+   }
+  },
+  "390": {
+   "nodes": 4,
+   "minPx": 815,
+   "maxPx": 1478,
+   "medianPx": 934.0,
+   "sample": {
+    "/product-overview": 939,
+    "/product/assignments": 929,
+    "/product/exams": 815
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.product",
+  "template.product-assignments",
+  "template.product-oral",
+  "template.product-overview"
+ ],
+ "evidence": [
+  "src/components/WhyChoose.jsx:31-51"
+ ]
+}

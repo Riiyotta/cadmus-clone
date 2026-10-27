@@ -1,0 +1,166 @@
+{
+ "id": "content.overview-image",
+ "title": "Overview image block",
+ "semantic": {
+  "id": "content.overview-image",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "Experience:overview:div@22",
+  "file": "src/components/Experience.jsx",
+  "tag": "div",
+  "lines": "13-56",
+  "tagLine": 22,
+  "tagLineSha1": "733df238029246e1",
+  "anchor": "export default function Experience",
+  "anchorLine": 13
+ },
+ "additionalSources": [],
+ "purpose": "Cream sheet with a centred heading, optional subtitle and one full-width product image.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/assignments",
+    "/product/oral_assessment"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 44,
+    "observedIn": 2,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 15,
+    "maxChars": 129,
+    "observedIn": 2,
+    "basis": "max over measured units: paragraphs"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 44,
+    "observedIn": 2,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "media": [
+    1,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "product.screenshot"
+    ],
+    "generatedRoles": [
+     "product.generated-visual"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "product.generated-visual"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "gap changes",
+   "cite": "src/components/Experience.jsx:39"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/components/Experience.jsx:40"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/components/Experience.jsx:22"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding removed",
+   "cite": "src/components/Experience.jsx:38"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 2,
+   "minPx": 835,
+   "maxPx": 1003,
+   "medianPx": 919.0,
+   "sample": {
+    "/product/assignments": 835,
+    "/product/oral_assessment": 1003
+   }
+  },
+  "768": {
+   "nodes": 2,
+   "minPx": 557,
+   "maxPx": 684,
+   "medianPx": 620.5,
+   "sample": {
+    "/product/assignments": 557,
+    "/product/oral_assessment": 684
+   }
+  },
+  "390": {
+   "nodes": 2,
+   "minPx": 406,
+   "maxPx": 546,
+   "medianPx": 476.0,
+   "sample": {
+    "/product/assignments": 406,
+    "/product/oral_assessment": 546
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.product-assignments",
+  "template.product-oral"
+ ],
+ "evidence": [
+  "src/components/Experience.jsx:13-56"
+ ]
+}

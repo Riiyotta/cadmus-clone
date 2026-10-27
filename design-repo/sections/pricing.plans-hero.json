@@ -1,0 +1,175 @@
+{
+ "id": "pricing.plans-hero",
+ "title": "Plans opener",
+ "semantic": {
+  "id": "pricing.plans-hero",
+  "category": "HERO"
+ },
+ "source": {
+  "id": "PricingHero:div@12",
+  "file": "src/pages/product/sections/PricingHero.jsx",
+  "tag": "div",
+  "lines": "10-24",
+  "tagLine": 12,
+  "tagLineSha1": "52826df2e96b7faf",
+  "anchor": "export default function PricingHero",
+  "anchorLine": 10
+ },
+ "additionalSources": [],
+ "purpose": "Orange pricing opener: centred heading block over a row of plan cards with chips, names, captions, bullet lists and buttons.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/pricing"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "actions",
+   "heading",
+   "items",
+   "lead"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 4,
+    "maxChars": 39,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 24,
+    "maxChars": 162,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 1,
+    "maxChars": 12,
+    "observedIn": 1,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 24,
+    "maxChars": 162,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "bullets[]": {
+    "type": "text",
+    "maxWords": 24,
+    "maxChars": 162,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 15,
+    "observedIn": 1,
+    "basis": "max over measured units: ctas"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    3
+   ],
+   "bullets": [
+    0,
+    9
+   ],
+   "actions": [
+    1,
+    3
+   ]
+  }
+ },
+ "assets": {
+  "fields": {},
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "grid collapses to one column",
+   "cite": "src/pages/product/sections/PricingHero.jsx:17"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/pages/product/sections/PricingHero.jsx:15"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/product/sections/PricingHero.jsx:12"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 1240,
+   "maxPx": 1240,
+   "medianPx": 1240,
+   "sample": {
+    "/pricing": 1240
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 2072,
+   "maxPx": 2072,
+   "medianPx": 2072,
+   "sample": {
+    "/pricing": 2072
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 2740,
+   "maxPx": 2740,
+   "medianPx": 2740,
+   "sample": {
+    "/pricing": 2740
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.pricing"
+ ],
+ "evidence": [
+  "src/pages/product/sections/PricingHero.jsx:10-24"
+ ]
+}

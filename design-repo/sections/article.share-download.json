@@ -1,0 +1,162 @@
+{
+ "id": "article.share-download",
+ "title": "Share and download bar",
+ "semantic": {
+  "id": "article.share-download",
+  "category": "ARTICLE"
+ },
+ "source": {
+  "id": "ShareWithDownload:div@58",
+  "file": "src/pages/content/sections/ShareBar.jsx",
+  "tag": "div",
+  "lines": "44-105",
+  "tagLine": 58,
+  "tagLineSha1": "cd40a444f436f5be",
+  "anchor": "export function ShareWithDownload",
+  "anchorLine": 44
+ },
+ "additionalSources": [],
+ "purpose": "Share links with a download action that expands an accordion lead form; optional author and about column.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/news/3-tips-for-introducing-students-to-cadmus",
+    "/news/3-ways-to-improve-scientific-report-assessments",
+    "/news/4-benefits-of-using-cadmus-for-more-than-exam-alternatives",
+    "/news/4-ways-cadmus-can-save-time-and-stress-for-large-student-cohorts"
+   ],
+   "observedOnCount": 112
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [],
+  "fields": {
+   "note": {
+    "type": "text",
+    "maxWords": 71,
+    "maxChars": 511,
+    "observedIn": 112,
+    "basis": "max over measured units: paragraphs"
+   },
+   "attribution": {
+    "type": "text",
+    "maxWords": 13,
+    "maxChars": 85,
+    "observedIn": 112,
+    "basis": "max over measured units: attributions"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 21,
+    "observedIn": 112,
+    "basis": "max over measured units: labels; list size from anchor count (no button-styled CTA measured)"
+   }
+  },
+  "listSizes": {
+   "actions": [
+    4,
+    6
+   ]
+  }
+ },
+ "assets": {
+  "fields": {},
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "accordion.expand",
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "accordion.expand": "instant-toggle",
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=990",
+   "behavior": "grid collapses to one column",
+   "cite": "src/pages/content/sections/ShareBar.jsx:83"
+  },
+  {
+   "range": "<=768",
+   "behavior": "element takes the full width",
+   "cite": "src/pages/content/sections/ShareBar.jsx:75"
+  },
+  {
+   "range": "<=768",
+   "behavior": "items stack vertically",
+   "cite": "src/pages/content/sections/ShareBar.jsx:58"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/content/sections/ShareBar.jsx:81"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding removed",
+   "cite": "src/pages/content/sections/ShareBar.jsx:58"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 112,
+   "minPx": 133,
+   "maxPx": 296,
+   "medianPx": 133.0,
+   "sample": {
+    "/news/why-ai-proofing-assessments-misses-the-point": 133,
+    "/news/why-ai-demands-a-redesign-of-assessment": 133,
+    "/news/the-degree-has-always-been-a-signal-ai-is-changing-how-we-verify-it": 133
+   }
+  },
+  "768": {
+   "nodes": 2,
+   "minPx": 73,
+   "maxPx": 73,
+   "medianPx": 73.0,
+   "sample": {
+    "/news/why-ai-proofing-assessments-misses-the-point": 73,
+    "/study/the-university-of-notre-dame-australia-enables-agile-assurance-of-learning": 73
+   }
+  },
+  "390": {
+   "nodes": 2,
+   "minPx": 73,
+   "maxPx": 73,
+   "medianPx": 73.0,
+   "sample": {
+    "/news/why-ai-proofing-assessments-misses-the-point": 73,
+    "/study/the-university-of-notre-dame-australia-enables-agile-assurance-of-learning": 73
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.news-detail",
+  "template.study-detail"
+ ],
+ "evidence": [
+  "src/pages/content/sections/ShareBar.jsx:44-105",
+  "src/pages/content/sections/ShareBar.jsx:12"
+ ]
+}

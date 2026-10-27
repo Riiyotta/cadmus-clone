@@ -1,0 +1,53 @@
+{
+ "note": "Foundation tokens derived by script from the clone source; value + category; cite is path:line in the clone and match is text that must appear on that line (extraction/verify_all.py CITATIONS).",
+ "tokens": {
+  "zIndex.2": {
+   "value": "2",
+   "category": "zIndex",
+   "cite": "tailwind.config.cjs:123",
+   "match": "2: '2'"
+  },
+  "zIndex.3": {
+   "value": "3",
+   "category": "zIndex",
+   "cite": "tailwind.config.cjs:124",
+   "match": "3: '3'"
+  },
+  "zIndex.4": {
+   "value": "4",
+   "category": "zIndex",
+   "cite": "tailwind.config.cjs:125",
+   "match": "4: '4'"
+  },
+  "zIndex.10": {
+   "value": "10",
+   "category": "zIndex",
+   "cite": "tailwind.config.cjs:126",
+   "match": "10: '10'"
+  },
+  "zIndex.11": {
+   "value": "11",
+   "category": "zIndex",
+   "cite": "tailwind.config.cjs:127",
+   "match": "11: '11'"
+  },
+  "zIndex.998": {
+   "value": "998",
+   "category": "zIndex",
+   "cite": "tailwind.config.cjs:128",
+   "match": "998: '998'"
+  },
+  "zIndex.999": {
+   "value": "999",
+   "category": "zIndex",
+   "cite": "tailwind.config.cjs:129",
+   "match": "999: '999'"
+  },
+  "zIndex.page-transition": {
+   "value": "9999",
+   "category": "zIndex",
+   "cite": "src/index.css:266",
+   "match": "z-index: 9999"
+  }
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "id": "pricing.licence-row",
+ "title": "Licence row",
+ "semantic": {
+  "id": "pricing.licence-row",
+  "category": "PRICING"
+ },
+ "source": {
+  "id": "LicenceRow:div@11",
+  "file": "src/pages/product/sections/LicenceRow.jsx",
+  "tag": "div",
+  "lines": "9-23",
+  "tagLine": 11,
+  "tagLineSha1": "8322a1fe307ded92",
+  "anchor": "export default function LicenceRow",
+  "anchorLine": 9
+ },
+ "additionalSources": [],
+ "purpose": "Continuation of the pricing opener: text column beside a licence card with a list and a button.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/pricing"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "actions",
+   "bullets",
+   "heading",
+   "lead"
+  ],
+  "fields": {
+   "eyebrow": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 17,
+    "observedIn": 1,
+    "basis": "max over measured units: labels"
+   },
+   "heading": {
+    "type": "text",
+    "maxWords": 7,
+    "maxChars": 47,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 2
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 45,
+    "maxChars": 321,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "bullets[]": {
+    "type": "text",
+    "maxWords": 45,
+    "maxChars": 321,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 18,
+    "observedIn": 1,
+    "basis": "max over measured units: ctas"
+   }
+  },
+  "listSizes": {
+   "bullets": [
+    1,
+    7
+   ],
+   "actions": [
+    1,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {},
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "element takes the full width",
+   "cite": "src/pages/product/sections/LicenceRow.jsx:13"
+  },
+  {
+   "range": "<=768",
+   "behavior": "items wrap onto new lines",
+   "cite": "src/pages/product/sections/LicenceRow.jsx:12"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/pages/product/sections/LicenceRow.jsx:17"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/product/sections/LicenceRow.jsx:11"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 639,
+   "maxPx": 639,
+   "medianPx": 639,
+   "sample": {
+    "/pricing": 639
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 909,
+   "maxPx": 909,
+   "medianPx": 909,
+   "sample": {
+    "/pricing": 909
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 1027,
+   "maxPx": 1027,
+   "medianPx": 1027,
+   "sample": {
+    "/pricing": 1027
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.pricing"
+ ],
+ "evidence": [
+  "src/pages/product/sections/LicenceRow.jsx:9-23"
+ ]
+}

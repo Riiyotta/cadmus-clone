@@ -1,0 +1,131 @@
+{
+ "id": "proof.quote-banner",
+ "title": "Quote banner",
+ "semantic": {
+  "id": "proof.quote-banner",
+  "category": "PROOF"
+ },
+ "source": {
+  "id": "QuoteCard:banner:section@44",
+  "file": "src/sections/QuoteCard.jsx",
+  "tag": "section",
+  "lines": "25-76",
+  "tagLine": 44,
+  "tagLineSha1": "8d4cb5a9b89be839",
+  "anchor": "export default function QuoteCard",
+  "anchorLine": 25
+ },
+ "additionalSources": [],
+ "purpose": "Navy patterned banner holding one large quote with author and role.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/study/2026-Cadmus-ROI-study"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "attribution",
+   "note"
+  ],
+  "fields": {
+   "note": {
+    "type": "text",
+    "maxWords": 21,
+    "maxChars": 138,
+    "observedIn": 1,
+    "basis": "max over measured units: title + paragraphs"
+   },
+   "attribution": {
+    "type": "text",
+    "maxWords": 11,
+    "maxChars": 70,
+    "observedIn": 1,
+    "basis": "max over measured units: attributions"
+   }
+  },
+  "listSizes": {}
+ },
+ "assets": {
+  "fields": {},
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=990",
+   "behavior": "padding changes",
+   "cite": "src/sections/QuoteCard.jsx:46"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/sections/QuoteCard.jsx:48"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/sections/QuoteCard.jsx:28"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 487,
+   "maxPx": 487,
+   "medianPx": 487,
+   "sample": {
+    "/study/2026-Cadmus-ROI-study": 487
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 327,
+   "maxPx": 327,
+   "medianPx": 327,
+   "sample": {
+    "/study/2026-Cadmus-ROI-study": 327
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 549,
+   "maxPx": 549,
+   "medianPx": 549,
+   "sample": {
+    "/study/2026-Cadmus-ROI-study": 549
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.roi-study"
+ ],
+ "evidence": [
+  "src/sections/QuoteCard.jsx:25-76"
+ ]
+}

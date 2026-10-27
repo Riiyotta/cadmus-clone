@@ -1,0 +1,18 @@
+{
+ "id": "primitive.accordion",
+ "kind": "primitive",
+ "title": "Accordion",
+ "purpose": "Grid-rows (0fr to 1fr) or height transition panel with a plus/minus icon.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "429-429",
+  "anchor": "  .accordion, .accordion--wrapper {",
+  "anchorLine": 429
+ },
+ "props": {
+  "open": "boolean"
+ },
+ "tokens": [
+  "motion.duration.accordion"
+ ]
+}

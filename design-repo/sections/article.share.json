@@ -1,0 +1,123 @@
+{
+ "id": "article.share",
+ "title": "Share bar",
+ "semantic": {
+  "id": "article.share",
+  "category": "ARTICLE"
+ },
+ "source": {
+  "id": "ShareOnly:div@110",
+  "file": "src/pages/content/sections/ShareBar.jsx",
+  "tag": "div",
+  "lines": "108-116",
+  "tagLine": 110,
+  "tagLineSha1": "fa5b2f37d9ab1303",
+  "anchor": "export function ShareOnly",
+  "anchorLine": 108
+ },
+ "additionalSources": [],
+ "purpose": "Right-aligned share controls only, hidden on mobile.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/guides/creating-your-first-cadmus-assessment",
+    "/guides/effective-feedback-ideas-with-cadmus",
+    "/guides/embed-more-learning-into-assessments",
+    "/guides/managing-your-class-pre-submission"
+   ],
+   "observedOnCount": 13
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [],
+  "fields": {
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 21,
+    "observedIn": 13,
+    "basis": "max over measured units: labels; list size from anchor count (no button-styled CTA measured)"
+   }
+  },
+  "listSizes": {
+   "actions": [
+    4,
+    4
+   ]
+  }
+ },
+ "assets": {
+  "fields": {},
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "element is hidden",
+   "cite": "src/pages/content/sections/ShareBar.jsx:110"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 13,
+   "minPx": 53,
+   "maxPx": 53,
+   "medianPx": 53,
+   "sample": {
+    "/guides/what-is-best-practice-assessment": 53,
+    "/guides/understanding-cadmus-templates": 53,
+    "/guides/marking-and-moderation-with-groups": 53
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 98,
+   "maxPx": 98,
+   "medianPx": 98,
+   "sample": {
+    "/guides/what-is-best-practice-assessment": 98
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 196,
+   "maxPx": 196,
+   "medianPx": 196,
+   "sample": {
+    "/guides/what-is-best-practice-assessment": 196
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.guide-detail"
+ ],
+ "evidence": [
+  "src/pages/content/sections/ShareBar.jsx:108-116",
+  "src/pages/content/sections/ShareBar.jsx:12"
+ ]
+}

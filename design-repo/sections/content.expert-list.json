@@ -1,0 +1,159 @@
+{
+ "id": "content.expert-list",
+ "title": "Expert list card",
+ "semantic": {
+  "id": "content.expert-list",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "ExpertList:div@11",
+  "file": "src/pages/company/sections/ExpertList.jsx",
+  "tag": "div",
+  "lines": "9-27",
+  "tagLine": 11,
+  "tagLineSha1": "2d84680bfae51ff2",
+  "anchor": "export default function ExpertList",
+  "anchorLine": 9
+ },
+ "additionalSources": [],
+ "purpose": "Orange sheet: centred heading over a flipped image card whose card holds a paragraph and an italic list.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/solutions/educators"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "bullets",
+   "heading",
+   "lead",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 61,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 28,
+    "maxChars": 199,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "bullets[]": {
+    "type": "text",
+    "maxWords": 28,
+    "maxChars": 199,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 61,
+    "observedIn": 1,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "bullets": [
+    1,
+    5
+   ],
+   "media": [
+    1,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "photo.source-scene"
+    ],
+    "generatedRoles": [
+     "photo.generated-scene"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "photo.generated-scene"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/company/sections/ExpertList.jsx:11"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 828,
+   "maxPx": 828,
+   "medianPx": 828,
+   "sample": {
+    "/solutions/educators": 828
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 1133,
+   "maxPx": 1133,
+   "medianPx": 1133,
+   "sample": {
+    "/solutions/educators": 1133
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 1062,
+   "maxPx": 1062,
+   "medianPx": 1062,
+   "sample": {
+    "/solutions/educators": 1062
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.solutions-educators"
+ ],
+ "evidence": [
+  "src/pages/company/sections/ExpertList.jsx:9-27"
+ ]
+}

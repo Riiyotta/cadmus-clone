@@ -1,0 +1,17 @@
+{
+ "id": "component.dropdown-panel",
+ "kind": "component",
+ "title": "Navigation dropdown panel",
+ "purpose": "Fixed 250px panel under a header button holding labelled link groups.",
+ "source": {
+  "file": "src/components/Header.jsx",
+  "lines": "112-144",
+  "anchor": "function DropdownPanel",
+  "anchorLine": 112
+ },
+ "props": {},
+ "tokens": [
+  "radius.card",
+  "elevation.bar"
+ ]
+}

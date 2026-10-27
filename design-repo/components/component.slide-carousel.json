@@ -1,0 +1,18 @@
+{
+ "id": "component.slide-carousel",
+ "kind": "component",
+ "title": "Slide carousel",
+ "purpose": "Looping slide carousel (850ms ease) with arrows, swipe and optional autoplay.",
+ "source": {
+  "file": "src/pages/company/motion/SlideCarousel.jsx",
+  "lines": "20-187",
+  "anchor": "export default function SlideCarousel",
+  "anchorLine": 20
+ },
+ "props": {
+  "autoplay": "none | delay in ms"
+ },
+ "tokens": [
+  "motion.duration.slide"
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "note": "Foundation tokens derived by script from the clone source; value + category; cite is path:line in the clone and match is text that must appear on that line (extraction/verify_all.py CITATIONS).",
+ "tokens": {
+  "radius.sheet": {
+   "value": "32px",
+   "category": "radius",
+   "cite": "tailwind.config.cjs:98",
+   "match": "sheet: '32px'"
+  },
+  "radius.card": {
+   "value": "12px",
+   "category": "radius",
+   "cite": "tailwind.config.cjs:99",
+   "match": "card: '12px'"
+  },
+  "radius.img": {
+   "value": "8px",
+   "category": "radius",
+   "cite": "tailwind.config.cjs:100",
+   "match": "img: '8px'"
+  },
+  "radius.btn": {
+   "value": "4px",
+   "category": "radius",
+   "cite": "tailwind.config.cjs:101",
+   "match": "btn: '4px'"
+  },
+  "radius.glass": {
+   "value": "16px",
+   "category": "radius",
+   "cite": "tailwind.config.cjs:103",
+   "match": "glass: '16px'"
+  },
+  "radius.photo": {
+   "value": "10px",
+   "category": "radius",
+   "cite": "tailwind.config.cjs:104",
+   "match": "photo: '10px'"
+  },
+  "radius.badge": {
+   "value": "5px",
+   "category": "radius",
+   "cite": "tailwind.config.cjs:105",
+   "match": "badge: '5px'"
+  },
+  "radius.checkbox": {
+   "value": "3px",
+   "category": "radius",
+   "cite": "tailwind.config.cjs:106",
+   "match": "checkbox: '3px'"
+  },
+  "radius.icon": {
+   "value": "2px",
+   "category": "radius",
+   "cite": "tailwind.config.cjs:107",
+   "match": "icon: '2px'"
+  },
+  "radius.input": {
+   "value": "8px",
+   "category": "radius",
+   "cite": "src/index.css:484",
+   "match": "border-radius: 8px; box-shadow: theme('boxShadow.input')"
+  },
+  "radius.round": {
+   "value": "100%",
+   "category": "radius",
+   "cite": "src/index.css:220",
+   "match": "border-radius: 100%;"
+  }
+ }
+}

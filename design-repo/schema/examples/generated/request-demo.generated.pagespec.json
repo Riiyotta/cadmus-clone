@@ -1,0 +1,135 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.request-demo",
+ "route": "/conversion-form-nimbus",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Quarry"
+     },
+     {
+      "title": "Basil"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Nimbus tidy",
+      "href": "https://fernhollow.example/signal",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Pillar cobalt",
+      "href": "https://fernhollow.example/ledger",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:falcon-rowan-delta",
+      "alt": "Thistle"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.title-banner",
+   "variant": "default",
+   "content": {
+    "heading": "Falcon cobalt lumen",
+    "lead": "Anchor horizon pillar rowan harvest velvet copper atlas"
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "conversion.contact-form",
+   "variant": "default",
+   "content": {
+    "heading": "Shape sort",
+    "lead": "Orchard beacon lantern share trace sprout juniper trace",
+    "note": "Willow map lumen mosaic prism cobalt marble current",
+    "items": [
+     {
+      "title": "Ribbon orbit",
+      "text": "Sort measure meadow tidal map sprout current compass"
+     },
+     {
+      "title": "Beacon tidy",
+      "text": "Map velvet thread grove signal summit walnut copper"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Field",
+      "href": "https://fernhollow.example/atlas",
+      "linkRole": "link.placeholder"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Summit tidal thread",
+    "items": [
+     {
+      "title": "Fjord"
+     },
+     {
+      "title": "Linen"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Cobalt compass thread",
+      "href": "https://fernhollow.example/meadow",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Thread quarry linen",
+      "href": "https://fernhollow.example/thread",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:ember-delta-thread",
+      "alt": "Plan"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:field-shape-juniper",
+      "alt": "Measure"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

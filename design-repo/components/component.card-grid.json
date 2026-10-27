@@ -1,0 +1,16 @@
+{
+ "id": "component.card-grid",
+ "kind": "component",
+ "title": "Load-more card grid",
+ "purpose": "Grid that shows a first batch of cards and reveals the rest behind a load-more / show-less toggle.",
+ "source": {
+  "file": "src/pages/content/sections/CardGrid.jsx",
+  "lines": "16-51",
+  "anchor": "export default function CardGrid",
+  "anchorLine": 16
+ },
+ "props": {
+  "variant": "news | study | guide | video"
+ },
+ "tokens": []
+}

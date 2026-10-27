@@ -1,0 +1,19 @@
+{
+ "id": "primitive.chip-label",
+ "kind": "primitive",
+ "title": "Chip label",
+ "purpose": "Small uppercase chip on a light-orange (or scheme-coloured) background used as overline above titles.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "93-103",
+  "anchor": "  .label {",
+  "anchorLine": 93
+ },
+ "props": {
+  "tone": "light-orange | scheme accent | clear"
+ },
+ "tokens": [
+  "font.size.chip-label",
+  "color.surface.warm-soft"
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "id": "hero.photo-banner",
+ "title": "Photo banner hero",
+ "semantic": {
+  "id": "hero.photo-banner",
+  "category": "HERO"
+ },
+ "source": {
+  "id": "HeroBannerAlt:photo:div@24",
+  "file": "src/pages/company/sections/HeroBannerAlt.jsx",
+  "tag": "div",
+  "lines": "20-92",
+  "tagLine": 24,
+  "tagLineSha1": "d0d5392cf2a7d553",
+  "anchor": "export default function HeroBannerAlt",
+  "anchorLine": 20
+ },
+ "additionalSources": [],
+ "purpose": "Full-viewport maroon hero with a cover photo behind a centred overline, headline, caption and optional scroll button.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/careers",
+    "/solutions/universities"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "lead",
+   "media"
+  ],
+  "fields": {
+   "eyebrow": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 35,
+    "observedIn": 2,
+    "basis": "max over measured units: labels"
+   },
+   "heading": {
+    "type": "text",
+    "maxWords": 6,
+    "maxChars": 56,
+    "observedIn": 2,
+    "basis": "max over measured units: title",
+    "maxLines1440": 2
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 13,
+    "maxChars": 67,
+    "observedIn": 2,
+    "basis": "max over measured units: paragraphs"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 14,
+    "observedIn": 2,
+    "basis": "max over measured units: ctas"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 35,
+    "observedIn": 2,
+    "basis": "max over measured units: labels"
+   }
+  },
+  "listSizes": {
+   "actions": [
+    0,
+    1
+   ],
+   "media": [
+    1,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "photo.source-scene"
+    ],
+    "generatedRoles": [
+     "photo.generated-scene"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "photo.generated-scene"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "reveal.fade-up",
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "reveal.fade-up": "instant-show",
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=1600",
+   "behavior": "height changes",
+   "cite": "src/pages/company/sections/HeroBannerAlt.jsx:27"
+  },
+  {
+   "range": "<=768",
+   "behavior": "element is shown",
+   "cite": "src/pages/company/sections/HeroBannerAlt.jsx:42"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/pages/company/sections/HeroBannerAlt.jsx:73"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/company/sections/HeroBannerAlt.jsx:58"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 2,
+   "minPx": 920,
+   "maxPx": 920,
+   "medianPx": 920.0,
+   "sample": {
+    "/solutions/universities": 920,
+    "/careers": 920
+   }
+  },
+  "768": {
+   "nodes": 2,
+   "minPx": 1044,
+   "maxPx": 1044,
+   "medianPx": 1044.0,
+   "sample": {
+    "/solutions/universities": 1044,
+    "/careers": 1044
+   }
+  },
+  "390": {
+   "nodes": 2,
+   "minPx": 864,
+   "maxPx": 864,
+   "medianPx": 864.0,
+   "sample": {
+    "/solutions/universities": 864,
+    "/careers": 864
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.careers",
+  "template.solutions-universities"
+ ],
+ "evidence": [
+  "src/pages/company/sections/HeroBannerAlt.jsx:20-92"
+ ]
+}

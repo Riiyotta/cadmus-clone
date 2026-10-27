@@ -1,0 +1,177 @@
+{
+ "id": "conversion.roi-form",
+ "title": "Report download form",
+ "semantic": {
+  "id": "conversion.roi-form",
+  "category": "CONVERSION"
+ },
+ "source": {
+  "id": "RoiForm:section@239",
+  "file": "src/pages/content/sections/Roi.jsx",
+  "tag": "section",
+  "lines": "237-270",
+  "tagLine": 239,
+  "tagLineSha1": "19724065c38a2094",
+  "anchor": "export function RoiForm",
+  "anchorLine": 237
+ },
+ "additionalSources": [],
+ "purpose": "Report download form at the end of the report page.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/study/2026-Cadmus-ROI-study"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "actions",
+   "heading",
+   "items"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 43,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 3
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 37,
+    "maxChars": 242,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "note": {
+    "type": "text",
+    "maxWords": 37,
+    "maxChars": 242,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 43,
+    "observedIn": 1,
+    "basis": "max over measured units: title"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 37,
+    "maxChars": 242,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 15,
+    "observedIn": 1,
+    "basis": "max over measured units: ctas"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    3
+   ],
+   "actions": [
+    1,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {},
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=990",
+   "behavior": "gap changes",
+   "cite": "src/pages/content/sections/Roi.jsx:241"
+  },
+  {
+   "range": "<=768",
+   "behavior": "element takes the full width",
+   "cite": "src/pages/content/sections/Roi.jsx:242"
+  },
+  {
+   "range": "<=768",
+   "behavior": "items wrap onto new lines",
+   "cite": "src/pages/content/sections/Roi.jsx:241"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/content/sections/Roi.jsx:239"
+  }
+ ],
+ "runtimeUi": [
+  "the form posts to no endpoint"
+ ],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 612,
+   "maxPx": 612,
+   "medianPx": 612,
+   "sample": {
+    "/study/2026-Cadmus-ROI-study": 612
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 819,
+   "maxPx": 819,
+   "medianPx": 819,
+   "sample": {
+    "/study/2026-Cadmus-ROI-study": 819
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 957,
+   "maxPx": 957,
+   "medianPx": 957,
+   "sample": {
+    "/study/2026-Cadmus-ROI-study": 957
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.roi-study"
+ ],
+ "evidence": [
+  "src/pages/content/sections/Roi.jsx:237-270"
+ ]
+}

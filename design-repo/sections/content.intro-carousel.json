@@ -1,0 +1,149 @@
+{
+ "id": "content.intro-carousel",
+ "title": "Introduction carousel",
+ "semantic": {
+  "id": "content.intro-carousel",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "Intro:div@32",
+  "file": "src/components/Intro.jsx",
+  "tag": "div",
+  "lines": "13-61",
+  "tagLine": 32,
+  "tagLineSha1": "d0d5392cf2a7d553",
+  "anchor": "export default function Intro",
+  "anchorLine": 13
+ },
+ "additionalSources": [],
+ "purpose": "Cream sheet with a centred statement and supporting line above an auto-fading carousel of product screens.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "lead",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 47,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 19,
+    "maxChars": 142,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 47,
+    "observedIn": 1,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "media": [
+    1,
+    4
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "product.screenshot"
+    ],
+    "generatedRoles": [
+     "product.generated-visual"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "product.generated-visual"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "carousel.fade-autoplay"
+  ],
+  "requiredPatterns": [
+   "carousel.fade-autoplay"
+  ],
+  "reducedMotionFallback": {
+   "carousel.fade-autoplay": "paused-first-slide"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/components/Intro.jsx:34"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 652,
+   "maxPx": 652,
+   "medianPx": 652,
+   "sample": {
+    "/": 652
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 509,
+   "maxPx": 509,
+   "medianPx": 509,
+   "sample": {
+    "/": 509
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 460,
+   "maxPx": 460,
+   "medianPx": 460,
+   "sample": {
+    "/": 460
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.home"
+ ],
+ "evidence": [
+  "src/components/Intro.jsx:13-61"
+ ]
+}

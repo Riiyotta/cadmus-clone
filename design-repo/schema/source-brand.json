@@ -1,0 +1,158 @@
+{
+ "note": "Source identity registry used by schema/semantic_validate.py in generated mode. Only the brand itself, its domains, generic store/rating patterns and live endpoints are kept as plain patterns; real people, organisations, customer domains, CTA labels and copy are stored as hashes in schema/source-identity-hashes.json so this repo never transcribes them. DERIVED BY extraction/build_source_brand.py; no human has reviewed the set.",
+ "normalization": "Before matching, every string is NFKC-normalised, zero-width characters (U+200B-200F, U+2060, U+FEFF) are removed, curly quotes become straight quotes and runs of whitespace collapse to one space. Patterns are matched case-insensitively with re.search.",
+ "reviewStatus": "UNREVIEWED. Detection is string-based: a paraphrase, a translation, a homoglyph that survives NFKC, text inside an image, or a first-name-only reference passes.",
+ "sourceBrand": {
+  "patterns": [
+   "\\bcadmus\\b",
+   "cadmus[_.-]?io",
+   "\\blovework\\b",
+   "\\blearning assurance analytics\\b",
+   "\\buplifting assessment\\b"
+  ],
+  "mustMatch": [
+   "Cadmus",
+   "CADMUS",
+   "cadmus_io",
+   "The Cadmus Chronicle",
+   "Lovework",
+   "Learning Assurance Analytics",
+   "Uplifting Assessment"
+  ],
+  "evidence": [
+   "src/components/Careers.jsx:8",
+   "src/components/Footer.jsx:36",
+   "src/components/Footer.jsx:79",
+   "src/components/ConnectedProducts.jsx:50",
+   "src/components/Hero.jsx:18"
+  ],
+  "note": "The ordinary Greek-mythology name Cadmus is blocked on purpose: it is the source brand. 'Lovework' is the studio credited in the footer; 'Learning Assurance Analytics' and 'Uplifting Assessment' are the source's product name and tagline."
+ },
+ "sourceDomains": {
+  "patterns": [
+   "(^|[/.@])cadmus\\.io",
+   "cadmus[-_.]io",
+   "lovework\\.studio",
+   "(linkedin|facebook)\\.com/(company/)?cadmus",
+   "x\\.com/cadmus"
+  ],
+  "mustMatch": [
+   "https://cadmus.io/pricing",
+   "support.cadmus.io",
+   "https://lovework.studio",
+   "https://x.com/cadmus_io",
+   "https://www.facebook.com/cadmus.io",
+   "https://www.linkedin.com/company/cadmus-io"
+  ],
+  "evidence": [
+   "src/pages/NotBuilt.jsx:9",
+   "src/components/Footer.jsx:36",
+   "src/components/Footer.jsx:79",
+   "src/components/Footer.jsx:54",
+   "src/components/Footer.jsx:53"
+  ]
+ },
+ "storeAndMarketplace": {
+  "patterns": [
+   "\\bapp store\\b",
+   "\\bgoogle play\\b",
+   "apps\\.apple\\.com",
+   "play\\.google\\.com",
+   "\\btestflight\\b"
+  ],
+  "mustMatch": [
+   "Download on the App Store",
+   "Get it on Google Play",
+   "https://apps.apple.com/app/id1",
+   "TestFlight"
+  ],
+  "evidence": [
+   "src/pages/NotBuilt.jsx:9"
+  ],
+  "precautionary": true,
+  "note": "The clone renders no app-store mark or link; these generic patterns are precautionary (evidence row only shows the source's domain)."
+ },
+ "rating": {
+  "patterns": [
+   "\\S+ • \\d{2}/(\\d{2}/)?\\d{4}",
+   "★",
+   "\\b[0-5](\\.\\d)?\\s*(/\\s*5|out of 5|stars?)\\b",
+   "\\brated (excellent|highly|\\d)",
+   "\\bnet promoter\\b"
+  ],
+  "mustMatch": [
+   "reader_1 • 03/04/2025",
+   "★★★★★",
+   "4.9 out of 5",
+   "Rated excellent by students"
+  ],
+  "evidence": [
+   "src/pages/content/data/pagemeta.js:88"
+  ],
+  "note": "The source renders no review site rating; its nearest claim is the 'rated excellent by students' highlight on case studies, blocked together with generic score phrasings."
+ },
+ "liveEndpoints": {
+  "patterns": [
+   "hsforms\\.(com|net)",
+   "forms\\.hubspot\\.com",
+   "apply\\.workable\\.com",
+   "typeform\\.com"
+  ],
+  "mustMatch": [
+   "https://33l73.share.hsforms.com/x",
+   "https://apply.workable.com/acme/j/1",
+   "https://x.typeform.com/to/1"
+  ],
+  "evidence": [
+   "src/pages/product/data/oralAssessment.js:10",
+   "src/pages/company/data/careers.js:77"
+  ],
+  "note": "The webinar registration button and the job cards link to live third-party form / application endpoints. Forbidden in every mode; reference examples replace them with '#'."
+ },
+ "thirdPartyEmbeds": {
+  "patterns": [
+   "vimeo\\.com",
+   "onelineplayer\\.com",
+   "storylane\\.io"
+  ],
+  "mustMatch": [
+   "https://player.vimeo.com/video/1"
+  ],
+  "evidence": [
+   "src/components/FeaturedVideo.jsx:8"
+  ]
+ },
+ "cta": {
+  "verbs": [
+   "start",
+   "try",
+   "get",
+   "join",
+   "explore",
+   "see",
+   "talk",
+   "book",
+   "watch",
+   "download",
+   "learn",
+   "read",
+   "request",
+   "register",
+   "apply",
+   "discover"
+  ],
+  "genericLabels": [
+   "book a demo",
+   "get a free trial",
+   "request a demo",
+   "contact us",
+   "learn more",
+   "see more",
+   "load more",
+   "show less",
+   "read more",
+   "view all"
+  ],
+  "rule": "a generated action label is rejected when it starts with one of these verbs and names the source brand/product, or when it equals a source CTA label of 3+ words (hashed) that is not one of the generic labels."
+ }
+}

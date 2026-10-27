@@ -1,0 +1,14 @@
+{
+ "id": "component.tag-list",
+ "kind": "component",
+ "title": "Tag list",
+ "purpose": "Wrapped row of tag chips.",
+ "source": {
+  "file": "src/pages/content/sections/common.jsx",
+  "lines": "57-65",
+  "anchor": "export function Tags",
+  "anchorLine": 57
+ },
+ "props": {},
+ "tokens": []
+}

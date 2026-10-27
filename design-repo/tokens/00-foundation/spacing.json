@@ -1,0 +1,96 @@
+{
+ "note": "Foundation tokens derived by script from the clone source; value + category; cite is path:line in the clone and match is text that must appear on that line (extraction/verify_all.py CITATIONS).",
+ "tokens": {
+  "spacing.4": {
+   "value": "4px",
+   "category": "spacing",
+   "cite": "src/components/ConnectedProducts.jsx:96",
+   "match": "py-[4px]",
+   "usageCount": 10
+  },
+  "spacing.5": {
+   "value": "5px",
+   "category": "spacing",
+   "cite": "src/components/Hero.jsx:26",
+   "match": "gap-[5px]",
+   "usageCount": 7
+  },
+  "spacing.6": {
+   "value": "6px",
+   "category": "spacing",
+   "cite": "src/components/Chronicle.jsx:62",
+   "match": "py-[6px]",
+   "usageCount": 6
+  },
+  "spacing.8": {
+   "value": "8px",
+   "category": "spacing",
+   "cite": "src/components/Chronicle.jsx:52",
+   "match": "gap-[8px]",
+   "usageCount": 8
+  },
+  "spacing.10": {
+   "value": "10px",
+   "category": "spacing",
+   "cite": "src/components/CaseStudy.jsx:49",
+   "match": "gap-[10px]",
+   "usageCount": 62
+  },
+  "spacing.12": {
+   "value": "12px",
+   "category": "spacing",
+   "cite": "src/components/ConnectedProducts.jsx:96",
+   "match": "pr-[12px]",
+   "usageCount": 11
+  },
+  "spacing.15": {
+   "value": "15px",
+   "category": "spacing",
+   "cite": "src/components/Header.jsx:196",
+   "match": "p-[15px]",
+   "usageCount": 6
+  },
+  "spacing.20": {
+   "value": "20px",
+   "category": "spacing",
+   "cite": "src/components/Careers.jsx:36",
+   "match": "p-[20px]",
+   "usageCount": 377
+  },
+  "spacing.40": {
+   "value": "40px",
+   "category": "spacing",
+   "cite": "src/components/Careers.jsx:36",
+   "match": "p-[40px]",
+   "usageCount": 276
+  },
+  "spacing.60": {
+   "value": "60px",
+   "category": "spacing",
+   "cite": "src/components/CaseStudy.jsx:63",
+   "match": "gap-[60px]",
+   "usageCount": 29
+  },
+  "spacing.80": {
+   "value": "80px",
+   "category": "spacing",
+   "cite": "src/components/TwoColumnRows.jsx:122",
+   "match": "mt-[80px]",
+   "usageCount": 13
+  },
+  "spacing.90": {
+   "value": "90px",
+   "category": "spacing",
+   "cite": "src/components/Hero.jsx:17",
+   "match": "mt-[90px]",
+   "usageCount": 9
+  },
+  "spacing.100": {
+   "value": "100px",
+   "category": "spacing",
+   "cite": "src/components/TwoColumnRows.jsx:51",
+   "match": "gap-[100px]",
+   "usageCount": 6
+  }
+ }
+}

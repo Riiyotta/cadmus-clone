@@ -1,0 +1,19 @@
+{
+ "id": "component.quote-card",
+ "kind": "component",
+ "title": "Quote card",
+ "purpose": "Quote with author and role in case-study (orange), article (colour-keyed) and banner (navy) variants.",
+ "source": {
+  "file": "src/sections/QuoteCard.jsx",
+  "lines": "25-76",
+  "anchor": "export default function QuoteCard",
+  "anchorLine": 25
+ },
+ "props": {
+  "variant": "case-study | article | banner",
+  "colour": "orange | blue | pink | green"
+ },
+ "tokens": [
+  "radius.card"
+ ]
+}

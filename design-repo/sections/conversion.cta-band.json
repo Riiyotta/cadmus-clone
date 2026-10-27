@@ -1,0 +1,199 @@
+{
+ "id": "conversion.cta-band",
+ "title": "Call-to-action band",
+ "semantic": {
+  "id": "conversion.cta-band",
+  "category": "CONVERSION"
+ },
+ "source": {
+  "id": "Cta:div@24",
+  "file": "src/sections/Cta.jsx",
+  "tag": "div",
+  "lines": "22-42",
+  "tagLine": 24,
+  "tagLineSha1": "9e0af7a9acd6639a",
+  "anchor": "export default function Cta",
+  "anchorLine": 22
+ },
+ "additionalSources": [],
+ "purpose": "Centred closing band: heading, body and one or two buttons on a coloured background.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "blue": {
+   "description": "blue page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/learning-analytics"
+   ]
+  },
+  "brand": {
+   "description": "brand (maroon and orange) scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/about",
+    "/careers",
+    "/solutions/educators",
+    "/solutions/students"
+   ],
+   "observedOnCount": 5
+  },
+  "green": {
+   "description": "green page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/marking-feedback"
+   ]
+  },
+  "lavender": {
+   "description": "lavender page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/exams"
+   ]
+  },
+  "maroon": {
+   "description": "maroon page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/oral_assessment"
+   ]
+  },
+  "pink": {
+   "description": "pink page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/group-work"
+   ]
+  },
+  "yellow": {
+   "description": "yellow page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/assignments"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "actions",
+   "heading"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 9,
+    "maxChars": 74,
+    "observedIn": 11,
+    "basis": "max over measured units: title",
+    "maxLines1440": 2
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 26,
+    "maxChars": 187,
+    "observedIn": 11,
+    "basis": "max over measured units: paragraphs"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 4,
+    "maxChars": 26,
+    "observedIn": 11,
+    "basis": "max over measured units: ctas"
+   }
+  },
+  "listSizes": {
+   "actions": [
+    1,
+    2
+   ]
+  }
+ },
+ "assets": {
+  "fields": {},
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/sections/Cta.jsx:24"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 11,
+   "minPx": 470,
+   "maxPx": 514,
+   "medianPx": 514,
+   "sample": {
+    "/product/assignments": 514,
+    "/product/exams": 514,
+    "/product/group-work": 514
+   }
+  },
+  "768": {
+   "nodes": 8,
+   "minPx": 376,
+   "maxPx": 410,
+   "medianPx": 410.0,
+   "sample": {
+    "/product/assignments": 410,
+    "/product/exams": 410,
+    "/product/oral_assessment": 376
+   }
+  },
+  "390": {
+   "nodes": 8,
+   "minPx": 455,
+   "maxPx": 497,
+   "medianPx": 490.0,
+   "sample": {
+    "/product/assignments": 490,
+    "/product/exams": 490,
+    "/product/oral_assessment": 497
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.about",
+  "template.careers",
+  "template.product",
+  "template.product-assignments",
+  "template.product-oral",
+  "template.solutions-educators",
+  "template.solutions-students",
+  "template.solutions-universities"
+ ],
+ "evidence": [
+  "src/sections/Cta.jsx:22-42"
+ ]
+}

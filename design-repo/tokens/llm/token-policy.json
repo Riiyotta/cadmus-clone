@@ -1,0 +1,89 @@
+{
+ "version": "1.0.0",
+ "themes": [
+  "light"
+ ],
+ "categories": [
+  "breakpoint",
+  "color",
+  "elevation",
+  "fontFamily",
+  "fontSize",
+  "fontWeight",
+  "letterSpacing",
+  "lineHeight",
+  "motionDuration",
+  "motionEasing",
+  "radius",
+  "size",
+  "spacing",
+  "zIndex"
+ ],
+ "rawValueRestrictions": {
+  "color": "no raw hex/rgb/hsl colour anywhere in a PageSpec; reference a color.* token",
+  "spacing": "no raw px/rem/vw lengths; spacing is owned by section contracts (sheet padding 40px, 20px at 768px and below)",
+  "fontFamily": "only font.family.* tokens (serif = heading face, sans = body face, stix = italic accent face); no other font",
+  "fontSize": "type sizes are owned by section contracts and switch at 990px and 768px (see responsive values)",
+  "radius": "radius.* tokens only"
+ },
+ "unsupportedFonts": [
+  "Georgia",
+  "Arial",
+  "Helvetica",
+  "Times New Roman",
+  "monospace",
+  "Roboto"
+ ],
+ "unsupportedFontsEvidence": [
+  "tailwind.config.cjs:92",
+  "tailwind.config.cjs:93"
+ ],
+ "unsupportedFontsNote": "Georgia is only the fallback behind the heading face; no other family is used by the clone, so a generated page may not choose any of these directly. The heading, body and italic faces are font.family.serif / sans / stix.",
+ "styleProps": {
+  "surface": {
+   "categories": [
+    "color"
+   ],
+   "allowedBySection": {
+    "content.connected-products": [
+     "color.surface.tab-yellow",
+     "color.surface.tab-lavender",
+     "color.surface.tab-pink",
+     "color.surface.tab-green",
+     "color.surface.tab-blue"
+    ],
+    "content.values": [
+     "color.surface.warm-soft",
+     "color.surface.page",
+     "color.surface.white"
+    ],
+    "proof.impact-counter": [
+     "color.surface.white",
+     "color.surface.warm"
+    ],
+    "proof.logo-marquee": [
+     "color.surface.white",
+     "color.surface.page",
+     "color.surface.warm",
+     "color.surface.warm-soft"
+    ]
+   },
+   "note": "The only per-instance token override a PageSpec node can carry: the section's background surface, restricted to the surfaces that section really renders in the clone."
+  }
+ },
+ "overrides": "PageSpec nodes carry no other style/token overrides; typography, spacing, radius and elevation are owned by the section contracts. Scheme colours (product pages) are chosen through the node variant, not through style.",
+ "enforcedBy": {
+  "schema/semantic_validate.py": [
+   "TOKEN_UNKNOWN",
+   "TOKEN_RAW_COLOR",
+   "TOKEN_ARBITRARY_SPACING",
+   "TOKEN_UNSUPPORTED_FONT",
+   "TOKEN_INVALID_COMBINATION",
+   "STYLE_PROP_UNKNOWN",
+   "THEME_UNSUPPORTED"
+  ],
+  "extraction/verify_all.py": [
+   "TOKENS"
+  ]
+ }
+}

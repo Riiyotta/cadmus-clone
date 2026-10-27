@@ -1,0 +1,225 @@
+{
+ "id": "proof.study-preview",
+ "title": "Case study preview",
+ "semantic": {
+  "id": "proof.study-preview",
+  "category": "PROOF"
+ },
+ "source": {
+  "id": "StudyPreview:div@12",
+  "file": "src/pages/product/sections/StudyPreview.jsx",
+  "tag": "div",
+  "lines": "10-43",
+  "tagLine": 12,
+  "tagLineSha1": "f3a81b99557c1616",
+  "anchor": "export default function StudyPreview",
+  "anchorLine": 10
+ },
+ "additionalSources": [],
+ "purpose": "Accent sheet with a titled case-study image card beside a quote, author and optional link.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "blue": {
+   "description": "blue page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/learning-analytics"
+   ]
+  },
+  "green": {
+   "description": "green page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/marking-feedback"
+   ]
+  },
+  "lavender": {
+   "description": "lavender page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/exams"
+   ]
+  },
+  "pink": {
+   "description": "pink page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/group-work"
+   ]
+  },
+  "yellow": {
+   "description": "yellow page scheme",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/assignments"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "attribution",
+   "heading",
+   "media",
+   "note"
+  ],
+  "fields": {
+   "eyebrow": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 19,
+    "observedIn": 5,
+    "basis": "max over measured units: labels"
+   },
+   "heading": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 57,
+    "observedIn": 5,
+    "basis": "max over measured units: title",
+    "maxLines1440": 3
+   },
+   "note": {
+    "type": "text",
+    "maxWords": 75,
+    "maxChars": 489,
+    "observedIn": 5,
+    "basis": "max over measured units: paragraphs"
+   },
+   "attribution": {
+    "type": "text",
+    "maxWords": 20,
+    "maxChars": 140,
+    "observedIn": 5,
+    "basis": "max over measured units: attributions"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 24,
+    "observedIn": 5,
+    "basis": "max over measured units: ctas"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 19,
+    "observedIn": 5,
+    "basis": "max over measured units: labels"
+   }
+  },
+  "listSizes": {
+   "actions": [
+    0,
+    1
+   ],
+   "media": [
+    1,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "photo.source-scene"
+    ],
+    "generatedRoles": [
+     "photo.generated-scene"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "photo.generated-scene"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "element is hidden",
+   "cite": "src/pages/product/sections/StudyPreview.jsx:40"
+  },
+  {
+   "range": "<=768",
+   "behavior": "element takes the full width",
+   "cite": "src/pages/product/sections/StudyPreview.jsx:14"
+  },
+  {
+   "range": "<=768",
+   "behavior": "items wrap onto new lines",
+   "cite": "src/pages/product/sections/StudyPreview.jsx:13"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/product/sections/StudyPreview.jsx:12"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 5,
+   "minPx": 653,
+   "maxPx": 690,
+   "medianPx": 653,
+   "sample": {
+    "/product/assignments": 653,
+    "/product/exams": 653,
+    "/product/group-work": 690
+   }
+  },
+  "768": {
+   "nodes": 2,
+   "minPx": 914,
+   "maxPx": 965,
+   "medianPx": 939.5,
+   "sample": {
+    "/product/assignments": 914,
+    "/product/exams": 965
+   }
+  },
+  "390": {
+   "nodes": 2,
+   "minPx": 804,
+   "maxPx": 850,
+   "medianPx": 827.0,
+   "sample": {
+    "/product/assignments": 804,
+    "/product/exams": 850
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.product",
+  "template.product-assignments"
+ ],
+ "evidence": [
+  "src/pages/product/sections/StudyPreview.jsx:10-43"
+ ]
+}

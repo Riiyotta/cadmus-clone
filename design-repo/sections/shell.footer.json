@@ -1,0 +1,201 @@
+{
+ "id": "shell.footer",
+ "title": "Site footer",
+ "semantic": {
+  "id": "shell.footer",
+  "category": "SHELL"
+ },
+ "source": {
+  "id": "Footer:footer@60",
+  "file": "src/components/Footer.jsx",
+  "tag": "footer",
+  "lines": "58-118",
+  "tagLine": 60,
+  "tagLineSha1": "d78d0952363ddf77",
+  "anchor": "export default function Footer",
+  "anchorLine": 58
+ },
+ "additionalSources": [],
+ "purpose": "Maroon footer: social links, copyright line, four labelled link columns and an oversized wordmark that peels up on reveal.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/",
+    "/about",
+    "/careers",
+    "/case-studies"
+   ],
+   "observedOnCount": 181
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "actions",
+   "items",
+   "note"
+  ],
+  "fields": {
+   "note": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 30,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 9,
+    "observedIn": 1,
+    "basis": "max over measured units: labels"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 30,
+    "observedIn": 1,
+    "basis": "max over measured units: ctas"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 9,
+    "observedIn": 1,
+    "basis": "max over measured units: labels"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    8
+   ],
+   "actions": [
+    1,
+    27
+   ],
+   "media": [
+    1,
+    2
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "brand.wordmark"
+    ],
+    "generatedRoles": [
+     "brand.placeholder-mark",
+     "brand.user-supplied-mark"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "brand.placeholder-mark",
+  "brand.user-supplied-mark"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "logo.peel",
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "logo.peel": "static",
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "element is hidden",
+   "cite": "src/components/Footer.jsx:108"
+  },
+  {
+   "range": "<=768",
+   "behavior": "element is shown",
+   "cite": "src/components/Footer.jsx:62"
+  },
+  {
+   "range": "<=768",
+   "behavior": "gap changes",
+   "cite": "src/components/Footer.jsx:86"
+  },
+  {
+   "range": "<=768",
+   "behavior": "grid collapses to one column",
+   "cite": "src/components/Footer.jsx:86"
+  },
+  {
+   "range": "<=768",
+   "behavior": "items wrap onto new lines",
+   "cite": "src/components/Footer.jsx:67"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/components/Footer.jsx:67"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/components/Footer.jsx:60"
+  },
+  {
+   "range": "<=768",
+   "behavior": "width changes",
+   "cite": "src/components/Footer.jsx:112"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {},
+ "usedByTemplates": [
+  "template.about",
+  "template.careers",
+  "template.case-studies-listing",
+  "template.contact",
+  "template.guide-detail",
+  "template.home",
+  "template.news-detail",
+  "template.news-listing",
+  "template.not-built-fallback",
+  "template.pricing",
+  "template.privacy",
+  "template.product",
+  "template.product-assignments",
+  "template.product-oral",
+  "template.product-overview",
+  "template.request-demo",
+  "template.roi-study",
+  "template.solutions-educators",
+  "template.solutions-students",
+  "template.solutions-universities",
+  "template.study-detail",
+  "template.teacher-guides-listing",
+  "template.trust-centre",
+  "template.video-detail",
+  "template.video-tutorials-listing"
+ ],
+ "evidence": [
+  "src/components/Footer.jsx:58-118",
+  "src/index.css:194"
+ ]
+}

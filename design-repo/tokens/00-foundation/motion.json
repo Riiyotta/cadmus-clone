@@ -1,0 +1,107 @@
+{
+ "note": "Foundation tokens derived by script from the clone source; value + category; cite is path:line in the clone and match is text that must appear on that line (extraction/verify_all.py CITATIONS).",
+ "tokens": {
+  "motion.duration.hover": {
+   "value": "0.3s",
+   "category": "motionDuration",
+   "cite": "src/index.css:126",
+   "match": "transition: all 0.3s ease;"
+  },
+  "motion.duration.reveal": {
+   "value": "0.65s",
+   "category": "motionDuration",
+   "cite": "src/index.css:248",
+   "match": ".fade--up { opacity: 0; transform: translate(-20px); transition: 0.65s 0.2s; }"
+  },
+  "motion.delay.reveal": {
+   "value": "0.2s",
+   "category": "motionDuration",
+   "cite": "src/index.css:251",
+   "match": ".fade--in { opacity: 0; transition: 0.65s 0.2s; }"
+  },
+  "motion.duration.page-fade": {
+   "value": "0.5s",
+   "category": "motionDuration",
+   "cite": "src/index.css:267",
+   "match": ".page--transition.fade--out { animation: fadeOut 0.5s ease forwards; }"
+  },
+  "motion.duration.logo-peel": {
+   "value": "0.75s",
+   "category": "motionDuration",
+   "cite": "src/index.css:262",
+   "match": "transition: transform 0.75s 0.2s;"
+  },
+  "motion.duration.accordion": {
+   "value": "0.3s",
+   "category": "motionDuration",
+   "cite": "src/index.css:429",
+   "match": "transition: grid-template-rows 0.3s ease;"
+  },
+  "motion.duration.faq-content": {
+   "value": "0.4s",
+   "category": "motionDuration",
+   "cite": "src/index.css:433",
+   "match": ".accordion .content { overflow: hidden; transition: height 0.4s ease; }"
+  },
+  "motion.duration.marquee": {
+   "value": "100s",
+   "category": "motionDuration",
+   "cite": "tailwind.config.cjs:137",
+   "match": "marquee: 'scroll 100s linear infinite'"
+  },
+  "motion.duration.carousel-fade": {
+   "value": "300ms",
+   "category": "motionDuration",
+   "cite": "src/motion/constants.js:46",
+   "match": "speed: 300,"
+  },
+  "motion.duration.carousel-autoplay": {
+   "value": "3000ms",
+   "category": "motionDuration",
+   "cite": "src/motion/constants.js:48",
+   "match": "autoplayDelay: 3000,"
+  },
+  "motion.duration.slide": {
+   "value": "850ms",
+   "category": "motionDuration",
+   "cite": "src/pages/company/motion/constants.js:6",
+   "match": "speed: 850, // ms"
+  },
+  "motion.duration.timeline-autoplay": {
+   "value": "3500ms",
+   "category": "motionDuration",
+   "cite": "src/pages/company/motion/constants.js:17",
+   "match": "TIMELINE_AUTOPLAY_DELAY = 3500"
+  },
+  "motion.duration.counter": {
+   "value": "1.5s",
+   "category": "motionDuration",
+   "cite": "src/motion/constants.js:35",
+   "match": "duration: 1.5,"
+  },
+  "motion.duration.smooth-scroll": {
+   "value": "1.2s",
+   "category": "motionDuration",
+   "cite": "src/motion/constants.js:6",
+   "match": "duration: 1.2,"
+  },
+  "motion.easing.standard": {
+   "value": "ease",
+   "category": "motionEasing",
+   "cite": "src/index.css:126",
+   "match": "transition: all 0.3s ease;"
+  },
+  "motion.easing.linear": {
+   "value": "linear",
+   "category": "motionEasing",
+   "cite": "tailwind.config.cjs:137",
+   "match": "marquee: 'scroll 100s linear infinite'"
+  },
+  "motion.easing.counter": {
+   "value": "power2.out",
+   "category": "motionEasing",
+   "cite": "src/motion/constants.js:36",
+   "match": "ease: 'power2.out',"
+  }
+ }
+}

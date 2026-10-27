@@ -28,7 +28,10 @@ if (!process.env.PLAYWRIGHT_MODULE) {
 }
 const { chromium } = createRequire(import.meta.url)(process.env.PLAYWRIGHT_MODULE)
 const templates = JSON.parse(readFileSync(join(REPO, 'templates/templates.json'), 'utf8')).templates
-const routes = JSON.parse(readFileSync(join(REPO, 'templates/routes.json'), 'utf8')).routes
+const routesDoc = JSON.parse(readFileSync(join(REPO, 'templates/routes.json'), 'utf8'))
+// the catch-all fallback has no enumerable route: it is measured through its probe path
+const fb = routesDoc.fallback
+const routes = routesDoc.routes.map((r) => ({ route: r.path ?? r.route, template: r.template })).concat(fb && fb.probePath ? [{ route: fb.probePath, template: fb.template }] : [])
 const only = args.filter((a) => a.startsWith('/'))
 
 let todo = routes
@@ -49,7 +52,7 @@ function inPage() {
   const wordsOf = (s) => (s || '').trim().split(/\s+/).filter(Boolean).length
   const SERIF = /AT Realm|STIX/
   function metrics(root) {
-    const m = { headings: [], labels: [], paragraphs: [], ctas: [], images: new Set(), videos: 0, iframes: 0 }
+    const m = { headings: [], labels: [], paragraphs: [], ctas: [], images: new Set(), videos: new Set(), iframes: new Set() }
     const seen = new Set()
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT)
     while (walker.nextNode()) {
@@ -68,28 +71,68 @@ function inPage() {
       if (cs.display === 'none' || cs.visibility === 'hidden') continue
       const r = el.getBoundingClientRect()
       if (!r.width || !r.height) continue
-      const w = wordsOf(el.innerText)
+      const txt = (el.innerText || '').trim()
+      const w = wordsOf(txt)
       if (!w) continue
       const size = parseFloat(cs.fontSize)
-      if (cta) m.ctas.push(w)
-      else if (/^H[1-6]$/.test(el.tagName) || (SERIF.test(cs.fontFamily) && size >= 20)) m.headings.push({ w, size, serif: SERIF.test(cs.fontFamily) })
-      else if (cs.textTransform === 'uppercase') m.labels.push(w)
-      else m.paragraphs.push(w)
+      const lh = parseFloat(cs.lineHeight) || size * 1.4
+      const rec = { w, c: txt.length, size, lines: Math.max(1, Math.round(r.height / lh)) }
+      if (cta) m.ctas.push(rec)
+      else if (/^H[1-6]$/.test(el.tagName) || size >= 20) m.headings.push({ ...rec, serif: SERIF.test(cs.fontFamily) })
+      else if (cs.textTransform === 'uppercase') m.labels.push(rec)
+      else m.paragraphs.push(rec)
     }
     root.querySelectorAll('img').forEach((i) => i.getBoundingClientRect().width && m.images.add(i.getAttribute('src')))
-    m.videos = root.querySelectorAll('video').length
-    m.iframes = root.querySelectorAll('iframe').length
-    const s = (a) => ({ count: a.length, maxWords: a.length ? Math.max(...a) : 0, totalWords: a.reduce((x, y) => x + y, 0) })
+    root.querySelectorAll('video').forEach((v) => m.videos.add(v.getAttribute('src')))
+    root.querySelectorAll('iframe').forEach((f) => m.iframes.add((f.getAttribute('src') || '').split('?')[0]))
+    // repeated-item heuristic: the largest group of visible sibling elements that share a tag and a class string
+    // (card grids, accordions, list items, tab strips); 'active' / reveal state classes are ignored
+    const normCls = (k) => cls(k).replace(/\b(active|sal-animate|open|fade--in-up|fade--up)\b/g, '').replace(/\s+/g, ' ').trim()
+    let items = 0, liItems = 0, nonLiItems = 0
+    root.querySelectorAll('*').forEach((c) => {
+      if (['svg', 'path', 'g'].includes(c.tagName.toLowerCase())) return
+      const groups = new Map()
+      for (const k of c.children) {
+        if (['BR', 'path', 'svg'].includes(k.tagName)) continue
+        const r = k.getBoundingClientRect()
+        if (!r.height || getComputedStyle(k).position === 'absolute') continue
+        const key = k.tagName + '|' + normCls(k)
+        groups.set(key, (groups.get(key) || 0) + 1)
+      }
+      for (const [key, n] of groups) {
+        if (n < 2) continue
+        items = Math.max(items, n)
+        if (key.startsWith('LI|')) liItems = Math.max(liItems, n)
+        else nonLiItems = Math.max(nonLiItems, n)
+      }
+    })
+    const links = [...root.querySelectorAll('a[href]')].slice(0, 120).map((a) => {
+      const h = a.getAttribute('href') || ''
+      return { href: h.replace(location.origin, ''), ext: /^https?:/.test(h) && !h.startsWith(location.origin), cta: !!(a.matches('.button, .arrow-button, .roi-button')) }
+    })
+    const attributions = [...root.querySelectorAll('.quote-author, .roi-quote-author')].map((q) => {
+      const t = (q.innerText || '').trim()
+      return { w: wordsOf(t), c: t.length, lines: 1 }
+    }).filter((x) => x.w)
+    const stat = (a, k) => ({ count: a.length, maxWords: a.length ? Math.max(...a.map((x) => x.w)) : 0, maxChars: a.length ? Math.max(...a.map((x) => x.c)) : 0, maxLines: a.length ? Math.max(...a.map((x) => x.lines)) : 0, totalWords: a.reduce((x, y) => x + y.w, 0) })
     const hs = m.headings.slice().sort((a, b) => b.size - a.size)
     return {
-      title: hs.length ? { maxWords: hs[0].w, fontSizePx: hs[0].size } : null,
-      secondaryHeadings: s(hs.slice(1).map((h) => h.w)),
-      labels: s(m.labels),
-      paragraphs: s(m.paragraphs),
-      ctas: s(m.ctas),
+      title: hs.length ? { maxWords: hs[0].w, maxChars: hs[0].c, maxLines: hs[0].lines, fontSizePx: hs[0].size } : null,
+      secondaryHeadings: stat(hs.slice(1)),
+      labels: stat(m.labels),
+      paragraphs: stat(m.paragraphs),
+      ctas: stat(m.ctas),
+      attributions: stat(attributions),
+      links,
+      listItems: items,
+      liItems,
+      nonLiItems,
       uniqueImages: m.images.size,
-      videos: m.videos,
-      iframes: m.iframes,
+      images: [...m.images].slice(0, 60),
+      videoSrcs: [...m.videos],
+      iframeHosts: [...m.iframes],
+      videos: m.videos.size,
+      iframes: m.iframes.size,
     }
   }
   const units = []
@@ -157,8 +200,11 @@ function inPage() {
           u.h = u.end - u.y
           const wrap = document.createElement('div')
           const words = u.blocks.map((b) => (b.innerText || '').trim().split(/\s+/).filter(Boolean).length)
-          u.metrics = { blocks: u.blocks.length, maxWordsPerBlock: Math.max(0, ...words), totalWords: words.reduce((a, b) => a + b, 0),
-            headingWords: /^H[2-4]$/.test(u.blocks[0].tagName) ? words[0] : 0 }
+          const chars = u.blocks.map((b) => (b.innerText || '').trim().length)
+          const imgs = u.blocks.reduce((n, b) => n + (b.tagName === 'IMG' ? 1 : b.querySelectorAll('img').length), 0)
+          u.metrics = { blocks: u.blocks.length, maxWordsPerBlock: Math.max(0, ...words), maxCharsPerBlock: Math.max(0, ...chars), totalWords: words.reduce((a, b) => a + b, 0),
+            headingWords: /^H[2-4]$/.test(u.blocks[0].tagName) ? words[0] : 0, headingChars: /^H[2-4]$/.test(u.blocks[0].tagName) ? chars[0] : 0, images: imgs,
+            imageSrcs: u.blocks.flatMap((b) => (b.tagName === 'IMG' ? [b] : [...b.querySelectorAll('img')])).map((i) => i.getAttribute('src')).slice(0, 8) }
           delete u.blocks; delete u.end
           void wrap
         }
@@ -176,7 +222,8 @@ function inPage() {
     }
   }
   walk(document.querySelector('main'))
-  return { docH: document.documentElement.scrollHeight, units }
+  const hdr = document.querySelector('header'), ftr = document.querySelector('footer')
+  return { docH: document.documentElement.scrollHeight, units, shell: { header: hdr ? { ...rect(hdr), metrics: metrics(hdr) } : null, footer: ftr ? { ...rect(ftr), metrics: metrics(ftr) } : null } }
 }
 
 const b = await chromium.launch()
@@ -199,8 +246,11 @@ for (const { route, template } of todo) {
       while (ui < units.length && units[ui].kind === 'chapter') mapped.push({ section: n.section, ...units[ui++] })
     } else if (n.section === 'article.policy-section') {
       while (ui < units.length && units[ui].kind === 'policy') mapped.push({ section: n.section, ...units[ui++] })
+    } else if (n.section === 'article.original-link') {
+      // reference-only node; absent when the article body is empty (no 'Read the original' link is rendered)
+      if (units[ui] && units[ui].kind === 'original-link') mapped.push({ section: n.section, ...units[ui++] })
     } else {
-      const count = n.repeatable ? n.min : 1
+      const count = n.repeatable ? (n.minCount ?? n.min) : 1
       for (let i = 0; i < count; i++) {
         if (ui >= units.length) { if (n.required) out.mismatches.push({ route, missing: n.section }); continue }
         mapped.push({ section: n.section, ...units[ui++] })
@@ -208,7 +258,7 @@ for (const { route, template } of todo) {
     }
   }
   if (ui !== units.length) out.mismatches.push({ route, extraUnits: units.slice(ui).map((u) => `${u.kind}:${u.cls}`) })
-  out.measured[route] = { template, docHeightPx: r.docH, sections: mapped.map(({ cls, ...m }) => m) }
+  out.measured[route] = { template, docHeightPx: r.docH, shell: r.shell, sections: mapped.map(({ cls, ...m }) => m) }
 }
 await b.close()
 console.log(JSON.stringify(out, null, 1))

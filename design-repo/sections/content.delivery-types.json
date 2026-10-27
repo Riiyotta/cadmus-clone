@@ -1,0 +1,159 @@
+{
+ "id": "content.delivery-types",
+ "title": "Delivery types strip",
+ "semantic": {
+  "id": "content.delivery-types",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "DeliveryTypes:section@13",
+  "file": "src/pages/company/sections/DeliveryTypes.jsx",
+  "tag": "section",
+  "lines": "10-45",
+  "tagLine": 13,
+  "tagLineSha1": "0c08a2edd0a94c59",
+  "anchor": "export default function DeliveryTypes",
+  "anchorLine": 10
+ },
+ "additionalSources": [],
+ "purpose": "Centred heading, a strip of product links styled like tabs, then a full-width image.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/solutions/educators"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "items",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 7,
+    "maxChars": 48,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 28,
+    "observedIn": 1,
+    "basis": "max over measured units: labels"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 28,
+    "observedIn": 1,
+    "basis": "max over measured units: labels"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    3
+   ],
+   "media": [
+    1,
+    6
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "product.screenshot",
+     "icon.source"
+    ],
+    "generatedRoles": [
+     "product.generated-visual",
+     "icon.generic"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "product.generated-visual",
+  "icon.generic"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=990",
+   "behavior": "padding changes",
+   "cite": "src/pages/company/sections/DeliveryTypes.jsx:20"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/company/sections/DeliveryTypes.jsx:13"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 978,
+   "maxPx": 978,
+   "medianPx": 978,
+   "sample": {
+    "/solutions/educators": 978
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 702,
+   "maxPx": 702,
+   "medianPx": 702,
+   "sample": {
+    "/solutions/educators": 702
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 548,
+   "maxPx": 548,
+   "medianPx": 548,
+   "sample": {
+    "/solutions/educators": 548
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.solutions-educators"
+ ],
+ "evidence": [
+  "src/pages/company/sections/DeliveryTypes.jsx:10-45"
+ ]
+}

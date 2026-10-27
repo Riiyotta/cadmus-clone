@@ -1,0 +1,215 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.contact",
+ "route": "/conversion-form-shape",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Thread"
+     },
+     {
+      "title": "Anchor"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Pillar lantern",
+      "href": "https://fernhollow.example/ledger",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Willow ledger",
+      "href": "https://fernhollow.example/lantern",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:fjord-fjord-linen",
+      "alt": "Ripple"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.title-banner",
+   "variant": "default",
+   "content": {
+    "heading": "Harbor summit shape",
+    "lead": "Weigh fjord atlas saffron lantern fjord tidy velvet"
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.two-column-rows",
+   "variant": "sheet",
+   "content": {
+    "eyebrow": "Gather pebble shape bundle atlas velvet weigh linen",
+    "heading": "Cobalt quarry horizon nimbus signal",
+    "note": "Bundle thistle lantern sketch linen notice lantern measure",
+    "items": [
+     {
+      "title": "Measure plan orchard pillar orchard",
+      "text": "Nimbus grove orchard delta pillar weigh harvest thread"
+     },
+     {
+      "title": "Bundle sprout steer thread ripple",
+      "text": "Summit orchard saffron rowan compass harvest horizon fjord"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Meadow",
+      "href": "https://fernhollow.example/field",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Basil",
+      "href": "https://fernhollow.example/sketch",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:harbor-tidy-weigh",
+      "alt": "Map quarry signal saffron fjord share harbor fjord"
+     },
+     {
+      "assetRole": "icon.generic",
+      "ref": "generate:measure-meadow-horizon",
+      "alt": "Lumen summit orchard shape saffron plan lantern measure"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "conversion.contact-form",
+   "variant": "default",
+   "content": {
+    "heading": "Ember sort",
+    "lead": "Tidy nimbus shape summit falcon kettle kettle shape",
+    "note": "Weigh steer thread measure tidy trace sort thistle",
+    "items": [
+     {
+      "title": "Steer delta",
+      "text": "Thread basil juniper thread kettle field thread marble"
+     },
+     {
+      "title": "Gather marble",
+      "text": "Thread pebble marble quarry plan pillar gather measure"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Marble",
+      "href": "https://fernhollow.example/quarry",
+      "linkRole": "link.placeholder"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.why-choose",
+   "variant": "default",
+   "content": {
+    "heading": "Rowan weigh saffron sprout",
+    "items": [
+     {
+      "title": "Shape ledger fjord cinder",
+      "text": "Current cedar delta beacon weigh gather"
+     },
+     {
+      "title": "Basil ripple kettle gather",
+      "text": "Pillar prism falcon ribbon delta thistle"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "icon.generic",
+      "ref": "generate:mosaic-notice-marble",
+      "alt": "Signal kettle cedar sprout"
+     },
+     {
+      "assetRole": "icon.generic",
+      "ref": "generate:lantern-willow-quarry",
+      "alt": "Field ember ember mosaic"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Refine ribbon notice",
+    "items": [
+     {
+      "title": "Saffron"
+     },
+     {
+      "title": "Measure"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Nimbus ember copper",
+      "href": "https://fernhollow.example/cobalt",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Atlas tidal ripple",
+      "href": "https://fernhollow.example/thread",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:cedar-horizon-plan",
+      "alt": "Saffron"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:marble-horizon-cinder",
+      "alt": "Thistle"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

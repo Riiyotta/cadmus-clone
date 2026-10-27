@@ -1,0 +1,180 @@
+{
+ "id": "proof.logo-marquee",
+ "title": "Logo marquee",
+ "semantic": {
+  "id": "proof.logo-marquee",
+  "category": "PROOF"
+ },
+ "source": {
+  "id": "LogoMarquee:div@45",
+  "file": "src/components/LogoMarquee.jsx",
+  "tag": "div",
+  "lines": "42-67",
+  "tagLine": 45,
+  "tagLineSha1": "38564c6291bb10d4",
+  "anchor": "export default function LogoMarquee",
+  "anchorLine": 42
+ },
+ "additionalSources": [],
+ "purpose": "Title over an infinitely scrolling strip of customer logos.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "cream": {
+   "description": "cream background",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/solutions/universities"
+   ]
+  },
+  "light-orange": {
+   "description": "light-orange background",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product/oral_assessment"
+   ]
+  },
+  "orange": {
+   "description": "orange background",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/about"
+   ]
+  },
+  "white": {
+   "description": "white background",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/",
+    "/pricing"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 6,
+    "maxChars": 43,
+    "observedIn": 5,
+    "basis": "max over measured units: title",
+    "maxLines1440": 3
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 6,
+    "maxChars": 43,
+    "observedIn": 5,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "media": [
+    1,
+    24
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "customer.logo"
+    ],
+    "generatedRoles": [
+     "customer.placeholder-logo"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "customer.placeholder-logo"
+ ],
+ "style": {
+  "props": {
+   "surface": {
+    "allowed": [
+     "color.surface.white",
+     "color.surface.page",
+     "color.surface.warm",
+     "color.surface.warm-soft"
+    ],
+    "evidence": "src/pages/company/Universities.jsx:22"
+   }
+  },
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "marquee.loop"
+  ],
+  "requiredPatterns": [
+   "marquee.loop"
+  ],
+  "reducedMotionFallback": {
+   "marquee.loop": "paused-static-row"
+  }
+ },
+ "responsive": [],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 5,
+   "minPx": 213,
+   "maxPx": 213,
+   "medianPx": 213,
+   "sample": {
+    "/": 213,
+    "/product/oral_assessment": 213,
+    "/pricing": 213
+   }
+  },
+  "768": {
+   "nodes": 5,
+   "minPx": 213,
+   "maxPx": 213,
+   "medianPx": 213,
+   "sample": {
+    "/": 213,
+    "/product/oral_assessment": 213,
+    "/pricing": 213
+   }
+  },
+  "390": {
+   "nodes": 5,
+   "minPx": 213,
+   "maxPx": 213,
+   "medianPx": 213,
+   "sample": {
+    "/": 213,
+    "/product/oral_assessment": 213,
+    "/pricing": 213
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.about",
+  "template.home",
+  "template.pricing",
+  "template.product-oral",
+  "template.solutions-universities"
+ ],
+ "evidence": [
+  "src/components/LogoMarquee.jsx:42-67"
+ ]
+}

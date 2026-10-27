@@ -1,0 +1,214 @@
+{
+ "id": "content.two-column-rows",
+ "title": "Alternating image and text rows",
+ "semantic": {
+  "id": "content.two-column-rows",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "TwoColumnRows:div@119",
+  "file": "src/components/TwoColumnRows.jsx",
+  "tag": "div",
+  "lines": "101-130",
+  "tagLine": 119,
+  "tagLineSha1": "af89704dd182ac25",
+  "anchor": "export default function TwoColumnRows",
+  "anchorLine": 101
+ },
+ "additionalSources": [],
+ "purpose": "Rows that alternate image and text sides; each row may carry a chip or icon tag, title, body, quote box or button.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "flat": {
+   "description": "flat rows without sheet radius or overlap",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/product-overview"
+   ]
+  },
+  "sheet": {
+   "description": "stacked cream sheet",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/",
+    "/about",
+    "/careers",
+    "/contact"
+   ],
+   "observedOnCount": 13
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "items",
+   "media"
+  ],
+  "fields": {
+   "eyebrow": {
+    "type": "text",
+    "maxWords": 20,
+    "maxChars": 137,
+    "observedIn": 14,
+    "basis": "max over measured units: labels"
+   },
+   "heading": {
+    "type": "text",
+    "maxWords": 9,
+    "maxChars": 58,
+    "observedIn": 14,
+    "basis": "max over measured units: title",
+    "maxLines1440": 2
+   },
+   "note": {
+    "type": "text",
+    "maxWords": 66,
+    "maxChars": 442,
+    "observedIn": 14,
+    "basis": "max over measured units: paragraphs"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 9,
+    "maxChars": 68,
+    "observedIn": 14,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 66,
+    "maxChars": 442,
+    "observedIn": 14,
+    "basis": "max over measured units: paragraphs"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 15,
+    "observedIn": 14,
+    "basis": "max over measured units: ctas"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 20,
+    "maxChars": 137,
+    "observedIn": 14,
+    "basis": "max over measured units: labels"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    3
+   ],
+   "actions": [
+    0,
+    2
+   ],
+   "media": [
+    1,
+    7
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "product.screenshot",
+     "icon.source"
+    ],
+    "generatedRoles": [
+     "product.generated-visual",
+     "icon.generic"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "product.generated-visual",
+  "icon.generic"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 2,
+  "consecutiveVariants": [
+   "sheet"
+  ]
+ },
+ "motion": {
+  "allowedPatterns": [
+   "reveal.fade-up",
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "reveal.fade-up": "instant-show",
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/components/TwoColumnRows.jsx:122"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 16,
+   "minPx": 524,
+   "maxPx": 3314,
+   "medianPx": 2392.0,
+   "sample": {
+    "/": 2187,
+    "/product-overview": 1040
+   }
+  },
+  "768": {
+   "nodes": 13,
+   "minPx": 786,
+   "maxPx": 5949,
+   "medianPx": 3161,
+   "sample": {
+    "/": 3161,
+    "/product-overview": 1711
+   }
+  },
+  "390": {
+   "nodes": 13,
+   "minPx": 535,
+   "maxPx": 4933,
+   "medianPx": 2271,
+   "sample": {
+    "/": 2159,
+    "/product-overview": 1211
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.about",
+  "template.careers",
+  "template.contact",
+  "template.home",
+  "template.product",
+  "template.product-assignments",
+  "template.product-oral",
+  "template.product-overview",
+  "template.solutions-educators",
+  "template.solutions-students",
+  "template.solutions-universities"
+ ],
+ "evidence": [
+  "src/components/TwoColumnRows.jsx:101-130"
+ ]
+}

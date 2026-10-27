@@ -1,0 +1,416 @@
+{
+ "version": "1.0.0",
+ "note": "Closed asset/link/copy role vocabulary. availability is pinned in code (PINNED_AVAILABILITY in schema/semantic_validate.py and extraction/verify_all.py); editing this file alone cannot loosen it.",
+ "licensing": "The source is a real, live company (Cadmus). public/assets in the clone holds its real wordmark, real university customer logos, real third-party integration logos, photographs of real people and stock-library photographs, and its real product screenshots and videos. Generated pages must never reproduce or imitate those logos, those people's photos or likenesses, or any of the source's proprietary copy, screenshots or media; they use the generation-safe roles only. Nothing in this repo licenses any source asset for reuse. Do not publish this repo or pages derived from it.",
+ "availabilityEnum": [
+  "reference-only",
+  "generation-safe",
+  "blocked-for-generation"
+ ],
+ "generationPolicyEnum": [
+  "reference-evidence-only",
+  "must-not-fabricate",
+  "must-not-reuse-live-endpoint",
+  "must-not-reproduce",
+  "may-generate-new",
+  "user-supplied-only"
+ ],
+ "forbiddenInAllModes": [
+  "link.live-endpoint"
+ ],
+ "roleAssignmentRules": "extraction/measured-values.json assetRoleRules",
+ "roles": {
+  "brand.wordmark": {
+   "kind": "media",
+   "availability": "reference-only",
+   "generationPolicy": "reference-evidence-only",
+   "description": "The source company's own wordmark and emblem (header, footer).",
+   "usedBySections": [
+    "shell.footer",
+    "shell.header"
+   ],
+   "generationSafeSubstitutes": [
+    "brand.placeholder-mark",
+    "brand.user-supplied-mark"
+   ]
+  },
+  "product.screenshot": {
+   "kind": "media",
+   "availability": "reference-only",
+   "generationPolicy": "reference-evidence-only",
+   "description": "Source product UI screenshots, composited marketing frames and product videos.",
+   "usedBySections": [
+    "content.delivery-types",
+    "content.intro-carousel",
+    "content.overview-image",
+    "content.single-column",
+    "content.two-column-rows",
+    "conversion.highlight-split",
+    "conversion.image-cta-band",
+    "hero.image-centered",
+    "hero.product-split",
+    "media.experience-video",
+    "media.seamless-slide",
+    "proof.case-study"
+   ],
+   "generationSafeSubstitutes": [
+    "product.generated-visual"
+   ]
+  },
+  "icon.source": {
+   "kind": "media",
+   "availability": "reference-only",
+   "generationPolicy": "reference-evidence-only",
+   "description": "Source SVG icons and small illustrations drawn for this site.",
+   "usedBySections": [
+    "content.connected-products",
+    "content.delivery-types",
+    "content.feature-grid",
+    "content.roi-why",
+    "content.single-column",
+    "content.two-column-rows",
+    "content.values",
+    "content.why-choose",
+    "hero.home-banner"
+   ],
+   "generationSafeSubstitutes": [
+    "icon.generic"
+   ]
+  },
+  "illustration.source": {
+   "kind": "media",
+   "availability": "reference-only",
+   "generationPolicy": "reference-evidence-only",
+   "description": "Source decorative art: banner patterns, timeline strip, thank-you illustration.",
+   "usedBySections": [],
+   "generationSafeSubstitutes": [
+    "illustration.generated"
+   ]
+  },
+  "customer.logo": {
+   "kind": "media",
+   "availability": "blocked-for-generation",
+   "generationPolicy": "must-not-fabricate",
+   "description": "Real university / customer logos (logo strip, case-study carousel).",
+   "usedBySections": [
+    "proof.logo-marquee"
+   ],
+   "generationSafeSubstitutes": [
+    "customer.placeholder-logo"
+   ]
+  },
+  "partner.logo": {
+   "kind": "media",
+   "availability": "blocked-for-generation",
+   "generationPolicy": "must-not-fabricate",
+   "description": "Real third-party integration product logos (learning-system and writing-tool tiles).",
+   "usedBySections": [
+    "content.integrations"
+   ],
+   "generationSafeSubstitutes": [
+    "partner.placeholder-icon"
+   ]
+  },
+  "person.photo": {
+   "kind": "media",
+   "availability": "blocked-for-generation",
+   "generationPolicy": "must-not-fabricate",
+   "description": "Photos of real people: leaders, staff, quoted academics.",
+   "usedBySections": [
+    "content.leaders",
+    "proof.case-study-carousel",
+    "proof.quote-carousel",
+    "proof.team-quotes"
+   ],
+   "generationSafeSubstitutes": [
+    "person.fictional-avatar"
+   ]
+  },
+  "photo.source-scene": {
+   "kind": "media",
+   "availability": "blocked-for-generation",
+   "generationPolicy": "must-not-fabricate",
+   "description": "Photographs used by the source (stock-library and commissioned scenes, event photos).",
+   "usedBySections": [
+    "article.body-chapter",
+    "article.more-row",
+    "content.bullet-points",
+    "content.careers-card",
+    "content.connected-products",
+    "content.expert-list",
+    "content.faq",
+    "content.intro-split",
+    "content.mission-card",
+    "content.partnership-image-card",
+    "content.reasons",
+    "content.roi-why",
+    "content.solution-cards",
+    "content.support-cards",
+    "conversion.webinar-image-card",
+    "hero.about-banner",
+    "hero.article",
+    "hero.home-banner",
+    "hero.listing-photo-card",
+    "hero.photo-banner",
+    "hero.roi",
+    "listing.chronicle",
+    "listing.chronicle-two-col",
+    "listing.guide-grid",
+    "listing.news-grid",
+    "listing.study-grid",
+    "listing.study-popup",
+    "listing.video-grid",
+    "proof.case-study",
+    "proof.case-study-carousel",
+    "proof.roi-card",
+    "proof.study-preview"
+   ],
+   "generationSafeSubstitutes": [
+    "photo.generated-scene"
+   ]
+  },
+  "media.third-party-embed": {
+   "kind": "media",
+   "availability": "blocked-for-generation",
+   "generationPolicy": "reference-evidence-only",
+   "description": "Third-party hosted video embeds from an external video-hosting service; domain-restricted.",
+   "usedBySections": [
+    "article.video-detail",
+    "media.featured-video",
+    "media.roi-video"
+   ],
+   "generationSafeSubstitutes": [
+    "video.placeholder-poster"
+   ]
+  },
+  "brand.placeholder-mark": {
+   "kind": "media",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "A generated placeholder logo mark for the fictional brand of a generated page.",
+   "usedBySections": [
+    "shell.footer",
+    "shell.header"
+   ]
+  },
+  "brand.user-supplied-mark": {
+   "kind": "media",
+   "availability": "generation-safe",
+   "generationPolicy": "user-supplied-only",
+   "description": "The user's own logo supplied at generation time (never a source asset).",
+   "usedBySections": [
+    "shell.footer",
+    "shell.header"
+   ]
+  },
+  "customer.placeholder-logo": {
+   "kind": "media",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Generic placeholder organisation logo (initials in a neutral shape).",
+   "usedBySections": [
+    "proof.logo-marquee"
+   ]
+  },
+  "partner.placeholder-icon": {
+   "kind": "media",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Generic placeholder tool icon.",
+   "usedBySections": [
+    "content.integrations"
+   ]
+  },
+  "person.fictional-avatar": {
+   "kind": "media",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Generated or generic avatar of a fictional person.",
+   "usedBySections": [
+    "content.leaders",
+    "proof.case-study-carousel",
+    "proof.quote-carousel",
+    "proof.team-quotes"
+   ]
+  },
+  "rating.placeholder": {
+   "kind": "media",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Placeholder rating visual (generic stars) with no review-site mark or real score. The source renders no ratings; kept so generators have a safe role.",
+   "usedBySections": []
+  },
+  "product.generated-visual": {
+   "kind": "media",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Newly generated product-style UI visual for the fictional brand.",
+   "usedBySections": [
+    "content.delivery-types",
+    "content.intro-carousel",
+    "content.overview-image",
+    "content.single-column",
+    "content.two-column-rows",
+    "conversion.highlight-split",
+    "conversion.image-cta-band",
+    "hero.image-centered",
+    "hero.product-split",
+    "media.experience-video",
+    "media.seamless-slide",
+    "proof.case-study"
+   ]
+  },
+  "photo.generated-scene": {
+   "kind": "media",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Newly generated or licensed-for-purpose scene photo with no real person or brand.",
+   "usedBySections": [
+    "article.body-chapter",
+    "article.more-row",
+    "content.bullet-points",
+    "content.careers-card",
+    "content.connected-products",
+    "content.expert-list",
+    "content.faq",
+    "content.intro-split",
+    "content.mission-card",
+    "content.partnership-image-card",
+    "content.reasons",
+    "content.roi-why",
+    "content.solution-cards",
+    "content.support-cards",
+    "conversion.webinar-image-card",
+    "hero.about-banner",
+    "hero.article",
+    "hero.home-banner",
+    "hero.listing-photo-card",
+    "hero.photo-banner",
+    "hero.roi",
+    "listing.chronicle",
+    "listing.chronicle-two-col",
+    "listing.guide-grid",
+    "listing.news-grid",
+    "listing.study-grid",
+    "listing.study-popup",
+    "listing.video-grid",
+    "proof.case-study",
+    "proof.case-study-carousel",
+    "proof.roi-card",
+    "proof.study-preview"
+   ]
+  },
+  "illustration.generated": {
+   "kind": "media",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Newly generated decorative illustration or pattern.",
+   "usedBySections": []
+  },
+  "video.placeholder-poster": {
+   "kind": "media",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Poster frame standing in for a video, with no third-party player.",
+   "usedBySections": [
+    "article.video-detail",
+    "media.experience-video",
+    "media.featured-video",
+    "media.roi-video",
+    "media.seamless-slide"
+   ]
+  },
+  "icon.generic": {
+   "kind": "media",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Generic line icon not drawn by the source.",
+   "usedBySections": [
+    "content.connected-products",
+    "content.delivery-types",
+    "content.feature-grid",
+    "content.roi-why",
+    "content.single-column",
+    "content.two-column-rows",
+    "content.values",
+    "content.why-choose",
+    "hero.home-banner"
+   ]
+  },
+  "link.site-route": {
+   "kind": "link",
+   "availability": "reference-only",
+   "generationPolicy": "reference-evidence-only",
+   "description": "A link to another route of the clone (reference mode only).",
+   "usedBySections": [],
+   "generationSafeSubstitutes": [
+    "link.placeholder"
+   ]
+  },
+  "link.source-external": {
+   "kind": "link",
+   "availability": "blocked-for-generation",
+   "generationPolicy": "must-not-reproduce",
+   "description": "A link to the source company's own or third-party external sites (help centre, social profiles, partner sites).",
+   "usedBySections": [],
+   "generationSafeSubstitutes": [
+    "link.placeholder"
+   ]
+  },
+  "link.live-endpoint": {
+   "kind": "link",
+   "availability": "blocked-for-generation",
+   "generationPolicy": "must-not-reuse-live-endpoint",
+   "description": "A live third-party form or registration endpoint (the registration form link on the oral-assessment page). Forbidden in every mode; reference examples replace it with #.",
+   "usedBySections": [],
+   "generationSafeSubstitutes": [
+    "link.placeholder"
+   ],
+   "forbiddenInAllModes": true
+  },
+  "link.placeholder": {
+   "kind": "link",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Placeholder link on a reserved .example/.invalid host or an in-page #anchor.",
+   "usedBySections": []
+  },
+  "copy.source-verbatim": {
+   "kind": "copy",
+   "availability": "blocked-for-generation",
+   "generationPolicy": "must-not-reproduce",
+   "description": "The source's own wording. Never stored or reproduced by this repo, in any mode.",
+   "usedBySections": [],
+   "generationSafeSubstitutes": [
+    "copy.original"
+   ]
+  },
+  "copy.clone-stand-in": {
+   "kind": "copy",
+   "availability": "reference-only",
+   "generationPolicy": "reference-evidence-only",
+   "description": "The clone's own stand-in wording (specific to this clone, used as placeholder body text).",
+   "usedBySections": [],
+   "generationSafeSubstitutes": [
+    "copy.original"
+   ]
+  },
+  "copy.neutral-placeholder": {
+   "kind": "copy",
+   "availability": "reference-only",
+   "generationPolicy": "reference-evidence-only",
+   "description": "Neutral filler sized to a measured budget; used by reference examples.",
+   "usedBySections": [],
+   "generationSafeSubstitutes": [
+    "copy.original"
+   ]
+  },
+  "copy.original": {
+   "kind": "copy",
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Newly written copy for the generated brand.",
+   "usedBySections": []
+  }
+ }
+}

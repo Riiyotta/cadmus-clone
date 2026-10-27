@@ -1,0 +1,18 @@
+{
+ "id": "primitive.share-icon",
+ "kind": "primitive",
+ "title": "Share icon",
+ "purpose": "30px rounded square with a share or download glyph on a beige background.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "445-445",
+  "anchor": "  .share-icon {",
+  "anchorLine": 445
+ },
+ "props": {
+  "kind": "facebook | linkedin | twitter | download"
+ },
+ "tokens": [
+  "color.share-bg"
+ ]
+}

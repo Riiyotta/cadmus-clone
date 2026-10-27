@@ -1,0 +1,422 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.product-oral",
+ "route": "/product-notice",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Cobalt"
+     },
+     {
+      "title": "Thistle"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Nimbus marble",
+      "href": "https://fernhollow.example/willow",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Sprout harvest",
+      "href": "https://fernhollow.example/map",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:delta-shape-ledger",
+      "alt": "Orchard"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.product-split",
+   "variant": "maroon",
+   "content": {
+    "eyebrow": "Falcon shape",
+    "heading": "Ledger velvet share ripple tidy",
+    "lead": "Share quarry kettle prism weigh rowan atlas fjord",
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:harvest-velvet-tidal",
+      "alt": "Horizon thistle"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.feature-grid",
+   "variant": "default",
+   "content": {
+    "heading": "Weigh signal sort harbor marble",
+    "items": [
+     {
+      "title": "Juniper ribbon nimbus field prism",
+      "text": "Marble juniper steer pillar sketch sketch notice tidal"
+     },
+     {
+      "title": "Shape plan cobalt bundle nimbus",
+      "text": "Weigh refine mosaic signal copper orbit steer saffron"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "icon.generic",
+      "ref": "generate:notice-harvest-prism",
+      "alt": "Fjord harvest linen compass shape"
+     },
+     {
+      "assetRole": "icon.generic",
+      "ref": "generate:signal-sprout-sort",
+      "alt": "Kettle linen map basil horizon"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.partnership-image-card",
+   "variant": "default",
+   "content": {
+    "heading": "Thread lantern anchor",
+    "lead": "Beacon bundle ledger delta sketch linen ripple plan",
+    "actions": [
+     {
+      "label": "Quarry",
+      "href": "https://fernhollow.example/weigh",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:plan-ember-ribbon",
+      "alt": "Harvest anchor copper"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.phase-release",
+   "variant": "default",
+   "content": {
+    "heading": "Sketch thistle notice",
+    "items": [
+     {
+      "title": "Map sprout copper steer",
+      "text": "Thread ledger kettle thistle quarry anchor orchard lumen"
+     },
+     {
+      "title": "Measure falcon sort fjord",
+      "text": "Rowan measure notice falcon falcon walnut ember sprout"
+     }
+    ],
+    "bullets": [
+     "Anchor willow walnut fjord basil shape ledger refine",
+     "Shape tidal weigh lantern grove gather harvest copper"
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "listing.chronicle-two-col",
+   "variant": "light-orange",
+   "content": {
+    "heading": "Saffron walnut sort",
+    "lead": "Gather harbor notice ember gather trace",
+    "items": [
+     {
+      "title": "Sprout compass mosaic summit orchard cedar orchard share"
+     },
+     {
+      "title": "Gather lumen horizon velvet tidy thread copper horizon"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Saffron pillar walnut falcon",
+      "href": "https://fernhollow.example/pebble",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:atlas-pebble-steer",
+      "alt": "Field signal cinder"
+     },
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:atlas-tidy-trace",
+      "alt": "Marble linen marble"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.overview-image",
+   "variant": "default",
+   "content": {
+    "heading": "Harvest refine atlas field",
+    "lead": "Cinder share shape orbit meadow orchard saffron orbit",
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:delta-plan-share",
+      "alt": "Tidy anchor gather ribbon"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.two-column-rows",
+   "variant": "sheet",
+   "content": {
+    "eyebrow": "Horizon basil ledger quarry cedar walnut weigh orchard",
+    "heading": "Measure falcon tidy nimbus velvet",
+    "note": "Refine notice cobalt notice sprout harvest delta signal",
+    "items": [
+     {
+      "title": "Summit lumen steer pebble kettle",
+      "text": "Horizon ribbon copper fjord kettle falcon juniper harvest"
+     },
+     {
+      "title": "Saffron weigh lumen quarry signal",
+      "text": "Rowan velvet sketch sprout rowan copper rowan marble"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Bundle",
+      "href": "https://fernhollow.example/kettle",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Atlas",
+      "href": "https://fernhollow.example/notice",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:bundle-kettle-tidal",
+      "alt": "Plan current grove kettle prism harvest refine marble"
+     },
+     {
+      "assetRole": "icon.generic",
+      "ref": "generate:summit-copper-pillar",
+      "alt": "Fjord orchard ripple cinder cedar marble ember anchor"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "content.two-column-rows",
+   "variant": "sheet",
+   "content": {
+    "eyebrow": "Summit tidy weigh current mosaic walnut mosaic cedar",
+    "heading": "Pebble grove harvest cinder weigh",
+    "note": "Fjord trace cedar map lantern pebble atlas ribbon",
+    "items": [
+     {
+      "title": "Mosaic sort trace field compass",
+      "text": "Ledger orchard tidal anchor atlas gather orbit ribbon"
+     },
+     {
+      "title": "Notice mosaic cobalt lantern saffron",
+      "text": "Bundle mosaic beacon walnut measure refine atlas lantern"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Steer",
+      "href": "https://fernhollow.example/basil",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Meadow",
+      "href": "https://fernhollow.example/weigh",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:meadow-pillar-rowan",
+      "alt": "Nimbus orchard thread sprout thistle harbor linen harbor"
+     },
+     {
+      "assetRole": "icon.generic",
+      "ref": "generate:measure-harbor-willow",
+      "alt": "Delta pebble atlas summit ember ledger summit cinder"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "conversion.webinar-image-card",
+   "variant": "default",
+   "content": {
+    "heading": "Orchard thread compass plan",
+    "lead": "Quarry map ledger ribbon bundle tidy basil meadow",
+    "actions": [
+     {
+      "label": "Fjord quarry",
+      "href": "https://fernhollow.example/notice",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:walnut-shape-horizon",
+      "alt": "Steer compass grove beacon"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "proof.logo-marquee",
+   "variant": "light-orange",
+   "content": {
+    "heading": "Steer lumen pillar",
+    "media": [
+     {
+      "assetRole": "customer.placeholder-logo",
+      "ref": "generate:shape-lantern-rowan",
+      "alt": "Summit measure cinder"
+     },
+     {
+      "assetRole": "customer.placeholder-logo",
+      "ref": "generate:trace-gather-compass",
+      "alt": "Falcon bundle rowan"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "marquee.loop",
+    "reducedMotionFallback": "paused-static-row"
+   }
+  },
+  {
+   "section": "conversion.cta-band",
+   "variant": "maroon",
+   "content": {
+    "heading": "Orchard tidy sprout orchard thread",
+    "lead": "Walnut walnut notice atlas ribbon atlas refine basil",
+    "actions": [
+     {
+      "label": "Bundle share",
+      "href": "https://fernhollow.example/ripple",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Delta nimbus",
+      "href": "https://fernhollow.example/prism",
+      "linkRole": "link.placeholder"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Measure field sprout",
+    "items": [
+     {
+      "title": "Orbit"
+     },
+     {
+      "title": "Trace"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Orbit tidal meadow",
+      "href": "https://fernhollow.example/thread",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Shape notice map",
+      "href": "https://fernhollow.example/gather",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:map-ripple-atlas",
+      "alt": "Falcon"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:steer-sort-delta",
+      "alt": "Beacon"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

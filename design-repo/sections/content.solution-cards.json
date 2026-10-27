@@ -1,0 +1,186 @@
+{
+ "id": "content.solution-cards",
+ "title": "Solution cards",
+ "semantic": {
+  "id": "content.solution-cards",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "SolutionCards:div@70",
+  "file": "src/components/SolutionCards.jsx",
+  "tag": "div",
+  "lines": "60-98",
+  "tagLine": 70,
+  "tagLineSha1": "d0d5392cf2a7d553",
+  "anchor": "export default function SolutionCards",
+  "anchorLine": 60
+ },
+ "additionalSources": [],
+ "purpose": "Heading and intro over a row of image cards, each with a title, optional body and optional learn-more link.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/",
+    "/pricing"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "items",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 42,
+    "observedIn": 2,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 38,
+    "maxChars": 247,
+    "observedIn": 2,
+    "basis": "max over measured units: paragraphs"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 31,
+    "observedIn": 2,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 38,
+    "maxChars": 247,
+    "observedIn": 2,
+    "basis": "max over measured units: paragraphs"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 10,
+    "observedIn": 2,
+    "basis": "max over measured units: ctas"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 42,
+    "observedIn": 2,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    3
+   ],
+   "actions": [
+    0,
+    3
+   ],
+   "media": [
+    1,
+    3
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "photo.source-scene"
+    ],
+    "generatedRoles": [
+     "photo.generated-scene"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "photo.generated-scene"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "grid collapses to one column",
+   "cite": "src/components/SolutionCards.jsx:79"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/components/SolutionCards.jsx:72"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 2,
+   "minPx": 657,
+   "maxPx": 763,
+   "medianPx": 710.0,
+   "sample": {
+    "/": 763,
+    "/pricing": 657
+   }
+  },
+  "768": {
+   "nodes": 2,
+   "minPx": 1766,
+   "maxPx": 2011,
+   "medianPx": 1888.5,
+   "sample": {
+    "/": 2011,
+    "/pricing": 1766
+   }
+  },
+  "390": {
+   "nodes": 2,
+   "minPx": 1413,
+   "maxPx": 1617,
+   "medianPx": 1515.0,
+   "sample": {
+    "/": 1617,
+    "/pricing": 1413
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.home",
+  "template.pricing"
+ ],
+ "evidence": [
+  "src/components/SolutionCards.jsx:60-98"
+ ]
+}

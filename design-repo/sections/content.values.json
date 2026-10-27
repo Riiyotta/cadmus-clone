@@ -1,0 +1,214 @@
+{
+ "id": "content.values",
+ "title": "Values grid",
+ "semantic": {
+  "id": "content.values",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "Values:div@22",
+  "file": "src/sections/Values.jsx",
+  "tag": "div",
+  "lines": "20-42",
+  "tagLine": 22,
+  "tagLineSha1": "d0d5392cf2a7d553",
+  "anchor": "export default function Values",
+  "anchorLine": 20
+ },
+ "additionalSources": [],
+ "purpose": "Title and optional intro over a multi-column grid of icon, title and text items.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "cream": {
+   "description": "cream background",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/trust-centre"
+   ]
+  },
+  "light-orange": {
+   "description": "light-orange background",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/about",
+    "/careers"
+   ]
+  },
+  "white": {
+   "description": "white background",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/trust-centre"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "items",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 46,
+    "observedIn": 3,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 76,
+    "maxChars": 500,
+    "observedIn": 3,
+    "basis": "max over measured units: paragraphs"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 7,
+    "maxChars": 36,
+    "observedIn": 3,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 76,
+    "maxChars": 500,
+    "observedIn": 3,
+    "basis": "max over measured units: paragraphs"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 46,
+    "observedIn": 3,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    6
+   ],
+   "media": [
+    1,
+    6
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "icon.source"
+    ],
+    "generatedRoles": [
+     "icon.generic"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "icon.generic"
+ ],
+ "style": {
+  "props": {
+   "surface": {
+    "allowed": [
+     "color.surface.warm-soft",
+     "color.surface.page",
+     "color.surface.white"
+    ],
+    "evidence": "src/pages/company/About.jsx:31"
+   }
+  },
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 2,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "gap changes",
+   "cite": "src/sections/Values.jsx:29"
+  },
+  {
+   "range": "<=768",
+   "behavior": "grid collapses to one column",
+   "cite": "src/sections/Values.jsx:29"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/sections/Values.jsx:28"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/sections/Values.jsx:24"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 4,
+   "minPx": 670,
+   "maxPx": 1072,
+   "medianPx": 754.0,
+   "sample": {
+    "/about": 744,
+    "/careers": 764,
+    "/trust-centre": 670
+   }
+  },
+  "768": {
+   "nodes": 4,
+   "minPx": 1058,
+   "maxPx": 1967,
+   "medianPx": 1301.5,
+   "sample": {
+    "/about": 1372,
+    "/careers": 1231,
+    "/trust-centre": 1058
+   }
+  },
+  "390": {
+   "nodes": 4,
+   "minPx": 1214,
+   "maxPx": 2206,
+   "medianPx": 1321.5,
+   "sample": {
+    "/about": 1412,
+    "/careers": 1231,
+    "/trust-centre": 1214
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.about",
+  "template.careers",
+  "template.trust-centre"
+ ],
+ "evidence": [
+  "src/sections/Values.jsx:20-42"
+ ]
+}

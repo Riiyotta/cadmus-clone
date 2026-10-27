@@ -1,0 +1,18 @@
+{
+ "id": "primitive.counter",
+ "kind": "primitive",
+ "title": "Animated counter",
+ "purpose": "Number that counts up from 0 with a prefix/suffix-aware formatter when scrolled into view.",
+ "source": {
+  "file": "src/motion/Counter.jsx",
+  "lines": "62-88",
+  "anchor": "export default function Counter",
+  "anchorLine": 62
+ },
+ "props": {
+  "value": "string such as 7m, 18,000+, +17.6%"
+ },
+ "tokens": [
+  "motion.duration.counter"
+ ]
+}

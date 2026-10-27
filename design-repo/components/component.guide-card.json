@@ -1,0 +1,16 @@
+{
+ "id": "component.guide-card",
+ "kind": "component",
+ "title": "Guide card",
+ "purpose": "Card for a teaching guide with tags and a learn-more or read-more button.",
+ "source": {
+  "file": "src/pages/content/sections/Cards.jsx",
+  "lines": "90-100",
+  "anchor": "export function GuideCard",
+  "anchorLine": 90
+ },
+ "props": {},
+ "tokens": [
+  "radius.img"
+ ]
+}

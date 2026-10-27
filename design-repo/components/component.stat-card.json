@@ -1,0 +1,20 @@
+{
+ "id": "component.stat-card",
+ "kind": "component",
+ "title": "Statistic glass card",
+ "purpose": "Blurred glass card holding a large serif number and an uppercase label.",
+ "source": {
+  "file": "src/components/RoiCard.jsx",
+  "lines": "22-39",
+  "anchor": "export function StatCard",
+  "anchorLine": 22
+ },
+ "props": {
+  "tone": "orange | blue"
+ },
+ "tokens": [
+  "color.glass",
+  "elevation.card",
+  "radius.card"
+ ]
+}

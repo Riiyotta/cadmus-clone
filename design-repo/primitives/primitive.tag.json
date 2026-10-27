@@ -1,0 +1,19 @@
+{
+ "id": "primitive.tag",
+ "kind": "primitive",
+ "title": "Tag chip",
+ "purpose": "Bordered uppercase 11px chip for categories; active state is filled orange.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "368-372",
+  "anchor": "  .tag {",
+  "anchorLine": 368
+ },
+ "props": {
+  "active": "boolean"
+ },
+ "tokens": [
+  "font.size.tag",
+  "color.border.tag"
+ ]
+}

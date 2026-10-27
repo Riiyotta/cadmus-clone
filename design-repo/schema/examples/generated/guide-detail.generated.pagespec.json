@@ -1,0 +1,226 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.guide-detail",
+ "route": "/article-mosaic",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Ripple"
+     },
+     {
+      "title": "Delta"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Pillar pebble",
+      "href": "https://fernhollow.example/walnut",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Harbor quarry",
+      "href": "https://fernhollow.example/falcon",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:basil-falcon-tidal",
+      "alt": "Quarry"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.article",
+   "variant": "default",
+   "content": {
+    "eyebrow": "Field",
+    "heading": "Field cinder steer ribbon quarry refine map thread",
+    "lead": "Kettle map notice atlas thread marble ledger share",
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:field-quarry-saffron",
+      "alt": "Pebble"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "article.share",
+   "variant": "default",
+   "content": {
+    "actions": [
+     {
+      "label": "Ledger notice",
+      "href": "https://fernhollow.example/ribbon",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Tidal lumen",
+      "href": "https://fernhollow.example/nimbus",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Notice kettle",
+      "href": "https://fernhollow.example/meadow",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Refine orchard",
+      "href": "https://fernhollow.example/velvet",
+      "linkRole": "link.placeholder"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "article.body-chapter",
+   "variant": "default",
+   "content": {
+    "heading": "Measure juniper linen tidal lantern anchor rowan refine",
+    "items": [
+     {
+      "text": "Ribbon lantern steer refine ribbon beacon measure walnut"
+     },
+     {
+      "text": "Summit kettle sort thistle tidal compass linen atlas"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:sort-map-ripple"
+     },
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:share-beacon-willow"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "article.categories",
+   "variant": "default",
+   "content": {
+    "bullets": [
+     "Orchard beacon",
+     "Gather marble"
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "article.more-row",
+   "variant": "default",
+   "content": {
+    "heading": "Fjord current atlas orchard meadow horizon current",
+    "items": [
+     {
+      "title": "Signal kettle lantern walnut summit signal cobalt"
+     },
+     {
+      "title": "Velvet map harbor tidy walnut gather thistle"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Pillar",
+      "href": "https://fernhollow.example/thread",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:fjord-basil-harvest",
+      "alt": "Notice saffron"
+     },
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:harbor-cobalt-grove",
+      "alt": "Basil cedar"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Falcon willow velvet",
+    "items": [
+     {
+      "title": "Cedar"
+     },
+     {
+      "title": "Ripple"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Saffron weigh nimbus",
+      "href": "https://fernhollow.example/ledger",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Field current shape",
+      "href": "https://fernhollow.example/rowan",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:nimbus-orbit-cedar",
+      "alt": "Bundle"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:beacon-share-pebble",
+      "alt": "Gather"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

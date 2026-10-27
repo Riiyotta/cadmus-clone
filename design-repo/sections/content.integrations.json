@@ -1,0 +1,208 @@
+{
+ "id": "content.integrations",
+ "title": "Integrations block",
+ "semantic": {
+  "id": "content.integrations",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "Integrations:section@26",
+  "file": "src/components/Integrations.jsx",
+  "tag": "section",
+  "lines": "20-46",
+  "tagLine": 26,
+  "tagLineSha1": "a684ebf20df26d22",
+  "anchor": "export default function Integrations",
+  "anchorLine": 20
+ },
+ "additionalSources": [],
+ "purpose": "Heading and body beside a grid of integration tiles, each a small icon with a product name.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/",
+    "/pricing",
+    "/product-overview",
+    "/solutions/educators"
+   ],
+   "observedOnCount": 5
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "items",
+   "lead",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 10,
+    "maxChars": 73,
+    "observedIn": 5,
+    "basis": "max over measured units: title",
+    "maxLines1440": 2
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 29,
+    "maxChars": 216,
+    "observedIn": 5,
+    "basis": "max over measured units: paragraphs"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 15,
+    "observedIn": 5,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 10,
+    "maxChars": 73,
+    "observedIn": 5,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    6
+   ],
+   "media": [
+    1,
+    6
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "partner.logo"
+    ],
+    "generatedRoles": [
+     "partner.placeholder-icon"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "partner.placeholder-icon"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "element takes the full width",
+   "cite": "src/components/Integrations.jsx:28"
+  },
+  {
+   "range": "<=768",
+   "behavior": "gap changes",
+   "cite": "src/components/Integrations.jsx:32"
+  },
+  {
+   "range": "<=768",
+   "behavior": "grid becomes two columns",
+   "cite": "src/components/Integrations.jsx:32"
+  },
+  {
+   "range": "<=768",
+   "behavior": "height changes",
+   "cite": "src/components/Integrations.jsx:36"
+  },
+  {
+   "range": "<=768",
+   "behavior": "items wrap onto new lines",
+   "cite": "src/components/Integrations.jsx:27"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/components/Integrations.jsx:26"
+  },
+  {
+   "range": "<=768",
+   "behavior": "type size or spacing changes",
+   "cite": "src/components/Integrations.jsx:37"
+  },
+  {
+   "range": "<=768",
+   "behavior": "width changes",
+   "cite": "src/components/Integrations.jsx:36"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 5,
+   "minPx": 388,
+   "maxPx": 388,
+   "medianPx": 388,
+   "sample": {
+    "/": 388,
+    "/product-overview": 388,
+    "/pricing": 388
+   }
+  },
+  "768": {
+   "nodes": 5,
+   "minPx": 515,
+   "maxPx": 545,
+   "medianPx": 524,
+   "sample": {
+    "/": 545,
+    "/product-overview": 524,
+    "/pricing": 524
+   }
+  },
+  "390": {
+   "nodes": 5,
+   "minPx": 587,
+   "maxPx": 617,
+   "medianPx": 617,
+   "sample": {
+    "/": 617,
+    "/product-overview": 617,
+    "/pricing": 617
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.home",
+  "template.pricing",
+  "template.product-overview",
+  "template.solutions-educators",
+  "template.solutions-universities"
+ ],
+ "evidence": [
+  "src/components/Integrations.jsx:20-46"
+ ]
+}

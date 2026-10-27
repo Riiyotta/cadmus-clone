@@ -1,0 +1,124 @@
+{
+ "note": "Layout tokens: container max-widths (every width used at least 4 times in src) and the stacked-sheet geometry.",
+ "tokens": {
+  "layout.maxWidth.400": {
+   "value": "400px",
+   "category": "size",
+   "cite": "src/components/WhyChoose.jsx:44",
+   "match": "max-w-[400px]",
+   "usageCount": 6
+  },
+  "layout.maxWidth.550": {
+   "value": "550px",
+   "category": "size",
+   "cite": "src/components/ImageCard.jsx:13",
+   "match": "max-w-[550px]",
+   "usageCount": 12
+  },
+  "layout.maxWidth.600": {
+   "value": "600px",
+   "category": "size",
+   "cite": "src/pages/company/sections/CaseStudyCarousel.jsx:32",
+   "match": "max-w-[600px]",
+   "usageCount": 4
+  },
+  "layout.maxWidth.650": {
+   "value": "650px",
+   "category": "size",
+   "cite": "src/components/Careers.jsx:12",
+   "match": "max-w-[650px]",
+   "usageCount": 15
+  },
+  "layout.maxWidth.800": {
+   "value": "800px",
+   "category": "size",
+   "cite": "src/pages/company/sections/IntroSplit.jsx:21",
+   "match": "max-w-[800px]",
+   "usageCount": 5
+  },
+  "layout.maxWidth.850": {
+   "value": "850px",
+   "category": "size",
+   "cite": "src/components/Header.jsx:195",
+   "match": "max-w-[850px]",
+   "usageCount": 4
+  },
+  "layout.maxWidth.900": {
+   "value": "900px",
+   "category": "size",
+   "cite": "src/components/CaseStudy.jsx:63",
+   "match": "max-w-[900px]",
+   "usageCount": 13
+  },
+  "layout.maxWidth.950": {
+   "value": "950px",
+   "category": "size",
+   "cite": "src/pages/content/sections/Article.jsx:48",
+   "match": "max-w-[950px]",
+   "usageCount": 10
+  },
+  "layout.maxWidth.1000": {
+   "value": "1000px",
+   "category": "size",
+   "cite": "src/components/Experience.jsx:44",
+   "match": "max-w-[1000px]",
+   "usageCount": 7
+  },
+  "layout.maxWidth.1100": {
+   "value": "1100px",
+   "category": "size",
+   "cite": "src/components/Chronicle.jsx:87",
+   "match": "max-w-[1100px]",
+   "usageCount": 15
+  },
+  "layout.maxWidth.1200": {
+   "value": "1200px",
+   "category": "size",
+   "cite": "src/components/Careers.jsx:37",
+   "match": "max-w-[1200px]",
+   "usageCount": 18
+  },
+  "layout.maxWidth.1300": {
+   "value": "1300px",
+   "category": "size",
+   "cite": "src/components/Hero.jsx:26",
+   "match": "max-w-[1300px]",
+   "usageCount": 10
+  },
+  "layout.maxWidth.1400": {
+   "value": "1400px",
+   "category": "size",
+   "cite": "src/components/Chronicle.jsx:87",
+   "match": "max-w-[1400px]",
+   "usageCount": 28
+  },
+  "layout.maxWidth.1600": {
+   "value": "1600px",
+   "category": "size",
+   "cite": "src/components/ImpactCounter.jsx:24",
+   "match": "max-w-[1600px]",
+   "usageCount": 21
+  },
+  "layout.sheet.overlap": {
+   "value": "-40px",
+   "category": "spacing",
+   "cite": "src/components/Intro.jsx:34",
+   "match": "-mt-[40px] rounded-t-sheet",
+   "note": "every section sheet is pulled up 40px under the previous one (stacked rounded sheets)"
+  },
+  "layout.sheet.padding": {
+   "value": "40px",
+   "category": "spacing",
+   "cite": "src/components/Intro.jsx:34",
+   "match": "px-[40px] pb-0 pt-[40px] m:px-[20px] m:pt-[20px]",
+   "note": "20px at max-width 768px"
+  },
+  "layout.header.width": {
+   "value": "850px",
+   "category": "size",
+   "cite": "CLONE_SPEC.md:143",
+   "match": "max-width:850px",
+   "note": "header bar max width (CLONE_SPEC section 1)"
+  }
+ }
+}

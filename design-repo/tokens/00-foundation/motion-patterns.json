@@ -1,0 +1,124 @@
+{
+ "note": "Closed motion vocabulary. Every pattern cites the clone source. reducedMotionFallback is PRESCRIPTIVE for generated pages: the clone itself never reads prefers-reduced-motion (sourceHonoursReducedMotion false everywhere; src has no reduced-motion rule).",
+ "patterns": {
+  "static": {
+   "description": "No motion beyond hover colour and arrow nudges (0.3s ease).",
+   "reducedMotionFallback": "none-needed",
+   "cite": "CLONE_SPEC.md:124",
+   "match": "**no hover effects**",
+   "sourceHonoursReducedMotion": false
+  },
+  "reveal.fade-up": {
+   "description": "Scroll reveal: element fades in while rising 20px (30px for the fast variant), 0.65s ease, staggered by data delays, once, when 50% visible.",
+   "reducedMotionFallback": "instant-show",
+   "cite": "src/index.css:253",
+   "match": ".fade--in-up { opacity: 0; transform: translateY(20px); transition: 0.65s 0.2s; }",
+   "sourceHonoursReducedMotion": false
+  },
+  "reveal.slide-in": {
+   "description": "Scroll reveal: element fades in while sliding 20px sideways (reverse flips direction), 0.65s.",
+   "reducedMotionFallback": "instant-show",
+   "cite": "src/index.css:248",
+   "match": ".fade--up { opacity: 0; transform: translate(-20px); transition: 0.65s 0.2s; }",
+   "sourceHonoursReducedMotion": false
+  },
+  "page.fade": {
+   "description": "Whole page (main + footer) fades in 0.5s after a 0.5s delay on load and fades out 0.5s before an internal navigation.",
+   "reducedMotionFallback": "instant-show",
+   "cite": "src/index.css:268",
+   "match": ".page--transition.fade--in { animation: fadeIn 0.5s ease 0.5s forwards; }",
+   "sourceHonoursReducedMotion": false
+  },
+  "marquee.loop": {
+   "description": "Endless linear horizontal loop of the logo strip (100s per cycle).",
+   "reducedMotionFallback": "paused-static-row",
+   "cite": "tailwind.config.cjs:137",
+   "match": "marquee: 'scroll 100s linear infinite'",
+   "sourceHonoursReducedMotion": false
+  },
+  "carousel.fade-autoplay": {
+   "description": "Cross-fading carousel: 300ms fade, advances every 3000ms (after each transition end), loops, touch swipe.",
+   "reducedMotionFallback": "paused-first-slide",
+   "cite": "src/motion/constants.js:48",
+   "match": "autoplayDelay: 3000,",
+   "sourceHonoursReducedMotion": false
+  },
+  "tabs.fade": {
+   "description": "Tab click fades the panel (300ms) and swaps the section colour instantly; no autoplay.",
+   "reducedMotionFallback": "instant-swap",
+   "cite": "src/motion/constants.js:46",
+   "match": "speed: 300,",
+   "sourceHonoursReducedMotion": false
+  },
+  "carousel.slide": {
+   "description": "Sliding carousel (850ms ease), manual arrows and swipe, optional autoplay (3500ms on the timeline).",
+   "reducedMotionFallback": "instant-slide",
+   "cite": "src/pages/company/motion/constants.js:6",
+   "match": "speed: 850, // ms",
+   "sourceHonoursReducedMotion": false
+  },
+  "timeline.loop": {
+   "description": "Desktop timeline: one milestone visible at a time, fading in 0.4s and out 0.6s after a 5s hold, repeating forever (skipped at 768px and below).",
+   "reducedMotionFallback": "show-all-static",
+   "cite": "src/pages/company/motion/constants.js:22",
+   "match": "inTween: { opacity: 1, x: 10, duration: 0.4 }",
+   "sourceHonoursReducedMotion": false
+  },
+  "counter.count-up": {
+   "description": "Number counts from 0 to its value in 1.5s (power2.out) when its top crosses 88% of the viewport; plays once.",
+   "reducedMotionFallback": "final-value",
+   "cite": "src/motion/constants.js:37",
+   "match": "start: 'top 88%',",
+   "sourceHonoursReducedMotion": false
+  },
+  "accordion.expand": {
+   "description": "Panel height or grid-rows expands in 0.3-0.4s with a plus/minus icon swap.",
+   "reducedMotionFallback": "instant-toggle",
+   "cite": "src/index.css:433",
+   "match": ".accordion .content { overflow: hidden; transition: height 0.4s ease; }",
+   "sourceHonoursReducedMotion": false
+  },
+  "nav.dropdown": {
+   "description": "Click-to-open dropdown panel (no animation) and a 350ms grid-rows accordion for the mobile menu.",
+   "reducedMotionFallback": "instant-toggle",
+   "cite": "src/components/Header.jsx:228",
+   "match": "duration-[350ms] ease-[ease]",
+   "sourceHonoursReducedMotion": false
+  },
+  "media.click-to-play": {
+   "description": "Thumbnail and play icon sit over an embedded player; a click removes them and starts autoplay.",
+   "reducedMotionFallback": "poster-with-controls",
+   "cite": "src/components/FeaturedVideo.jsx:37",
+   "match": "playing ? `${VIMEO}?autoplay=1` : VIMEO",
+   "sourceHonoursReducedMotion": false
+  },
+  "media.loop-video": {
+   "description": "Muted, autoplaying, looping inline video.",
+   "reducedMotionFallback": "poster-static",
+   "cite": "src/components/Experience.jsx:48",
+   "match": "muted",
+   "sourceHonoursReducedMotion": false
+  },
+  "logo.peel": {
+   "description": "Footer wordmark slides up out of a clipped box (0.75s ease) when revealed.",
+   "reducedMotionFallback": "static",
+   "cite": "src/index.css:262",
+   "match": "transition: transform 0.75s 0.2s;",
+   "sourceHonoursReducedMotion": false
+  },
+  "panel.slide-in": {
+   "description": "Off-canvas panel slides in from the right over a backdrop (0.85s cubic-bezier).",
+   "reducedMotionFallback": "instant-open",
+   "cite": "src/pages/content/content.css:61",
+   "match": "transition: transform 0.85s cubic-bezier(0.4, 0, 0.2, 1);",
+   "sourceHonoursReducedMotion": false
+  },
+  "scroll.smooth": {
+   "description": "Page-wide smooth scrolling (Lenis, 1.2s exponential ease-out); hash links scroll with an 85px offset. Global behaviour, not a per-section pattern.",
+   "reducedMotionFallback": "native-scroll",
+   "cite": "src/motion/constants.js:6",
+   "match": "duration: 1.2,",
+   "sourceHonoursReducedMotion": false
+  }
+ }
+}

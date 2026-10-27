@@ -1,0 +1,29 @@
+{
+ "note": "Foundation tokens derived by script from the clone source; value + category; cite is path:line in the clone and match is text that must appear on that line (extraction/verify_all.py CITATIONS).",
+ "tokens": {
+  "iconSize.social": {
+   "value": "20px",
+   "category": "size",
+   "cite": "src/index.css:196",
+   "match": ".social-icon { width: 20px;"
+  },
+  "iconSize.feature": {
+   "value": "34px",
+   "category": "size",
+   "cite": "src/components/WhyChoose.jsx:42",
+   "match": "h-[34px] w-[34px]"
+  },
+  "iconSize.tag": {
+   "value": "25px",
+   "category": "size",
+   "cite": "src/components/TwoColumnRows.jsx:66",
+   "match": "w-[25px] object-contain"
+  },
+  "iconSize.accordion": {
+   "value": "25px",
+   "category": "size",
+   "cite": "src/index.css:434",
+   "match": ".accordion-icon { display: inline-block; width: 25px; height: 25px;"
+  }
+ }
+}

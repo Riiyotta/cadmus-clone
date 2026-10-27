@@ -1,0 +1,41 @@
+{
+ "note": "Foundation tokens derived by script from the clone source; value + category; cite is path:line in the clone and match is text that must appear on that line (extraction/verify_all.py CITATIONS).",
+ "tokens": {
+  "breakpoint.w18": {
+   "value": "max 1800px",
+   "category": "breakpoint",
+   "cite": "tailwind.config.cjs:8",
+   "match": "w18: { max: '1800px' }"
+  },
+  "breakpoint.t": {
+   "value": "max 1600px",
+   "category": "breakpoint",
+   "cite": "tailwind.config.cjs:9",
+   "match": "t: { max: '1600px' }"
+  },
+  "breakpoint.w15": {
+   "value": "max 1500px",
+   "category": "breakpoint",
+   "cite": "tailwind.config.cjs:10",
+   "match": "w15: { max: '1500px' }"
+  },
+  "breakpoint.lgm": {
+   "value": "max 990px",
+   "category": "breakpoint",
+   "cite": "tailwind.config.cjs:11",
+   "match": "lgm: { max: '990px' }"
+  },
+  "breakpoint.m": {
+   "value": "max 768px",
+   "category": "breakpoint",
+   "cite": "tailwind.config.cjs:12",
+   "match": "m: { max: '768px' }"
+  },
+  "breakpoint.dk": {
+   "value": "min 991px",
+   "category": "breakpoint",
+   "cite": "tailwind.config.cjs:13",
+   "match": "dk: { raw: '(min-width: 991px)' }"
+  }
+ }
+}

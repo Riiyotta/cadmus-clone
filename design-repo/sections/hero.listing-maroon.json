@@ -1,0 +1,137 @@
+{
+ "id": "hero.listing-maroon",
+ "title": "Listing hero on maroon",
+ "semantic": {
+  "id": "hero.listing-maroon",
+  "category": "HERO"
+ },
+ "source": {
+  "id": "HeroImageBanner:alt:div@13",
+  "file": "src/pages/content/sections/HeroImageBanner.jsx",
+  "tag": "div",
+  "lines": "10-49",
+  "tagLine": 13,
+  "tagLineSha1": "d0d5392cf2a7d553",
+  "anchor": "export default function HeroImageBanner",
+  "anchorLine": 10
+ },
+ "additionalSources": [],
+ "purpose": "Listing opener on maroon with decorative art, orange headline and intro, no card or photo.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/video-tutorials"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "lead"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 15,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 19,
+    "maxChars": 105,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   }
+  },
+  "listSizes": {}
+ },
+ "assets": {
+  "fields": {},
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "gap changes",
+   "cite": "src/pages/content/sections/HeroImageBanner.jsx:21"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/pages/content/sections/HeroImageBanner.jsx:21"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/content/sections/HeroImageBanner.jsx:14"
+  },
+  {
+   "range": "<=768",
+   "behavior": "type size or spacing changes",
+   "cite": "src/pages/content/sections/HeroImageBanner.jsx:29"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 549,
+   "maxPx": 549,
+   "medianPx": 549,
+   "sample": {
+    "/video-tutorials": 549
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 362,
+   "maxPx": 362,
+   "medianPx": 362,
+   "sample": {
+    "/video-tutorials": 362
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 382,
+   "maxPx": 382,
+   "medianPx": 382,
+   "sample": {
+    "/video-tutorials": 382
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.video-tutorials-listing"
+ ],
+ "evidence": [
+  "src/pages/content/sections/HeroImageBanner.jsx:10-49"
+ ]
+}

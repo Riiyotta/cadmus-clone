@@ -1,0 +1,181 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.teacher-guides-listing",
+ "route": "/listing-bundle",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Harbor"
+     },
+     {
+      "title": "Linen"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Map anchor",
+      "href": "https://fernhollow.example/share",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Juniper harvest",
+      "href": "https://fernhollow.example/atlas",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:linen-juniper-cinder",
+      "alt": "Sort"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.listing-photo-card",
+   "variant": "default",
+   "content": {
+    "heading": "Bundle",
+    "lead": "Thread notice orchard falcon plan quarry copper mosaic",
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:cinder-linen-shape",
+      "alt": "Horizon"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "listing.guide-grid",
+   "variant": "default",
+   "content": {
+    "items": [
+     {
+      "title": "Juniper cobalt field sort",
+      "text": "Anchor"
+     },
+     {
+      "title": "Tidy quarry copper weigh",
+      "text": "Gather"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Summit",
+      "href": "https://fernhollow.example/thread",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:harbor-cinder-rowan",
+      "alt": "Tidal ripple cedar"
+     },
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:trace-lumen-delta",
+      "alt": "Falcon velvet pebble"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "conversion.image-cta-band",
+   "variant": "default",
+   "content": {
+    "heading": "Delta fjord current",
+    "actions": [
+     {
+      "label": "Thread lumen",
+      "href": "https://fernhollow.example/cedar",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Copper field",
+      "href": "https://fernhollow.example/lantern",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:ember-ribbon-linen",
+      "alt": "Pebble mosaic cedar"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Meadow refine current",
+    "items": [
+     {
+      "title": "Copper"
+     },
+     {
+      "title": "Measure"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Anchor cedar share",
+      "href": "https://fernhollow.example/ribbon",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Thread shape basil",
+      "href": "https://fernhollow.example/measure",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:fjord-cobalt-lantern",
+      "alt": "Thistle"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:thistle-signal-cedar",
+      "alt": "Pebble"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

@@ -11,7 +11,7 @@ node validate.mjs && node build.mjs
 
 | file | what it is |
 |---|---|
-| `ia.json` | Source of truth: 9 categories, 80 sections (each with `implementedBy`), 24 templates, 181 routes |
+| `ia.json` | Source of truth: 10 categories, 82 sections (each with `implementedBy`), 25 templates (24 with routes plus the router fallback), 181 routes |
 | `IA.md` | Generated doc: template shares, chrome, sections by reuse, per-template tables, section reference |
 | `matrix.csv` | Generated section × template matrix |
 | `validate.mjs` / `build.mjs` | Skill scripts, unmodified |
@@ -40,8 +40,14 @@ node validate.mjs && node build.mjs
   Each template's `$comment` names the component. This split makes `proof.study-preview` and `conversion.highlight-split` show up as
   "shared ×2", but in code that's one component used by one page file.
 - **Repeated blocks.** Some pages render the same block twice in a row (TwoColumnRows on product-overview and Oral,
-  Values on trust-centre, VideoSection on video-tutorials). These are listed once per template, with a `$comment`.
-  Listing them twice would make `validate.mjs` count that template twice in its reuse numbers.
+  Values on trust-centre, VideoSection on video-tutorials). Each template lists the section once per occurrence in
+  real render order, so `validate.mjs` counts it once per template regardless; the design-repo records the same
+  thing as one repeatable node with a minimum count and per-position variants.
+- **Decomposition (kept in step with `design-repo/templates/templates.json`).** No section holds most of a page:
+  the former whole-body `article.body` is `article.body-chapter` (one heading-bounded chapter, repeated) plus the
+  clone-only `article.original-link`; the privacy body is `article.policy-section` (repeated). `article.hero` is
+  renamed `hero.article` and `pricing.plans-hero` is classed HERO, because each is the page-opening composition of
+  its page. `utility.not-built` is the body of the router fallback.
 - **Variants.** One component with materially different output gets distinct section ids that share a file in
   `implementedBy`:
   - WhyChoose: default vs feature
@@ -55,22 +61,22 @@ node validate.mjs && node build.mjs
 
   Prop-level differences, such as background colour, logo list or stat count, stay as one section.
   QuoteCard's `case-study` variant is part of `proof.case-study`, and its `article` variant is inline inside
-  `article.body`, so only `banner` is a section of its own (`proof.quote-banner`).
-- **Not a template.** `src/pages/NotBuilt.jsx` is the `*` fallback, and it also renders for unknown collection slugs.
-  It has no enumerable routes, so it isn't modelled as a template. It renders inside the full shell.
+  `article.body-chapter`, so only `banner` is a section of its own (`proof.quote-banner`).
+- **Fallback.** `src/pages/NotBuilt.jsx` is the `*` fallback, and it also renders for unknown collection slugs.
+  It has no enumerable routes, so it is listed as `template.not-built-fallback` with `routeCount` 0 and
+  `routePattern` `*`. It renders inside the full shell.
 
 ## Findings
 
 1. **87% of routes (158 of 181) come from the 4 collection detail templates.** These are news, study, guide and
    video. All four are filled from data and share one `ArticleShell`. The remaining 23 routes span 20 templates,
    and nearly every one is a single hand-composed page. That's where most of the per-page build and QA effort goes.
-2. **There are 33 shared sections and 47 single-use ones.** Header and footer are among the shared 33, which leaves 31 shared
-   content sections. Three shared components appear on the most templates:
+2. **There are 34 shared sections and 48 single-use ones** (see `IA.md`). Header and footer are among the shared 34. Three shared components appear on the most templates:
    - `TwoColumnRows`: 11 templates
    - `WhyChoose`: 9 (default and feature variants together)
    - `Cta`: 8
 
-   Of the 47 single-use sections, 44 sit on single-route templates (pricing, careers, ROI and others). They should
+   Most of the single-use sections sit on single-route templates (pricing, careers, ROI and others). They should
    stay page-local until a second page needs them.
 3. **One page-local section is implemented twice in two page groups:** `hero.small-banner`.
    `src/pages/company/sections/SmallHeroBanner.jsx` (trust-centre) and

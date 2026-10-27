@@ -1,0 +1,125 @@
+{
+ "id": "listing.study-popup",
+ "title": "Case study panel",
+ "semantic": {
+  "id": "listing.study-popup",
+  "category": "LISTING"
+ },
+ "source": {
+  "id": "CaseStudyPopup:div@34",
+  "file": "src/pages/content/sections/CaseStudyPopup.jsx",
+  "tag": "div",
+  "lines": "9-46",
+  "tagLine": 34,
+  "tagLineSha1": "11efaddcce37be6f",
+  "anchor": "export default function CaseStudyPopup",
+  "anchorLine": 9
+ },
+ "additionalSources": [],
+ "purpose": "Desktop off-canvas panel that renders a full case study over the listing.",
+ "retrievalEligible": false,
+ "placement": "overlay",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/case-studies"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 45,
+    "maxChars": 350,
+    "observedIn": 125,
+    "basis": "inherited from hero.article: the panel renders the same case-study content component (StudyContent), which is not in the DOM until a card is opened",
+    "maxLines1440": 12
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 55,
+    "maxChars": 381,
+    "observedIn": 125,
+    "basis": "inherited from hero.article: the panel renders the same case-study content component (StudyContent), which is not in the DOM until a card is opened"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 15,
+    "observedIn": 125,
+    "basis": "inherited from hero.article: the panel renders the same case-study content component (StudyContent), which is not in the DOM until a card is opened"
+   }
+  },
+  "listSizes": {
+   "media": [
+    0,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "photo.source-scene"
+    ],
+    "generatedRoles": [
+     "photo.generated-scene"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "photo.generated-scene"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "panel.slide-in"
+  ],
+  "requiredPatterns": [
+   "panel.slide-in"
+  ],
+  "reducedMotionFallback": {
+   "panel.slide-in": "instant-open"
+  }
+ },
+ "responsive": [],
+ "runtimeUi": [
+  "fixed off-canvas panel slides in from the right over a blurred backdrop",
+  "closes on Escape or backdrop click; only rendered at desktop widths"
+ ],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 768,
+   "maxPx": 768,
+   "medianPx": 768,
+   "sample": {
+    "/case-studies": 768
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.case-studies-listing"
+ ],
+ "evidence": [
+  "src/pages/content/sections/CaseStudyPopup.jsx:9-46"
+ ],
+ "retrievalIneligibleReason": "Off-canvas dialog opened by clicking a card; it renders the case-study detail content that the article sections already describe and is never a retrievable section in its own right."
+}

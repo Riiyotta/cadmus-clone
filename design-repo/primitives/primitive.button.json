@@ -1,0 +1,20 @@
+{
+ "id": "primitive.button",
+ "kind": "primitive",
+ "title": "Solid button",
+ "purpose": "Ink-filled 4px-radius button with a 0.8px border; inverts to a transparent outline on hover. A maroon header variant exists.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "114-127",
+  "anchor": "  .button {",
+  "anchorLine": 114
+ },
+ "props": {
+  "variant": "solid | header"
+ },
+ "tokens": [
+  "color.surface.ink",
+  "radius.btn",
+  "motion.duration.hover"
+ ]
+}

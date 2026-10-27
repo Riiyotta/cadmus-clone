@@ -1,0 +1,225 @@
+{
+ "id": "proof.case-study",
+ "title": "Case study spotlight",
+ "semantic": {
+  "id": "proof.case-study",
+  "category": "PROOF"
+ },
+ "source": {
+  "id": "CaseStudy:section@44",
+  "file": "src/components/CaseStudy.jsx",
+  "tag": "section",
+  "lines": "32-81",
+  "tagLine": 44,
+  "tagLineSha1": "be7e491508496944",
+  "anchor": "export default function CaseStudy",
+  "anchorLine": 32
+ },
+ "additionalSources": [],
+ "purpose": "One light-orange sheet in three parts: an image card with tags, body and counted statistics; a straddling quote card; a closing image call to action.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/",
+    "/product-overview"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "actions",
+   "attribution",
+   "heading",
+   "items",
+   "lead",
+   "media",
+   "note"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 26,
+    "maxChars": 193,
+    "observedIn": 2,
+    "basis": "max over measured units: title + secondaryHeadings"
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 25,
+    "maxChars": 185,
+    "observedIn": 2,
+    "basis": "max over measured units: paragraphs"
+   },
+   "note": {
+    "type": "text",
+    "maxWords": 26,
+    "maxChars": 193,
+    "observedIn": 2,
+    "basis": "max over measured units: secondaryHeadings + paragraphs"
+   },
+   "attribution": {
+    "type": "text",
+    "maxWords": 13,
+    "maxChars": 101,
+    "observedIn": 2,
+    "basis": "max over measured units: attributions"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 25,
+    "maxChars": 185,
+    "observedIn": 2,
+    "basis": "max over measured units: labels + paragraphs"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 26,
+    "maxChars": 193,
+    "observedIn": 2,
+    "basis": "max over measured units: title + secondaryHeadings"
+   },
+   "bullets[]": {
+    "type": "text",
+    "maxWords": 6,
+    "maxChars": 45,
+    "observedIn": 2,
+    "basis": "max over measured units: labels"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 24,
+    "observedIn": 2,
+    "basis": "max over measured units: ctas"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 6,
+    "maxChars": 45,
+    "observedIn": 2,
+    "basis": "max over measured units: labels"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    3
+   ],
+   "bullets": [
+    0,
+    1
+   ],
+   "actions": [
+    1,
+    3
+   ],
+   "media": [
+    1,
+    2
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "product.screenshot",
+     "photo.source-scene"
+    ],
+    "generatedRoles": [
+     "product.generated-visual",
+     "photo.generated-scene"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "product.generated-visual",
+  "photo.generated-scene"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "counter.count-up"
+  ],
+  "requiredPatterns": [
+   "counter.count-up"
+  ],
+  "reducedMotionFallback": {
+   "counter.count-up": "final-value"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "alignment changes",
+   "cite": "src/components/CaseStudy.jsx:63"
+  },
+  {
+   "range": "<=768",
+   "behavior": "items wrap onto new lines",
+   "cite": "src/components/CaseStudy.jsx:63"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/components/CaseStudy.jsx:46"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 2,
+   "minPx": 1904,
+   "maxPx": 1904,
+   "medianPx": 1904.0,
+   "sample": {
+    "/": 1904,
+    "/product-overview": 1904
+   }
+  },
+  "768": {
+   "nodes": 2,
+   "minPx": 2403,
+   "maxPx": 2433,
+   "medianPx": 2418.0,
+   "sample": {
+    "/": 2433,
+    "/product-overview": 2403
+   }
+  },
+  "390": {
+   "nodes": 2,
+   "minPx": 2250,
+   "maxPx": 2280,
+   "medianPx": 2265.0,
+   "sample": {
+    "/": 2280,
+    "/product-overview": 2250
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.home",
+  "template.product-overview"
+ ],
+ "evidence": [
+  "src/components/CaseStudy.jsx:32-81"
+ ],
+ "notes": "Composite on purpose: the three parts share one rounded sheet in the DOM and in the measured section structure; the embedded call to action is a part of the story, not a separate conversion section."
+}

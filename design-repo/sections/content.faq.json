@@ -1,0 +1,175 @@
+{
+ "id": "content.faq",
+ "title": "FAQ accordion",
+ "semantic": {
+  "id": "content.faq",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "Faq:div@33",
+  "file": "src/pages/product/sections/Faq.jsx",
+  "tag": "div",
+  "lines": "30-49",
+  "tagLine": 33,
+  "tagLineSha1": "7fa85d51d7073b61",
+  "anchor": "export default function Faq",
+  "anchorLine": 30
+ },
+ "additionalSources": [],
+ "purpose": "Accordion of questions and answers beside an image on a light-orange sheet.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/pricing"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "items",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 26,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 12,
+    "maxChars": 60,
+    "observedIn": 1,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 123,
+    "maxChars": 902,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 26,
+    "observedIn": 1,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    4
+   ],
+   "media": [
+    1,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "photo.source-scene"
+    ],
+    "generatedRoles": [
+     "photo.generated-scene"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "photo.generated-scene"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "accordion.expand"
+  ],
+  "requiredPatterns": [
+   "accordion.expand"
+  ],
+  "reducedMotionFallback": {
+   "accordion.expand": "instant-toggle"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "element takes the full width",
+   "cite": "src/pages/product/sections/Faq.jsx:35"
+  },
+  {
+   "range": "<=768",
+   "behavior": "items wrap onto new lines",
+   "cite": "src/pages/product/sections/Faq.jsx:34"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/pages/product/sections/Faq.jsx:38"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/product/sections/Faq.jsx:33"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 767,
+   "maxPx": 767,
+   "medianPx": 767,
+   "sample": {
+    "/pricing": 767
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 1213,
+   "maxPx": 1213,
+   "medianPx": 1213,
+   "sample": {
+    "/pricing": 1213
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 933,
+   "maxPx": 933,
+   "medianPx": 933,
+   "sample": {
+    "/pricing": 933
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.pricing"
+ ],
+ "evidence": [
+  "src/pages/product/sections/Faq.jsx:30-49"
+ ]
+}

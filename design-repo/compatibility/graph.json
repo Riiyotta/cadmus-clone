@@ -1,0 +1,96 @@
+{
+ "note": "Rhythm/position rules JSON Schema cannot express. Every rule id here is implemented in schema/semantic_validate.py with the same severity (extraction/verify_all.py GRAPH_AGREEMENT checks ids, severities and the ONE_HERO exception list against the validator).",
+ "rules": [
+  {
+   "id": "TEMPLATE_SEQUENCE",
+   "severity": "error",
+   "rule": "The PageSpec's node sequence (section#variant) must match its DECLARED template's node list (required/repeatable/minCount/maxCount/variants; reference-only nodes are dropped in generated mode; referenceMinCount lowers a minimum in reference mode). The template id is cross-referenced, never nodes[] in isolation."
+  },
+  {
+   "id": "FALLBACK_NOT_INSTANTIABLE",
+   "severity": "error",
+   "rule": "template.not-built-fallback (the router catch-all) is documentation of a state, not a page: a PageSpec may not declare it, in either mode."
+  },
+  {
+   "id": "SHELL_ORDER",
+   "severity": "error",
+   "rule": "shell.header opens the page and shell.footer closes the in-flow content; only overlays may sit between the last section and the footer."
+  },
+  {
+   "id": "ONE_HERO",
+   "severity": "error",
+   "rule": "Exactly one HERO node per page, except hero-less templates (the video detail page, which opens directly into the player, and the fallback).",
+   "exceptions": [
+    "template.not-built-fallback",
+    "template.video-detail"
+   ]
+  },
+  {
+   "id": "HERO_FIRST_CONTENT",
+   "severity": "error",
+   "rule": "The hero is the first non-shell node: nothing precedes it."
+  },
+  {
+   "id": "SECTION_MAX_PER_PAGE",
+   "severity": "error",
+   "rule": "A section may not appear more often than its contract's maxPerPage (max observed on any route)."
+  },
+  {
+   "id": "NO_ADJACENT_IDENTICAL",
+   "severity": "error",
+   "rule": "Two adjacent nodes may not have the same section AND variant, except variants a contract lists in consecutiveVariants (alternating rows legitimately repeat)."
+  },
+  {
+   "id": "OVERLAY_LAST",
+   "severity": "error",
+   "rule": "Overlay nodes (fixed panels) take no page height and may be followed only by other overlays or the footer; no in-flow content follows an overlay."
+  },
+  {
+   "id": "HOME_ROUTE_ONLY",
+   "severity": "error",
+   "rule": "template.home is valid only on '/', and '/' only on template.home."
+  },
+  {
+   "id": "REFERENCE_ROUTE_IN_TEMPLATE",
+   "severity": "error",
+   "rule": "A reference-mode PageSpec's route must be a served route mapped to the same template in templates/routes.json."
+  },
+  {
+   "id": "REFERENCE_ONLY_NODE",
+   "severity": "error",
+   "rule": "Nodes whose template entry lists modes [reference] (the clone-only read-the-original link) are valid only in reference mode."
+  },
+  {
+   "id": "RUNTIME_UI_INELIGIBLE",
+   "severity": "error",
+   "rule": "A node's retrievalEligible flag (if set) must equal the value pinned in code for its section."
+  },
+  {
+   "id": "SCHEME_CONSISTENT",
+   "severity": "error",
+   "rule": "The scheme-coloured sections of one page (split hero, study preview, quote card, call-to-action band) must all carry the same scheme variant: the page colour scheme is chosen once.",
+   "sections": [
+    "hero.product-split",
+    "proof.study-preview",
+    "proof.quote-carousel",
+    "conversion.cta-band"
+   ],
+   "schemes": [
+    "lavender",
+    "pink",
+    "blue",
+    "green",
+    "yellow",
+    "maroon",
+    "brand"
+   ]
+  },
+  {
+   "id": "AUTOPLAY_BUDGET",
+   "severity": "warn",
+   "rule": "No more than 3 sections with autoplaying motion (marquee, auto-fading carousel, looping video, looping timeline) on one page; the busiest served page (the homepage) has 3.",
+   "max": 3
+  }
+ ],
+ "heroAllowedBefore": []
+}

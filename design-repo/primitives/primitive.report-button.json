@@ -1,0 +1,18 @@
+{
+ "id": "primitive.report-button",
+ "kind": "primitive",
+ "title": "Report button",
+ "purpose": "Inline-flex 16px button used on the report page and the ROI card; dark, light-blue and outline variants.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "171-183",
+  "anchor": "  .roi-button {",
+  "anchorLine": 171
+ },
+ "props": {
+  "variant": "dark | light | outline"
+ },
+ "tokens": [
+  "radius.btn"
+ ]
+}

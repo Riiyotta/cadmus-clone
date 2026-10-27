@@ -1,0 +1,196 @@
+{
+ "id": "listing.video-grid",
+ "title": "Video card grid",
+ "semantic": {
+  "id": "listing.video-grid",
+  "category": "LISTING"
+ },
+ "source": {
+  "id": "VideoSection:div@110",
+  "file": "src/pages/content/Listings.jsx",
+  "tag": "div",
+  "lines": "107-122",
+  "tagLine": 110,
+  "tagLineSha1": "7419d4af947411f2",
+  "anchor": "function VideoSection",
+  "anchorLine": 107
+ },
+ "additionalSources": [
+  {
+   "id": "VideoCard:@103",
+   "file": "src/pages/content/sections/Cards.jsx",
+   "lines": "103-119",
+   "tag": null,
+   "tagLine": null,
+   "tagLineSha1": null,
+   "anchor": "export function VideoCard",
+   "anchorLine": 103
+  }
+ ],
+ "purpose": "Sheet with a centred title and intro over a load-more grid of video cards for one audience.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "cream": {
+   "description": "cream background",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/video-tutorials"
+   ]
+  },
+  "white": {
+   "description": "white background",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/video-tutorials"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "items",
+   "lead",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 14,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 31,
+    "maxChars": 209,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 6,
+    "maxChars": 47,
+    "observedIn": 1,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 31,
+    "maxChars": 209,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 9,
+    "observedIn": 1,
+    "basis": "max over measured units: ctas"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 14,
+    "observedIn": 1,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    19
+   ],
+   "actions": [
+    0,
+    1
+   ],
+   "media": [
+    1,
+    24
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "photo.source-scene"
+    ],
+    "generatedRoles": [
+     "photo.generated-scene"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "photo.generated-scene"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 2,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/pages/content/Listings.jsx:112"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 2,
+   "minPx": 1130,
+   "maxPx": 1234,
+   "medianPx": 1182.0,
+   "sample": {
+    "/video-tutorials": 1130
+   }
+  },
+  "768": {
+   "nodes": 2,
+   "minPx": 2712,
+   "maxPx": 2771,
+   "medianPx": 2741.5,
+   "sample": {
+    "/video-tutorials": 2712
+   }
+  },
+  "390": {
+   "nodes": 2,
+   "minPx": 1677,
+   "maxPx": 1758,
+   "medianPx": 1717.5,
+   "sample": {
+    "/video-tutorials": 1677
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.video-tutorials-listing"
+ ],
+ "evidence": [
+  "src/pages/content/Listings.jsx:107-122"
+ ]
+}

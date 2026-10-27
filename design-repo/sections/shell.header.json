@@ -1,0 +1,175 @@
+{
+ "id": "shell.header",
+ "title": "Site header",
+ "semantic": {
+  "id": "shell.header",
+  "category": "SHELL"
+ },
+ "source": {
+  "id": "Header:header@194",
+  "file": "src/components/Header.jsx",
+  "tag": "header",
+  "lines": "146-275",
+  "tagLine": 194,
+  "tagLineSha1": "da4e4e312e3c2fe6",
+  "anchor": "export default function Header",
+  "anchorLine": 146
+ },
+ "additionalSources": [],
+ "purpose": "Fixed masthead bar: wordmark, four click-to-open dropdown groups of links, a primary demo button; on narrow screens a hamburger expands an accordion menu inside the bar.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "fixed": {
+   "description": "fixed masthead, outside the page transition",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/",
+    "/about",
+    "/careers",
+    "/case-studies"
+   ],
+   "observedOnCount": 181
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "actions"
+  ],
+  "fields": {
+   "items[].title": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 9,
+    "observedIn": 1,
+    "basis": "max over measured units: labels"
+   },
+   "actions[].label": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 28,
+    "observedIn": 1,
+    "basis": "max over measured units: ctas"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 2,
+    "maxChars": 9,
+    "observedIn": 1,
+    "basis": "max over measured units: labels"
+   }
+  },
+  "listSizes": {
+   "items": [
+    0,
+    4
+   ],
+   "actions": [
+    1,
+    21
+   ],
+   "media": [
+    1,
+    1
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "brand.wordmark"
+    ],
+    "generatedRoles": [
+     "brand.placeholder-mark",
+     "brand.user-supplied-mark"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "brand.placeholder-mark",
+  "brand.user-supplied-mark"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "nav.dropdown",
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "nav.dropdown": "instant-toggle",
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "element is hidden",
+   "cite": "src/components/Header.jsx:200"
+  },
+  {
+   "range": "<=768",
+   "behavior": "element is shown",
+   "cite": "src/components/Header.jsx:221"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/components/Header.jsx:197"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/components/Header.jsx:196"
+  }
+ ],
+ "runtimeUi": [
+  "dropdown panels open on click and close on outside mousedown (no hover open)",
+  "mobile menu is an accordion that grows the bar (grid-rows transition)"
+ ],
+ "measuredHeightsPx": {},
+ "usedByTemplates": [
+  "template.about",
+  "template.careers",
+  "template.case-studies-listing",
+  "template.contact",
+  "template.guide-detail",
+  "template.home",
+  "template.news-detail",
+  "template.news-listing",
+  "template.not-built-fallback",
+  "template.pricing",
+  "template.privacy",
+  "template.product",
+  "template.product-assignments",
+  "template.product-oral",
+  "template.product-overview",
+  "template.request-demo",
+  "template.roi-study",
+  "template.solutions-educators",
+  "template.solutions-students",
+  "template.solutions-universities",
+  "template.study-detail",
+  "template.teacher-guides-listing",
+  "template.trust-centre",
+  "template.video-detail",
+  "template.video-tutorials-listing"
+ ],
+ "evidence": [
+  "src/components/Header.jsx:146-275",
+  "src/index.css:193"
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "id": "component.static-form",
+ "kind": "component",
+ "title": "Static form",
+ "purpose": "Generic form (fields, consent, submit, thank-you overlay) that validates natively and submits nowhere.",
+ "source": {
+  "file": "src/pages/content/sections/StaticForm.jsx",
+  "lines": "14-57",
+  "anchor": "export default function StaticForm",
+  "anchorLine": 14
+ },
+ "props": {},
+ "tokens": [
+  "radius.input"
+ ]
+}

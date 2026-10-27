@@ -1,0 +1,562 @@
+{
+ "$schema": "http://json-schema.org/draft-07/schema#",
+ "$id": "section-contract.schema.json",
+ "title": "Section contract",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "id",
+  "title",
+  "semantic",
+  "source",
+  "additionalSources",
+  "purpose",
+  "retrievalEligible",
+  "placement",
+  "variants",
+  "content",
+  "assets",
+  "generatedAssetRoles",
+  "style",
+  "constraints",
+  "motion",
+  "responsive",
+  "runtimeUi",
+  "measuredHeightsPx",
+  "usedByTemplates",
+  "evidence"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z-]+\\.[a-z0-9-]+$"
+  },
+  "title": {
+   "type": "string"
+  },
+  "semantic": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "id",
+    "category"
+   ],
+   "properties": {
+    "id": {
+     "type": "string"
+    },
+    "category": {
+     "enum": [
+      "SHELL",
+      "HERO",
+      "CONTENT",
+      "PROOF",
+      "MEDIA",
+      "PRICING",
+      "CONVERSION",
+      "LISTING",
+      "ARTICLE",
+      "UTILITY"
+     ]
+    }
+   }
+  },
+  "source": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "id",
+    "file",
+    "tag",
+    "lines",
+    "tagLine",
+    "tagLineSha1",
+    "anchor",
+    "anchorLine"
+   ],
+   "properties": {
+    "id": {
+     "type": "string"
+    },
+    "file": {
+     "type": "string",
+     "pattern": "^src/"
+    },
+    "tag": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "lines": {
+     "type": "string",
+     "pattern": "^\\d+-\\d+$"
+    },
+    "tagLine": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    },
+    "tagLineSha1": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "pattern": "^[0-9a-f]{16}$",
+     "description": "sha1 of the stripped source line at tagLine (pins the exact line without copying it)"
+    },
+    "anchor": {
+     "type": "string"
+    },
+    "anchorLine": {
+     "type": "integer"
+    }
+   }
+  },
+  "additionalSources": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "id",
+     "file",
+     "tag",
+     "lines",
+     "tagLine",
+     "tagLineSha1",
+     "anchor",
+     "anchorLine"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "file": {
+      "type": "string",
+      "pattern": "^src/"
+     },
+     "tag": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "lines": {
+      "type": "string",
+      "pattern": "^\\d+-\\d+$"
+     },
+     "tagLine": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "tagLineSha1": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "pattern": "^[0-9a-f]{16}$",
+      "description": "sha1 of the stripped source line at tagLine (pins the exact line without copying it)"
+     },
+     "anchor": {
+      "type": "string"
+     },
+     "anchorLine": {
+      "type": "integer"
+     }
+    }
+   }
+  },
+  "purpose": {
+   "type": "string",
+   "minLength": 20
+  },
+  "notes": {
+   "type": "string"
+  },
+  "referenceOnly": {
+   "type": "boolean"
+  },
+  "retrievalEligible": {
+   "type": "boolean"
+  },
+  "retrievalIneligibleReason": {
+   "type": "string",
+   "minLength": 30
+  },
+  "placement": {
+   "enum": [
+    "main",
+    "overlay"
+   ]
+  },
+  "variants": {
+   "type": "object",
+   "minProperties": 1,
+   "additionalProperties": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "description",
+     "requiredFields",
+     "forbiddenFields",
+     "observedOn"
+    ],
+    "properties": {
+     "description": {
+      "type": "string"
+     },
+     "requiredFields": {
+      "type": "array"
+     },
+     "forbiddenFields": {
+      "type": "array"
+     },
+     "observedOn": {
+      "type": "array"
+     },
+     "observedOnCount": {
+      "type": "integer"
+     }
+    }
+   }
+  },
+  "content": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "budgetRule",
+    "requiredFields",
+    "fields",
+    "listSizes"
+   ],
+   "properties": {
+    "budgetRule": {
+     "type": "string"
+    },
+    "requiredFields": {
+     "type": "array"
+    },
+    "fields": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "type",
+       "maxWords",
+       "maxChars",
+       "observedIn"
+      ],
+      "properties": {
+       "type": {
+        "const": "text"
+       },
+       "maxWords": {
+        "type": "integer",
+        "minimum": 1
+       },
+       "maxChars": {
+        "type": "integer",
+        "minimum": 1
+       },
+       "maxLines1440": {
+        "type": "integer"
+       },
+       "observedIn": {
+        "type": "integer",
+        "minimum": 1
+       },
+       "basis": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "listSizes": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+       "type": "integer"
+      }
+     }
+    }
+   }
+  },
+  "assets": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "fields",
+    "note"
+   ],
+   "properties": {
+    "note": {
+     "type": "string"
+    },
+    "fields": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "type",
+       "referenceRoles",
+       "generatedRoles"
+      ],
+      "properties": {
+       "type": {
+        "const": "asset"
+       },
+       "referenceRoles": {
+        "type": "array",
+        "items": {
+         "enum": [
+          "brand.placeholder-mark",
+          "brand.user-supplied-mark",
+          "brand.wordmark",
+          "customer.logo",
+          "customer.placeholder-logo",
+          "icon.generic",
+          "icon.source",
+          "illustration.generated",
+          "illustration.source",
+          "media.third-party-embed",
+          "partner.logo",
+          "partner.placeholder-icon",
+          "person.fictional-avatar",
+          "person.photo",
+          "photo.generated-scene",
+          "photo.source-scene",
+          "product.generated-visual",
+          "product.screenshot",
+          "rating.placeholder",
+          "video.placeholder-poster"
+         ]
+        }
+       },
+       "generatedRoles": {
+        "type": "array",
+        "items": {
+         "enum": [
+          "brand.placeholder-mark",
+          "brand.user-supplied-mark",
+          "brand.wordmark",
+          "customer.logo",
+          "customer.placeholder-logo",
+          "icon.generic",
+          "icon.source",
+          "illustration.generated",
+          "illustration.source",
+          "media.third-party-embed",
+          "partner.logo",
+          "partner.placeholder-icon",
+          "person.fictional-avatar",
+          "person.photo",
+          "photo.generated-scene",
+          "photo.source-scene",
+          "product.generated-visual",
+          "product.screenshot",
+          "rating.placeholder",
+          "video.placeholder-poster"
+         ]
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "generatedAssetRoles": {
+   "type": "array",
+   "items": {
+    "enum": [
+     "brand.placeholder-mark",
+     "brand.user-supplied-mark",
+     "brand.wordmark",
+     "customer.logo",
+     "customer.placeholder-logo",
+     "icon.generic",
+     "icon.source",
+     "illustration.generated",
+     "illustration.source",
+     "media.third-party-embed",
+     "partner.logo",
+     "partner.placeholder-icon",
+     "person.fictional-avatar",
+     "person.photo",
+     "photo.generated-scene",
+     "photo.source-scene",
+     "product.generated-visual",
+     "product.screenshot",
+     "rating.placeholder",
+     "video.placeholder-poster"
+    ]
+   }
+  },
+  "style": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "props",
+    "note"
+   ],
+   "properties": {
+    "note": {
+     "type": "string"
+    },
+    "props": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "allowed",
+       "evidence"
+      ],
+      "properties": {
+       "allowed": {
+        "type": "array"
+       },
+       "evidence": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   }
+  },
+  "constraints": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "maxPerPage",
+    "consecutiveVariants"
+   ],
+   "properties": {
+    "maxPerPage": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "consecutiveVariants": {
+     "type": "array"
+    }
+   }
+  },
+  "motion": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "allowedPatterns",
+    "requiredPatterns",
+    "reducedMotionFallback"
+   ],
+   "properties": {
+    "allowedPatterns": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "enum": [
+       "accordion.expand",
+       "carousel.fade-autoplay",
+       "carousel.slide",
+       "counter.count-up",
+       "logo.peel",
+       "marquee.loop",
+       "media.click-to-play",
+       "media.loop-video",
+       "nav.dropdown",
+       "page.fade",
+       "panel.slide-in",
+       "reveal.fade-up",
+       "reveal.slide-in",
+       "scroll.smooth",
+       "static",
+       "tabs.fade",
+       "timeline.loop"
+      ]
+     }
+    },
+    "requiredPatterns": {
+     "type": "array",
+     "items": {
+      "enum": [
+       "accordion.expand",
+       "carousel.fade-autoplay",
+       "carousel.slide",
+       "counter.count-up",
+       "logo.peel",
+       "marquee.loop",
+       "media.click-to-play",
+       "media.loop-video",
+       "nav.dropdown",
+       "page.fade",
+       "panel.slide-in",
+       "reveal.fade-up",
+       "reveal.slide-in",
+       "scroll.smooth",
+       "static",
+       "tabs.fade",
+       "timeline.loop"
+      ]
+     }
+    },
+    "reducedMotionFallback": {
+     "type": "object"
+    }
+   }
+  },
+  "responsive": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "range",
+     "behavior",
+     "cite"
+    ],
+    "properties": {
+     "range": {
+      "type": "string"
+     },
+     "behavior": {
+      "type": "string"
+     },
+     "cite": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "runtimeUi": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "measuredHeightsPx": {
+   "type": "object"
+  },
+  "usedByTemplates": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "evidence": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "string",
+    "pattern": "^[\\w./()\\[\\]-]+:\\d+(-\\d+)?$"
+   }
+  }
+ }
+}

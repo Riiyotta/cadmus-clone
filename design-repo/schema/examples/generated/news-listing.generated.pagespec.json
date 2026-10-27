@@ -1,0 +1,198 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.news-listing",
+ "route": "/listing-velvet",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Orbit"
+     },
+     {
+      "title": "Steer"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Share refine",
+      "href": "https://fernhollow.example/cinder",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Pebble kettle",
+      "href": "https://fernhollow.example/signal",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:compass-juniper-cedar",
+      "alt": "Refine"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.news-banner",
+   "variant": "default",
+   "content": {
+    "eyebrow": "Field",
+    "heading": "Beacon pebble"
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "listing.category-filter",
+   "variant": "default",
+   "content": {
+    "bullets": [
+     "Prism sketch pebble orchard share marble map orbit",
+     "Shape harvest signal ember fjord ledger lumen grove"
+    ],
+    "actions": [
+     {
+      "label": "Velvet saffron linen signal ledger share harvest saffron",
+      "href": "https://fernhollow.example/copper",
+      "linkRole": "link.placeholder"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "listing.news-grid",
+   "variant": "default",
+   "content": {
+    "items": [
+     {
+      "title": "Share delta willow orbit lumen cobalt prism willow",
+      "text": "Gather sketch ribbon ledger anchor beacon orbit field"
+     },
+     {
+      "title": "Trace harbor orchard cedar delta orbit meadow cinder",
+      "text": "Pebble delta compass nimbus lantern fjord cobalt grove"
+     }
+    ],
+    "bullets": [
+     "Rowan signal orchard grove fjord mosaic beacon cobalt"
+    ],
+    "actions": [
+     {
+      "label": "Basil",
+      "href": "https://fernhollow.example/kettle",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:tidal-sprout-summit",
+      "alt": "Meadow lumen"
+     },
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:plan-pebble-ribbon",
+      "alt": "Tidal delta"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "conversion.image-cta-band",
+   "variant": "default",
+   "content": {
+    "heading": "Tidal gather share",
+    "actions": [
+     {
+      "label": "Compass harbor",
+      "href": "https://fernhollow.example/lantern",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Thistle ember",
+      "href": "https://fernhollow.example/cinder",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:thistle-measure-grove",
+      "alt": "Thistle atlas cinder"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Current ribbon gather",
+    "items": [
+     {
+      "title": "Harvest"
+     },
+     {
+      "title": "Atlas"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Saffron cinder sprout",
+      "href": "https://fernhollow.example/measure",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Kettle shape ribbon",
+      "href": "https://fernhollow.example/willow",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:plan-field-refine",
+      "alt": "Lumen"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:tidy-ledger-thread",
+      "alt": "Willow"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

@@ -1,0 +1,935 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "reference",
+ "template": "template.news-listing",
+ "route": "/news",
+ "theme": "light",
+ "brand": {
+  "name": "Reference Source"
+ },
+ "copyRole": "copy.neutral-placeholder",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Lumen"
+     },
+     {
+      "title": "Marble"
+     },
+     {
+      "title": "Grove"
+     },
+     {
+      "title": "Fjord"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Horizon trace",
+      "href": "/product-overview",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Nimbus falcon",
+      "href": "/product/assignments",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Summit signal",
+      "href": "/product/exams",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Tidal prism",
+      "href": "/product/group-work",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Current kettle",
+      "href": "/product/marking-feedback",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Lantern delta",
+      "href": "/product/learning-analytics",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Measure walnut",
+      "href": "/product/oral_assessment",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Map lantern",
+      "href": "/pricing",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Steer harbor",
+      "href": "/solutions/universities",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Sort juniper",
+      "href": "/solutions/educators",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Horizon horizon",
+      "href": "/solutions/students",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Map linen",
+      "href": "/case-studies",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Orbit beacon",
+      "href": "/news",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Horizon cinder",
+      "href": "https://support.cadmus.io",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Fjord thistle",
+      "href": "/teacher-guides",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Sprout pillar",
+      "href": "/video-tutorials",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Sprout saffron",
+      "href": "/contact",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Lantern tidal",
+      "href": "/request-demo",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Steer horizon",
+      "href": "/about",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Harvest lantern",
+      "href": "/careers",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Beacon sort",
+      "href": "/contact",
+      "linkRole": "link.site-route"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.wordmark",
+      "ref": "inline:logo--main"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.news-banner",
+   "variant": "default",
+   "content": {
+    "eyebrow": "Linen field",
+    "heading": "Compass field willow"
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "listing.category-filter",
+   "variant": "default",
+   "content": {
+    "bullets": [
+     "Ember thistle thread bundle sprout atlas horizon thread",
+     "Shape harbor delta plan sort gather pillar ripple",
+     "Horizon steer trace signal current nimbus atlas atlas",
+     "Linen plan pillar weigh sprout juniper measure signal",
+     "Linen tidy signal share copper summit trace nimbus",
+     "Falcon thistle tidy ribbon basil delta ribbon rowan",
+     "Kettle saffron tidal saffron weigh tidy grove plan",
+     "Shape pillar steer beacon plan nimbus bundle nimbus",
+     "Harbor weigh sprout refine atlas tidy rowan ember",
+     "Delta prism nimbus ribbon kettle marble velvet measure",
+     "Current pillar juniper notice nimbus orchard prism pebble",
+     "Refine harvest copper thistle pebble map notice cedar"
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "listing.news-grid",
+   "variant": "default",
+   "content": {
+    "items": [
+     {
+      "title": "Ribbon bundle signal ripple nimbus horizon thistle tidal harvest ledger thistle beacon mosaic ember ribbon",
+      "text": "Tidal prism lumen falcon willow nimbus pillar sprout walnut fjord meadow tidal atlas horizon share copper velvet sort prism marble saffron sort ember lumen grove horizon ledger harbor gather ripple prism pillar lantern orbit thistle sprout pillar map rowan velvet cedar beacon juniper shape field willow notice marble copper willow horizon delta map copper thread fjord ember pebble basil basil tidy cobalt field mosaic kettle refine velvet plan cobalt linen orbit weigh falcon horizon trace atlas plan harbor cobalt trace plan falcon walnut"
+     },
+     {
+      "title": "Ember prism rowan signal tidal sort sort ribbon harbor field gather harvest tidy thistle beacon grove beacon",
+      "text": "Kettle willow linen gather juniper willow kettle measure linen orchard lumen lumen pillar ribbon sprout signal juniper shape tidy basil notice trace lumen quarry sort pillar mosaic thistle tidy fjord share field ember marble basil tidal ribbon copper saffron thread pebble bundle summit sprout copper tidy thistle weigh cedar gather mosaic kettle basil pebble ripple falcon tidal horizon bundle plan fjord rowan current cinder rowan pebble tidal shape share share ember copper anchor meadow ember marble willow marble marble ribbon quarry measure"
+     },
+     {
+      "title": "Tidal lantern bundle delta harbor grove delta horizon basil compass thistle sketch walnut lumen cinder cobalt",
+      "text": "Compass weigh shape walnut ember willow willow linen compass ripple share cobalt prism ember current lumen map gather harvest trace pebble sprout cobalt harvest bundle sort gather ledger signal shape cedar thread lantern map sort notice cobalt atlas signal fjord weigh compass trace saffron juniper atlas ember pebble share juniper gather grove pebble share lumen steer copper field gather ember cinder juniper ribbon fjord orbit ledger walnut share weigh thread current signal prism sort harvest pillar fjord lumen trace ledger tidy notice pebble"
+     },
+     {
+      "title": "Plan summit prism marble willow cinder ledger refine refine saffron sort lantern refine sprout meadow mosaic",
+      "text": "Sketch orbit notice delta trace map velvet willow tidal anchor gather ember willow tidal gather quarry cobalt ripple nimbus trace harvest sprout quarry linen sketch tidal basil linen prism compass ribbon refine ember linen steer cedar weigh quarry willow pebble beacon rowan weigh willow orchard anchor steer sort nimbus horizon cedar harvest cinder weigh cobalt thistle shape thread linen measure walnut delta orbit trace summit weigh lumen rowan ripple tidal sketch falcon nimbus plan map lumen orbit basil gather share current basil thistle"
+     },
+     {
+      "title": "Nimbus falcon thread orchard lantern compass nimbus cedar pebble steer harbor summit cedar signal field plan",
+      "text": "Pebble sketch harbor ripple lumen lumen steer orbit kettle ember plan cinder willow lantern kettle tidy shape ripple cedar meadow plan basil linen trace lantern signal marble horizon current pillar anchor ripple ember cedar lantern plan refine lantern ripple anchor sprout cobalt ribbon steer harbor steer lantern meadow horizon basil compass basil plan juniper linen thread mosaic bundle summit basil compass horizon walnut fjord orbit linen mosaic lantern sort linen linen willow lantern plan cobalt weigh cedar current pillar walnut walnut kettle"
+     },
+     {
+      "title": "Velvet trace gather pillar copper nimbus refine tidal field sketch measure sprout atlas meadow nimbus orchard",
+      "text": "Lantern beacon thread kettle willow linen tidy steer meadow delta measure weigh meadow orbit anchor ember ember ripple delta velvet horizon signal lumen lumen prism ripple bundle horizon fjord ledger marble mosaic orchard prism falcon falcon orbit nimbus lumen copper map gather compass walnut cinder tidy measure basil thread map rowan linen plan velvet grove nimbus signal harvest fjord notice quarry orchard ribbon map sprout horizon map shape tidy velvet lantern steer beacon summit linen compass cedar willow sort basil mosaic notice quarry"
+     },
+     {
+      "title": "Ledger harvest nimbus refine pebble sort saffron marble trace share lumen notice map anchor summit orbit atlas",
+      "text": "Juniper orchard bundle copper trace sort ledger harbor weigh meadow pebble trace lantern steer notice thread fjord saffron walnut sort orchard atlas prism beacon ripple anchor lantern compass lumen walnut harbor notice quarry meadow cinder ribbon share quarry tidy measure thread sprout lumen ripple willow ribbon summit saffron map shape thread notice orchard velvet bundle tidy cedar lantern linen velvet quarry pebble sprout cedar trace prism orchard pebble compass anchor linen current bundle lantern tidy saffron grove current thistle walnut map"
+     },
+     {
+      "title": "Bundle orbit orchard velvet share cinder ledger pebble weigh thistle atlas horizon pillar anchor quarry horizon",
+      "text": "Marble plan tidy cedar lumen steer signal thistle weigh cinder cobalt ledger sprout sketch field orchard mosaic delta cobalt nimbus compass measure current compass ribbon summit falcon sketch beacon horizon saffron marble velvet lumen willow anchor juniper horizon meadow basil compass signal prism anchor willow horizon walnut willow nimbus current mosaic pillar velvet kettle thread summit grove share refine bundle current signal ribbon anchor saffron cobalt current harvest gather cobalt tidal compass refine measure cinder bundle thread notice"
+     },
+     {
+      "title": "Field mosaic lumen shape nimbus marble field meadow shape tidy atlas basil meadow grove plan delta steer",
+      "text": "Measure rowan orchard orbit weigh refine weigh willow sort ripple ember tidy cobalt grove sprout rowan field marble current cedar saffron lumen harbor beacon field juniper falcon ledger orbit ledger cobalt atlas sprout ripple velvet velvet harbor notice velvet weigh bundle juniper field grove harbor delta ledger atlas ripple orbit gather nimbus harbor trace atlas walnut grove sprout fjord ripple nimbus ember current copper fjord marble lumen beacon kettle map notice sort measure pebble meadow harbor meadow ember cobalt trace weigh prism ledger"
+     },
+     {
+      "title": "Beacon beacon trace fjord shape juniper tidal current lumen cedar tidy velvet fjord notice mosaic tidal kettle",
+      "text": "Atlas falcon thistle thistle nimbus grove signal prism current measure sort lumen cinder sort willow pillar pebble shape current delta walnut ember sketch weigh orchard cobalt walnut harbor tidy beacon thread cobalt weigh harbor walnut harvest harvest walnut copper orbit cinder shape measure orchard ember field sketch mosaic falcon pebble plan harbor thread ripple grove willow lantern shape prism quarry rowan marble cinder sprout ribbon ribbon lantern prism pebble compass notice bundle falcon sort ripple sort compass harbor orchard fjord harbor"
+     },
+     {
+      "title": "Map mosaic sort tidy trace signal refine compass map horizon steer ledger saffron marble mosaic tidy trace",
+      "text": "Signal horizon ember mosaic nimbus ember gather signal notice current fjord pillar meadow sprout steer lumen sprout lumen pebble share field velvet saffron quarry thread marble shape bundle nimbus fjord cinder thistle weigh ledger falcon ember weigh grove sprout ember shape fjord map ledger harbor shape gather marble ribbon map meadow kettle signal anchor horizon grove tidal basil notice grove ripple fjord willow prism saffron rowan share compass ribbon willow sprout walnut quarry compass juniper ember atlas harvest shape horizon summit walnut"
+     },
+     {
+      "title": "Lumen map horizon compass share field harbor sketch bundle shape mosaic cobalt notice tidy walnut plan horizon",
+      "text": "Notice fjord basil orchard measure saffron pebble tidal rowan cinder anchor beacon compass basil horizon basil rowan anchor tidy notice bundle compass lumen cobalt notice orchard steer bundle fjord ember willow ripple field plan cobalt weigh weigh nimbus falcon summit sort cedar refine weigh saffron saffron steer quarry compass sketch cobalt fjord juniper weigh orbit lantern pillar velvet lantern beacon velvet ripple copper rowan meadow gather velvet linen lumen thistle refine linen bundle refine kettle pillar marble trace measure juniper copper"
+     },
+     {
+      "title": "Walnut ripple delta saffron harvest atlas ribbon saffron signal juniper kettle horizon velvet cedar harbor",
+      "text": "Measure sprout signal ember thistle share weigh compass sketch gather horizon sketch bundle map harbor field velvet cobalt fjord map horizon weigh horizon velvet ledger orbit map horizon harvest ledger velvet fjord ribbon trace map kettle linen sprout grove orbit field meadow grove tidal signal cedar marble orbit harbor copper orchard notice ripple saffron grove meadow copper basil walnut field delta lumen trace measure harbor delta notice cedar signal basil horizon trace kettle sketch summit basil rowan lumen juniper thread plan harbor notice"
+     },
+     {
+      "title": "Gather harvest field willow cobalt sprout prism map ripple velvet summit orbit grove field mosaic tidal fjord",
+      "text": "Shape measure gather basil sketch sort marble map orchard prism cinder fjord kettle summit velvet horizon walnut lumen field lantern compass ripple pillar mosaic tidy trace harvest lumen harvest thistle fjord linen ledger walnut lantern cinder harvest signal beacon measure bundle sketch marble copper walnut pebble velvet thistle cinder tidy cobalt plan sketch measure horizon weigh ribbon anchor cinder thread plan lumen lantern thistle mosaic ledger bundle measure trace bundle trace signal gather harbor mosaic steer lantern atlas mosaic weigh"
+     },
+     {
+      "title": "Prism rowan velvet pebble harbor cobalt measure signal anchor saffron walnut ribbon signal rowan horizon plan",
+      "text": "Mosaic delta velvet tidy notice mosaic measure rowan rowan saffron pillar sort walnut anchor cinder sort rowan prism cinder measure tidal compass ember saffron nimbus horizon compass measure cedar prism notice notice trace delta pillar cinder tidal refine tidy grove bundle prism marble cinder orchard ripple willow rowan orbit delta summit weigh ripple pillar bundle cinder share walnut cedar cobalt willow signal lantern walnut orbit kettle prism quarry willow plan rowan current plan sprout falcon juniper tidy rowan steer compass nimbus signal"
+     },
+     {
+      "title": "Thread meadow map fjord thread thistle prism thread steer beacon walnut cobalt map thread juniper orchard linen",
+      "text": "Sort sort map horizon map cobalt meadow rowan saffron basil summit horizon tidal delta orchard meadow thread signal ripple fjord ledger tidal meadow sort thread rowan ripple willow tidy delta field nimbus walnut walnut basil lantern nimbus signal horizon trace lumen field bundle nimbus harvest pebble copper measure atlas anchor bundle walnut orbit linen atlas shape bundle ember horizon map weigh notice sprout sort ledger kettle notice mosaic ribbon kettle grove tidy prism willow lumen field summit ember harbor orchard harvest falcon willow"
+     },
+     {
+      "title": "Sketch copper cinder steer harvest sprout velvet ripple cedar delta bundle quarry map linen lantern bundle",
+      "text": "Gather thread orbit beacon meadow orbit notice willow notice fjord walnut marble gather harvest sort ledger orbit shape ribbon signal atlas notice basil summit gather share fjord steer plan tidy orchard signal thread prism orbit harbor delta rowan marble ember juniper share gather harbor sketch trace tidy orbit current sketch thread sort lumen copper gather weigh map ribbon saffron walnut grove cedar lantern harvest juniper willow basil ledger harvest ember map share cobalt quarry thread thistle compass quarry trace harvest orbit ember summit"
+     },
+     {
+      "title": "Ledger orbit harvest ripple beacon shape pebble saffron signal weigh willow trace horizon marble refine plan",
+      "text": "Signal ember mosaic harbor copper lumen copper grove ribbon pillar harvest thread delta cedar ember measure quarry map prism pebble ember signal falcon cedar marble ribbon cinder tidal cinder shape refine compass shape thread harvest beacon meadow harbor basil atlas horizon compass saffron atlas pebble velvet ripple meadow sketch plan tidy quarry quarry atlas bundle cedar quarry thistle bundle anchor fjord notice refine grove tidy gather tidal anchor field nimbus fjord walnut grove sprout ember meadow summit compass ribbon sprout thistle horizon"
+     },
+     {
+      "title": "Signal summit horizon harbor signal beacon harbor sketch fjord trace cinder delta shape ribbon summit plan",
+      "text": "Orchard prism copper beacon refine steer tidy linen plan quarry ember ledger signal pillar harvest bundle map fjord copper thread map ribbon willow notice marble plan current orbit current steer pebble sprout ledger meadow velvet cobalt fjord signal linen summit signal cobalt current velvet field basil marble refine measure marble field cobalt quarry kettle saffron current velvet weigh pebble prism shape summit horizon sort quarry ripple nimbus measure gather cobalt bundle harvest beacon signal nimbus gather mosaic gather walnut gather measure"
+     },
+     {
+      "title": "Walnut walnut willow lumen notice ribbon beacon horizon ember copper tidy delta compass compass cobalt grove",
+      "text": "Velvet ledger marble harbor plan thread harbor pebble pebble pebble lumen thread shape saffron share mosaic willow map kettle falcon quarry trace tidy prism grove current trace ledger ribbon sprout ledger bundle rowan summit lumen measure juniper refine thistle shape basil ledger current tidy horizon measure cobalt fjord steer summit weigh delta anchor prism ledger prism mosaic prism lumen notice steer rowan plan shape measure velvet kettle weigh quarry beacon marble delta grove horizon nimbus tidy thistle notice current tidal velvet nimbus"
+     },
+     {
+      "title": "Beacon harbor sort ember gather steer cinder sprout map lumen notice steer pillar summit willow rowan delta",
+      "text": "Grove current lantern map thistle plan copper willow sketch cobalt current falcon sketch ember tidal steer summit fjord cedar current ledger orbit sprout bundle pillar tidal anchor prism steer grove willow cinder shape saffron shape lumen pebble rowan linen thread trace current signal marble mosaic anchor bundle prism walnut nimbus current pebble atlas notice delta marble shape sort falcon atlas ledger gather share harbor lantern summit quarry gather map marble cobalt summit nimbus quarry trace atlas marble prism compass mosaic field cedar"
+     },
+     {
+      "title": "Atlas harvest anchor harbor walnut field compass pillar ember pebble sketch field notice plan falcon weigh",
+      "text": "Sketch steer pillar quarry thistle copper map marble lantern weigh rowan ribbon harvest basil ribbon lantern sort ripple ledger orbit orbit ripple quarry tidy gather ribbon notice cedar sketch meadow sort pebble lantern walnut horizon juniper saffron harbor basil weigh steer measure map lumen copper map signal lantern plan current notice current cinder steer field orchard shape weigh willow plan shape prism grove anchor rowan basil bundle sketch gather signal bundle marble harbor juniper lumen current beacon ribbon mosaic quarry signal atlas"
+     },
+     {
+      "title": "Kettle harbor mosaic saffron saffron lantern falcon cobalt cobalt tidal harbor steer quarry summit gather",
+      "text": "Prism anchor ripple ember cobalt map pebble weigh horizon thistle steer bundle sprout lantern falcon kettle quarry marble lumen atlas delta grove orbit share cedar sprout sort ledger notice shape field horizon velvet refine marble fjord grove harbor delta cobalt marble bundle lumen fjord trace thistle quarry cobalt harvest basil rowan ribbon meadow measure tidal sort compass thread horizon thread anchor trace thread kettle basil summit linen steer orchard grove compass harvest saffron anchor pillar kettle walnut share summit thread sketch"
+     },
+     {
+      "title": "Ripple harbor trace steer mosaic sketch ripple sprout marble bundle copper grove ledger basil mosaic field",
+      "text": "Lantern signal cinder summit harbor thread anchor thread trace notice harvest gather grove notice signal basil thistle grove tidal mosaic falcon atlas sort harbor field juniper anchor ember steer compass sprout tidy mosaic mosaic harbor walnut notice signal orchard refine harvest fjord quarry cedar orbit tidal harbor juniper lantern weigh cobalt meadow anchor basil anchor ledger trace tidal beacon summit trace compass saffron map prism delta plan thistle sketch marble pillar field steer ribbon bundle bundle harvest willow trace gather marble map"
+     },
+     {
+      "title": "Marble orbit beacon horizon notice orbit cinder ledger tidy gather atlas meadow fjord rowan current beacon",
+      "text": "Harbor cinder sort ledger thistle walnut sketch ledger orchard gather fjord mosaic steer harvest walnut beacon lumen linen bundle tidal marble sort harvest ribbon cedar share lantern copper rowan shape saffron willow fjord share falcon pebble cinder tidal anchor nimbus notice share pebble meadow nimbus compass walnut sort marble lantern delta falcon marble map steer cedar sketch willow orchard signal harbor ledger orbit summit compass willow beacon ember pebble ledger shape cedar ripple pebble plan linen shape tidal copper weigh lantern orchard"
+     },
+     {
+      "title": "Cedar shape fjord current pillar sketch delta current velvet trace delta signal ember sprout orchard lantern",
+      "text": "Atlas fjord sprout orchard pebble plan notice ribbon ledger grove mosaic summit nimbus sort delta grove willow measure linen delta prism ledger orchard ledger falcon pillar meadow harbor orchard marble thistle current ledger velvet current walnut copper plan sort bundle signal horizon marble steer compass nimbus ledger sketch compass lantern sketch share delta sprout rowan delta sprout tidy delta quarry bundle willow prism beacon pillar orbit share bundle velvet thread current measure meadow shape weigh rowan cinder sketch ember quarry walnut"
+     },
+     {
+      "title": "Tidal atlas cinder thistle pillar compass notice trace ember orchard juniper orchard summit shape cinder signal",
+      "text": "Copper harvest field sketch lumen walnut nimbus steer thistle ember atlas compass horizon linen harvest ledger orchard measure atlas pillar pillar velvet gather lumen orchard sprout mosaic meadow ribbon sketch gather orbit beacon basil walnut tidy sketch juniper sketch ribbon grove cobalt ember basil thistle share thread steer saffron ripple current cobalt orbit cobalt harvest nimbus harbor quarry pillar signal thistle lumen cobalt basil pebble steer plan quarry copper juniper cobalt copper anchor trace thistle cobalt weigh orbit ripple notice"
+     },
+     {
+      "title": "Cinder grove velvet shape marble steer rowan tidy willow kettle steer notice anchor compass notice horizon",
+      "text": "Notice cinder gather willow juniper grove ribbon pebble falcon walnut ember falcon tidy bundle grove current current atlas quarry harvest fjord field cinder velvet ledger thread orbit atlas field shape juniper plan orbit falcon sprout steer map sprout linen atlas pebble cinder sketch summit beacon marble pillar thistle tidy cobalt summit linen pillar sort trace shape signal horizon bundle ripple falcon falcon trace bundle saffron kettle ember fjord current bundle summit walnut refine rowan ledger walnut sprout cobalt orbit harvest compass trace"
+     },
+     {
+      "title": "Harbor mosaic velvet ember ribbon meadow shape prism copper weigh cedar grove pebble trace trace lantern grove",
+      "text": "Mosaic horizon harvest willow cedar fjord gather delta tidal current willow bundle anchor mosaic weigh plan map basil copper beacon gather ribbon ember falcon refine ledger cobalt refine marble compass ember cinder steer cobalt sprout share ember rowan gather thread lumen basil anchor linen steer orchard orchard sketch falcon signal kettle measure quarry pebble current lantern prism sketch gather sort compass tidal atlas quarry falcon rowan fjord shape harbor nimbus fjord orbit lantern rowan sketch ribbon falcon shape sort harvest nimbus marble"
+     },
+     {
+      "title": "Field refine meadow shape ripple anchor basil gather atlas signal mosaic cobalt weigh meadow lantern falcon",
+      "text": "Cobalt cobalt walnut gather harvest quarry delta refine beacon saffron marble delta sketch map thistle mosaic beacon lantern prism horizon prism velvet lumen horizon ripple pebble copper marble tidy cobalt kettle sort field linen anchor plan summit share willow nimbus summit saffron horizon ripple shape cedar cobalt harbor harbor willow ripple kettle notice lumen kettle ledger quarry measure copper harvest atlas kettle refine pebble quarry atlas pebble sprout horizon linen cedar compass marble linen lantern field shape field current orbit cedar"
+     },
+     {
+      "title": "Lantern mosaic juniper prism map shape cinder willow delta thread steer refine ember orbit pillar compass",
+      "text": "Atlas grove summit gather current nimbus trace lantern sort lumen notice grove thread pillar steer tidy weigh copper gather orbit atlas current linen saffron pebble cedar cinder measure quarry map ember thread grove measure gather horizon ribbon delta quarry mosaic quarry horizon map plan saffron trace shape velvet nimbus quarry kettle beacon nimbus orchard prism share orchard quarry marble ledger meadow quarry ledger cedar saffron sprout meadow plan pebble sprout refine cobalt map notice juniper velvet map shape sprout delta ribbon mosaic"
+     },
+     {
+      "title": "Atlas delta orchard linen cobalt signal copper bundle orbit sketch horizon ember gather harbor cobalt kettle",
+      "text": "Falcon delta quarry current compass horizon juniper orchard sort refine linen bundle field grove plan pillar ripple falcon juniper orbit orbit linen basil compass thistle rowan linen harvest ledger orbit velvet willow notice plan ledger pillar summit walnut basil fjord harbor ripple prism beacon pillar walnut rowan summit map ledger map basil pebble thread ledger ripple thistle grove ember ledger share grove notice gather map harvest nimbus compass notice refine cinder cedar tidy cinder plan meadow ripple tidy harbor orbit map signal weigh"
+     },
+     {
+      "title": "Grove trace notice thistle velvet cobalt orchard plan rowan linen map map thistle compass delta rowan ribbon",
+      "text": "Copper quarry willow falcon ripple map pillar pillar tidy pillar juniper beacon anchor field trace meadow fjord ledger velvet harvest grove beacon atlas harvest prism refine orchard ribbon prism walnut rowan sort beacon ripple basil current ledger bundle ledger rowan gather nimbus linen thread pillar lantern pebble shape beacon cedar notice willow ledger pillar beacon delta fjord field pillar weigh compass share ripple ember ribbon pebble nimbus rowan ledger compass pillar grove trace orchard sprout saffron lantern cobalt refine ledger pebble"
+     },
+     {
+      "title": "Basil compass mosaic summit lumen copper compass quarry pillar harvest horizon bundle fjord lantern marble",
+      "text": "Lantern orchard falcon ember meadow nimbus tidy fjord pebble mosaic compass thread cinder ribbon atlas kettle orbit weigh gather willow kettle fjord kettle tidy orchard gather juniper pebble rowan cobalt tidy orchard refine meadow steer notice thistle steer cinder mosaic ledger harvest juniper orbit cedar tidal pillar plan saffron linen nimbus falcon ribbon basil summit cobalt pillar willow nimbus sketch saffron plan trace harvest notice refine tidal thistle lumen ledger basil juniper linen ripple velvet falcon steer grove current sort compass"
+     },
+     {
+      "title": "Orbit steer cinder juniper ribbon atlas summit anchor sketch harvest gather grove summit weigh meadow weigh",
+      "text": "Orbit bundle willow shape horizon tidal sort ledger tidal rowan linen meadow share cedar refine measure notice delta orbit map quarry harvest pebble delta notice harbor lantern meadow measure sketch notice velvet anchor ribbon meadow nimbus sketch field willow sort thistle beacon pebble anchor signal falcon steer thread marble ribbon atlas sort map cinder harbor bundle nimbus summit cobalt ripple falcon bundle walnut walnut thistle steer kettle fjord sort field gather steer ripple copper saffron linen steer refine harvest tidy weigh lumen"
+     },
+     {
+      "title": "Map shape field summit sort orbit trace copper saffron trace tidy field cedar map grove ripple lumen",
+      "text": "Steer harbor weigh linen gather linen compass walnut velvet meadow basil sketch refine cobalt grove kettle summit juniper ripple juniper fjord plan ripple pillar fjord fjord mosaic lantern beacon velvet ribbon shape thistle current falcon thistle shape plan ribbon anchor sketch willow thistle fjord tidy prism summit copper mosaic ribbon cobalt nimbus summit ledger gather ribbon marble trace delta quarry marble sprout sort ribbon gather field pebble pillar juniper anchor shape meadow field orchard quarry bundle current horizon walnut bundle"
+     },
+     {
+      "title": "Thistle anchor falcon signal linen notice quarry walnut sort steer ledger rowan measure walnut pebble plan",
+      "text": "Summit thread cedar share shape summit horizon atlas pillar ribbon atlas ledger lantern mosaic basil refine signal measure quarry bundle mosaic walnut share juniper summit share tidal field saffron pillar sprout steer ledger nimbus cinder fjord gather grove pebble sort steer lantern marble cedar harbor refine measure thread current meadow tidal compass pebble quarry atlas basil thread cedar bundle velvet weigh tidy map compass harvest kettle current kettle mosaic ember compass rowan ledger quarry bundle gather falcon notice prism walnut falcon"
+     },
+     {
+      "title": "Ribbon plan notice willow measure refine grove trace bundle refine map cedar measure field ledger grove nimbus",
+      "text": "Cinder sort harvest grove grove anchor kettle ledger share prism cedar ember ribbon kettle ledger tidy thistle quarry harbor lumen grove walnut delta trace thistle juniper fjord saffron basil harvest fjord harvest orbit nimbus saffron anchor shape horizon prism prism velvet ribbon cobalt steer lantern ribbon ledger orchard sprout notice cobalt plan pillar horizon beacon harvest current willow falcon beacon sprout ledger tidal quarry signal ember refine ember bundle lumen cedar bundle harbor anchor basil ember summit share field compass grove"
+     },
+     {
+      "title": "Prism ripple bundle weigh harvest steer willow trace beacon pebble cedar orchard steer harvest pebble anchor",
+      "text": "Ledger mosaic lantern kettle linen harbor trace fjord pillar tidy bundle lantern steer orbit juniper quarry lantern velvet cedar linen share weigh pebble rowan velvet thistle harvest current steer cinder grove plan ribbon mosaic rowan sort measure lantern ribbon willow sort weigh ribbon copper mosaic falcon notice signal copper map marble ember mosaic rowan horizon harvest share willow ripple copper refine current prism linen thistle signal prism plan fjord cinder lantern horizon ribbon cobalt tidy ledger sort thread sort harbor nimbus shape map"
+     },
+     {
+      "title": "Cobalt prism velvet ripple pillar saffron ripple current saffron mosaic gather basil summit velvet orchard",
+      "text": "Anchor sort juniper atlas mosaic quarry sprout pillar basil ribbon anchor harbor anchor pillar share steer map tidy velvet notice map trace fjord bundle copper steer grove walnut steer signal signal cobalt harvest lantern trace fjord current weigh saffron cinder tidy thistle grove refine grove kettle sort shape weigh refine thistle map velvet refine ledger tidal steer copper kettle kettle sort juniper ripple pebble shape thread ember summit ripple atlas cinder walnut cinder map anchor harbor tidy falcon pebble juniper measure field sprout"
+     },
+     {
+      "title": "Quarry map notice trace steer signal compass saffron horizon copper orchard sprout gather refine beacon harbor",
+      "text": "Steer ember sort juniper walnut delta sketch notice ledger current nimbus willow walnut grove thread pebble cinder fjord measure fjord measure signal measure sprout meadow cobalt ribbon atlas meadow fjord quarry sort linen field ember pebble beacon falcon thistle sprout current harvest willow prism quarry tidal prism map steer current anchor steer steer sort horizon nimbus meadow ribbon thistle signal velvet harvest weigh nimbus falcon velvet velvet current steer lumen willow lantern lumen marble horizon shape map tidy horizon steer signal steer"
+     },
+     {
+      "title": "Refine horizon ledger copper basil fjord plan orbit thistle weigh falcon mosaic walnut cobalt kettle juniper",
+      "text": "Map map cobalt harbor marble prism refine ember orchard saffron grove field pillar grove cedar basil copper compass shape beacon steer meadow marble plan orbit compass orchard copper refine linen kettle ripple walnut sprout linen basil saffron horizon falcon field willow fjord tidal shape velvet lumen copper harvest field fjord pillar meadow refine nimbus linen cinder cinder rowan lumen gather cinder fjord juniper signal harvest lantern willow thistle ripple current gather harbor weigh meadow map mosaic cedar field trace refine signal delta"
+     },
+     {
+      "title": "Mosaic tidal summit pebble prism summit summit thistle orchard shape grove fjord nimbus refine falcon sort",
+      "text": "Nimbus thistle marble copper pebble ripple fjord meadow linen sprout thread thread thistle cinder signal thread saffron cinder weigh steer fjord fjord falcon gather sort delta copper saffron juniper orbit thread notice cedar measure current gather steer share harbor falcon cinder velvet lantern pebble trace shape ripple falcon marble willow harbor willow thread horizon basil map linen sketch meadow sketch meadow current lumen tidal anchor linen cinder sketch ribbon ledger refine shape atlas ledger atlas ribbon cedar nimbus beacon current kettle"
+     },
+     {
+      "title": "Orbit willow harvest measure mosaic atlas refine basil weigh ripple nimbus willow mosaic cedar ledger delta",
+      "text": "Pillar bundle quarry ripple anchor share saffron weigh ribbon sprout lumen meadow nimbus steer orchard saffron prism orbit pillar field shape juniper steer meadow compass fjord sort fjord falcon sort lumen plan lumen weigh orbit grove cobalt field ledger plan grove gather refine tidal tidy atlas basil share orchard harvest lumen lumen current fjord trace gather marble trace current meadow lumen velvet grove plan thread walnut notice map meadow compass marble ribbon mosaic thread cinder ribbon ripple basil field kettle sort quarry fjord"
+     },
+     {
+      "title": "Fjord rowan juniper nimbus grove field basil plan basil cobalt atlas pebble lantern cinder refine lumen sketch",
+      "text": "Refine plan basil delta rowan trace thread refine ember measure orbit summit grove grove falcon ledger steer horizon compass steer harvest marble harvest orchard atlas ledger tidy shape delta current harbor pebble harvest tidy orbit sort falcon pebble measure cobalt shape tidal notice tidy rowan beacon saffron sketch basil grove prism velvet trace velvet shape map kettle plan ripple cedar ledger willow walnut saffron beacon current grove saffron measure sort ledger tidal pillar grove basil falcon harbor harvest plan pillar ember signal share"
+     },
+     {
+      "title": "Walnut ripple quarry weigh sprout notice orchard sprout copper weigh lumen beacon marble ember map grove nimbus",
+      "text": "Cedar sort ledger harbor bundle ripple orbit ripple saffron tidy willow copper delta bundle share field ember gather fjord rowan quarry linen steer quarry tidal harvest velvet compass falcon cedar fjord thistle horizon linen linen atlas marble tidal ribbon lantern beacon gather harbor summit horizon grove cedar tidal cinder plan rowan velvet sort harbor anchor cinder orchard beacon lumen ripple juniper grove cedar tidal cinder plan beacon copper anchor tidal cinder tidy tidal nimbus thread lantern tidal willow harvest fjord saffron field sprout"
+     },
+     {
+      "title": "Marble sketch harbor saffron rowan tidy plan rowan field horizon weigh velvet ripple kettle saffron nimbus",
+      "text": "Orchard horizon juniper beacon copper beacon copper delta copper shape prism lumen pillar pebble walnut walnut pillar ribbon thistle lumen current map marble thistle thistle rowan bundle ribbon shape basil cinder sort notice lantern orbit linen shape ripple mosaic delta horizon tidy cinder refine juniper harbor sprout velvet plan prism velvet linen prism pebble thread refine prism linen thread ember thread mosaic lantern pillar thread nimbus plan compass basil lumen sprout ember saffron thread mosaic marble signal map delta rowan marble willow"
+     },
+     {
+      "title": "Sprout map tidy map copper lumen field sort horizon falcon measure plan tidy summit horizon ledger measure",
+      "text": "Delta basil pebble steer thread cinder signal harvest harvest anchor summit signal sprout prism quarry velvet lantern harvest ripple rowan marble bundle cinder mosaic linen atlas ember copper juniper signal ember mosaic ripple ripple cedar anchor linen quarry thistle meadow trace sort signal ember saffron cobalt bundle orbit willow cedar prism saffron signal ribbon grove thread orbit bundle refine steer trace lumen horizon shape juniper sprout quarry delta walnut ember sketch falcon compass fjord share ribbon sort gather cobalt nimbus field"
+     },
+     {
+      "title": "Steer map prism cobalt nimbus thistle nimbus map sprout refine grove copper lumen measure share velvet prism",
+      "text": "Weigh gather lumen thistle sprout nimbus falcon tidal thistle horizon marble refine notice gather harbor cedar harvest thistle cinder prism harbor gather ripple map orbit cinder delta meadow delta field beacon signal pebble copper mosaic current delta harbor sketch cedar beacon sketch measure willow pillar mosaic saffron weigh orchard willow saffron current thistle nimbus current rowan linen tidal measure map anchor pebble willow bundle cinder ribbon quarry current linen copper juniper nimbus nimbus harvest willow velvet notice map rowan fjord"
+     },
+     {
+      "title": "Willow share horizon delta sprout quarry basil grove horizon lantern sort linen cedar refine lantern cobalt",
+      "text": "Ledger gather summit pebble tidal mosaic mosaic tidy walnut refine compass shape delta current lumen cedar refine harbor willow grove thread willow copper measure tidy sketch gather field juniper linen gather ribbon velvet gather trace bundle pebble harvest willow atlas thread harbor tidal copper pillar compass measure shape copper anchor ripple map atlas anchor marble shape thistle ribbon trace lumen nimbus compass gather cedar harbor grove marble gather quarry signal plan current orchard shape cinder thistle pebble rowan lantern nimbus atlas"
+     },
+     {
+      "title": "Velvet grove sort refine pebble meadow notice saffron marble cobalt orbit saffron ripple ember sprout grove",
+      "text": "Anchor copper delta horizon summit harvest signal basil lumen pebble lumen meadow plan ribbon velvet orbit ripple cinder willow velvet ribbon quarry ribbon ribbon ember harbor sprout fjord gather pebble trace compass horizon map velvet cinder lumen weigh sort horizon measure sketch falcon compass willow shape quarry meadow sort falcon cinder quarry gather refine lumen orchard tidal cinder cinder beacon horizon thistle bundle compass summit cedar trace gather mosaic sketch steer mosaic anchor field basil shape gather compass anchor ledger horizon"
+     },
+     {
+      "title": "Harvest rowan shape current quarry field cobalt current saffron steer marble copper cobalt thistle orbit tidal",
+      "text": "Marble lumen thistle current trace weigh orchard saffron notice pebble weigh marble refine meadow harbor shape tidal ribbon delta grove saffron mosaic current plan ember bundle sprout cobalt harvest sketch harbor grove meadow measure map harvest prism notice ember kettle shape pebble willow pebble delta shape basil grove sort plan signal harvest bundle tidy copper pillar rowan thistle walnut cinder cedar pillar sort refine ledger ripple gather harbor bundle copper field map ripple kettle sketch anchor walnut mosaic orbit velvet falcon tidy steer"
+     },
+     {
+      "title": "Sprout cobalt orbit current thistle walnut lantern refine beacon cinder trace fjord ribbon map lantern map",
+      "text": "Tidal refine nimbus summit measure cobalt copper ember orbit linen tidal anchor refine ledger orbit sketch harbor sort fjord signal mosaic copper gather anchor map weigh linen cobalt harvest willow saffron ribbon marble horizon lantern thistle delta thread tidy bundle atlas atlas gather saffron orbit refine rowan orbit harbor saffron ripple cedar share rowan lantern anchor sort plan ripple sprout sort walnut cinder meadow anchor marble falcon sprout falcon refine ledger pillar basil basil anchor falcon steer nimbus compass walnut orbit orchard"
+     },
+     {
+      "title": "Sprout tidal fjord tidy pebble thistle anchor lantern sketch grove rowan steer share falcon mosaic sort ribbon",
+      "text": "Sketch atlas harbor ledger notice harvest copper lumen sort thistle bundle falcon share summit horizon linen notice bundle thread atlas juniper atlas sort anchor kettle mosaic juniper delta beacon basil basil lumen ribbon anchor notice orchard ripple copper linen tidy beacon horizon lumen lumen gather sprout basil atlas nimbus refine measure velvet juniper orbit willow sprout ribbon trace nimbus nimbus cinder plan basil refine nimbus velvet sketch thread linen signal atlas velvet lantern copper cobalt sprout meadow kettle pebble shape map beacon"
+     },
+     {
+      "title": "Harvest copper ribbon sprout orbit beacon gather sketch refine juniper ribbon lantern quarry basil meadow",
+      "text": "Atlas signal cobalt mosaic copper sketch summit gather notice mosaic sprout meadow tidy trace ribbon signal share current signal harbor beacon velvet pebble saffron thistle mosaic steer measure bundle kettle saffron pebble marble summit kettle ledger map nimbus quarry pebble thread ember cedar summit prism sketch grove measure bundle cinder weigh weigh pillar willow plan velvet measure basil falcon pillar share refine orbit meadow weigh pillar sort tidal share ribbon pebble ripple lumen signal notice signal refine juniper bundle gather delta"
+     },
+     {
+      "title": "Pillar thistle velvet signal ledger steer steer orbit pebble beacon horizon harvest cobalt copper lantern",
+      "text": "Trace pebble compass kettle ledger field harvest harbor harvest share thistle lumen plan saffron compass cinder steer marble lumen basil pebble compass mosaic velvet nimbus orbit compass horizon velvet pillar plan sprout orchard velvet anchor notice compass ember sprout pillar mosaic signal orbit weigh marble mosaic bundle ripple cinder bundle cedar marble prism compass nimbus ember saffron harbor ember bundle share sort marble sort grove horizon tidal horizon compass pebble pebble thistle current share sort harvest signal beacon trace signal"
+     },
+     {
+      "title": "Share mosaic copper orbit gather basil plan ribbon steer compass walnut horizon ripple prism weigh refine",
+      "text": "Weigh ripple trace saffron marble ribbon saffron refine sketch basil cinder bundle ledger cedar pebble signal fjord steer map ember grove meadow share sort summit meadow copper field steer atlas rowan weigh linen anchor copper orchard velvet beacon share mosaic cinder gather quarry anchor sketch field thread saffron compass shape quarry orbit copper marble compass compass cobalt anchor juniper sketch copper weigh harvest grove sprout linen basil nimbus harbor weigh weigh atlas rowan share share cinder prism anchor trace map saffron kettle tidy"
+     },
+     {
+      "title": "Delta share current trace harbor thread harbor map atlas quarry linen gather sprout measure cobalt harbor",
+      "text": "Trace thread pebble sprout thistle harbor basil cinder weigh juniper sketch signal mosaic quarry falcon walnut thread mosaic harvest field map falcon thistle map pebble field bundle weigh prism saffron shape beacon field weigh cedar shape harvest saffron saffron delta kettle meadow lantern atlas thistle bundle ledger walnut marble thread quarry marble thread gather kettle harvest bundle kettle shape pebble copper plan compass kettle ledger linen lumen marble tidy plan measure sort notice beacon signal cobalt plan prism ember mosaic rowan bundle"
+     },
+     {
+      "title": "Pillar kettle prism walnut sketch pillar copper weigh prism grove atlas quarry trace falcon horizon horizon",
+      "text": "Lantern lumen tidy harvest refine sprout cinder thread falcon linen copper thread share ribbon nimbus measure cobalt meadow juniper quarry map cinder marble quarry thistle kettle pillar velvet basil harvest shape saffron orbit sprout anchor ember delta ribbon marble sprout pillar beacon orbit horizon atlas current juniper plan thread juniper cinder beacon map weigh rowan walnut thistle ribbon pebble tidal willow fjord anchor kettle compass thistle grove harbor trace steer thistle measure walnut horizon harbor beacon copper lumen compass tidal"
+     },
+     {
+      "title": "Ledger beacon basil current ribbon meadow thread velvet horizon plan basil copper cinder willow refine anchor",
+      "text": "Signal refine field tidal willow gather ember nimbus measure measure saffron sort cinder fjord saffron field ember prism notice quarry lantern tidal ribbon shape weigh shape compass falcon mosaic velvet notice cedar orbit ripple saffron tidal harvest linen prism delta cinder lumen anchor atlas field copper notice quarry sort saffron linen plan current ribbon share field kettle cinder orbit copper orchard rowan steer lumen gather marble refine lumen lumen juniper meadow falcon cobalt kettle ripple trace current cobalt meadow trace cinder cobalt"
+     },
+     {
+      "title": "Tidal basil ember ember harbor weigh beacon plan sketch bundle mosaic orchard tidy delta anchor ember signal",
+      "text": "Kettle sort shape ripple sketch map sprout refine map orchard basil fjord current quarry notice quarry plan lantern map pebble velvet rowan marble juniper rowan delta marble prism anchor ember thread summit sort gather mosaic nimbus atlas willow meadow tidy quarry notice copper velvet bundle sketch tidal sprout atlas cedar plan harvest cinder basil lumen thistle share copper cedar ripple orbit prism cinder shape ember field trace atlas tidy grove prism walnut rowan bundle horizon cobalt grove sprout sketch measure share lumen saffron"
+     },
+     {
+      "title": "Falcon compass delta ledger anchor sprout plan anchor copper current velvet lantern measure refine ledger atlas",
+      "text": "Horizon sort compass walnut steer thread ripple ripple horizon gather kettle field quarry grove refine basil saffron juniper steer trace current harvest mosaic mosaic share cinder cinder copper marble anchor juniper tidal ledger tidy pebble thread plan horizon sprout notice harvest falcon orbit cedar cobalt tidal shape gather fjord refine delta orbit grove anchor meadow falcon nimbus plan thistle current juniper gather atlas thistle shape mosaic beacon rowan compass orchard meadow thistle refine basil compass steer sprout measure mosaic falcon"
+     },
+     {
+      "title": "Cinder orchard prism thistle thistle cobalt anchor marble fjord kettle falcon kettle plan ribbon willow pebble",
+      "text": "Refine trace atlas rowan map current saffron atlas compass refine gather anchor summit field velvet orbit ledger delta thread map gather saffron notice delta ribbon beacon cinder ribbon bundle anchor ember anchor walnut ember horizon thread current falcon walnut bundle linen willow falcon basil prism linen kettle falcon bundle current measure compass trace current notice notice walnut ledger rowan orbit lumen harvest ribbon ledger pebble summit sketch pebble anchor harbor lumen willow sort willow nimbus quarry beacon thistle delta kettle copper"
+     },
+     {
+      "title": "Sort marble atlas gather summit harbor kettle thistle anchor nimbus notice nimbus measure shape cinder pebble",
+      "text": "Mosaic gather share fjord weigh sort harbor harvest share map basil pebble orchard atlas walnut thread willow willow signal rowan refine beacon basil cobalt trace ember measure signal horizon ledger basil kettle orbit orchard ribbon fjord lumen mosaic refine delta kettle copper map harbor saffron cinder cedar thistle shape compass kettle grove atlas pebble cobalt kettle harvest juniper bundle saffron shape anchor sketch sprout saffron grove cinder measure harbor atlas orbit field saffron delta ledger atlas grove sprout mosaic compass falcon"
+     },
+     {
+      "title": "Plan shape grove share summit falcon cobalt falcon pillar ribbon beacon mosaic prism juniper lumen mosaic orbit",
+      "text": "Tidal sprout ledger steer plan refine kettle thistle falcon saffron shape bundle tidal orbit weigh beacon rowan prism orchard ember grove velvet quarry lumen basil fjord lantern lantern ledger measure lumen copper harbor field gather sort atlas marble atlas pillar gather pillar grove sketch tidy ember sprout ripple willow lumen gather juniper kettle sprout cinder basil ledger sprout delta ledger atlas steer harbor field fjord trace lantern field meadow anchor field ember nimbus tidy fjord steer prism fjord thistle anchor mosaic thread ribbon"
+     },
+     {
+      "title": "Quarry orbit ripple measure summit lumen quarry harbor lumen marble meadow willow gather fjord plan steer",
+      "text": "Ribbon gather pillar map horizon compass fjord copper cobalt kettle measure atlas grove copper fjord copper sort rowan pebble meadow plan anchor walnut ripple share summit lantern marble steer mosaic atlas prism ledger linen measure harbor measure lumen ledger saffron orchard anchor cobalt field saffron plan lumen ledger anchor falcon weigh meadow linen nimbus juniper walnut fjord sketch compass cedar cinder delta basil falcon kettle pebble refine thistle delta juniper linen falcon copper notice juniper notice basil atlas ledger lantern shape"
+     },
+     {
+      "title": "Linen cobalt copper copper grove weigh cobalt lumen beacon marble quarry grove weigh copper sort pebble compass",
+      "text": "Harbor summit willow walnut fjord sketch marble share signal cinder copper ribbon copper cobalt saffron velvet plan cobalt ripple harvest quarry fjord ripple saffron juniper summit lantern lumen ledger pebble sketch signal basil summit thread cedar walnut sketch marble beacon tidal orbit signal linen measure gather plan harvest prism rowan juniper thread measure cinder atlas gather pillar harvest horizon walnut grove willow bundle gather signal grove sprout walnut nimbus willow thistle beacon signal share map atlas sketch ripple tidal signal"
+     },
+     {
+      "title": "Quarry linen copper meadow nimbus map horizon rowan lumen refine refine tidal measure cobalt harvest shape",
+      "text": "Saffron copper trace tidy basil anchor gather mosaic current walnut thread harbor steer current current notice mosaic beacon grove tidy notice juniper fjord willow current map plan atlas measure lumen plan bundle shape compass fjord saffron pillar lantern prism linen tidal linen pebble orchard field notice cobalt prism trace compass copper velvet copper saffron thistle horizon copper horizon shape pebble meadow refine lumen tidy ripple cedar rowan thistle tidy mosaic prism grove weigh grove velvet map falcon ember ember steer gather sketch"
+     },
+     {
+      "title": "Willow current mosaic velvet notice lantern cinder ripple ledger weigh steer sort lantern horizon linen ribbon",
+      "text": "Plan weigh prism measure beacon cedar rowan delta copper tidy sort basil field delta pillar fjord sprout kettle rowan gather measure orchard tidal ribbon willow prism thread rowan horizon ledger ledger share grove ribbon pebble atlas ledger fjord ripple atlas falcon ledger mosaic steer saffron ember quarry shape quarry linen falcon current juniper linen marble linen tidy thread quarry saffron willow copper sketch pebble atlas prism mosaic prism orchard kettle willow bundle tidal harvest orchard quarry sketch pillar delta ledger ledger summit"
+     }
+    ],
+    "bullets": [
+     "Delta pebble rowan harvest harvest walnut sketch harvest"
+    ],
+    "actions": [
+     {
+      "label": "Ember",
+      "href": "/news/why-ai-proofing-assessments-misses-the-point",
+      "linkRole": "link.site-route"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1778212941-pexels-cottonbro-63337352.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1778213101-surface-xarmm8ffapo-unsplash-2.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1778213038-adobestock_354893802-jpg-2.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754191896-image-container.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1777944825-docusign-akkhzqylej4-unsplash_2_optimized_1000.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1776408753-tim-gouw-1k9t5yiz2wu-unsplash-1.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1775528308-teacreativelife-soo-chung-9p-xfprly-unsplash1.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1775528240-kateryna-hliznitsova-io-afxstgdy-unsplash-2.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754544713-istock-2208695167-1-1-1.png"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1774920315-pexels-artempodrez-8518848-1.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1773885321-vimeo-cover-image-5.png"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1753397134-vector_layer-1.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754564986-surface-8hplpr3hebu-unsplash.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1772418402-ba_14855.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1758869826-the-university-of-newcastle.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1770605714-victoria-heath-b7crdcwfnfu-unsplash-3.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1770082005-getty-images-ofpozrbdv8g-unsplash.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1769470107-adobestock_733092520-1.jpeg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1768788932-pexels-thisisengineering-3861963_2_optimized_1000.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1768261029-pexels-kampus-5940712.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1759384951-slide-74-1-11zon.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1767828390-christian-velitchkov-mxz64b8-3h0.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1764289240-screenshot-2025-11-28-at-10-20-29-am.png"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1762299399-cadmus-x-uom-forum-oct-2025-0092-1-1-11zon.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1758076101-blog-article-thumbnail-copy.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754565735-robert-bye-cyvk_z2pyxg-unsplash.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754540155-cadmus-event-june-2025-48-copy-1.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1751704405-image-container.png"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754525016-christin-hume-hcfwew744z4-unsplash-1-1.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754475527-vector_layer-1.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754570852-frame-1430106096.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1753397173-image-container.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754331274-article-080523-01.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1751704570-image-container-3.png"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1751704477-image-container-1.png"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1751282421-vector_layer.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754565531-adobestock_1198309077.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754569023-frame-1430106076.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754547662-pexels-kampus-5940828.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1758858937-charles-sturt-university.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754565818-pexels-vazhnik-7864534.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754540305-getty-images-n1iez7woc1c-unsplash-1.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1758867088-the-university-of-melbourne.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1758864866-the-9th-coworking-qeagaujw_fw-unsplash-1-min-2.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1758211315-adobestock_577860219-1.png"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1758868347-winthrop-hall-uwa.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1759383331-templates-2x.webp"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754566396-kateryna-hliznitsova-ylacfjwry6c-unsplash.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1759387127-pexels-thisisengineering-3861963-1-11zon.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754566145-image-container02.png"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754472821-screenshot-2025-02-13-at-5-07-44-pm-3.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754565281-kateryna-hliznitsova-ye7hwgyte4a-unsplash.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1753397204-image-container-1.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1759467250-article-290121-main.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1751282453-frame-1321314721.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754570624-frame-1430106089.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1759474976-1752535456-frame-1430105485.avif"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754472851-screenshot-2025-02-13-at-5-07-44-pm-4.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1754472361-cadmus-event-june-2025-467-copy.jpg"
+     },
+     {
+      "assetRole": "photo.source-scene",
+      "ref": "/assets/1752370909-rectangle-3470759-1-1.jpg"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "conversion.image-cta-band",
+   "variant": "default",
+   "content": {
+    "heading": "Linen lantern saffron grove grove thistle",
+    "actions": [
+     {
+      "label": "Weigh refine",
+      "href": "/request-demo",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Anchor orbit",
+      "href": "/",
+      "linkRole": "link.site-route"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "product.screenshot",
+      "ref": "/assets/1751189417-frame-1430105575.png"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Linen steer ripple",
+    "items": [
+     {
+      "title": "Mosaic"
+     },
+     {
+      "title": "Trace"
+     },
+     {
+      "title": "Share"
+     },
+     {
+      "title": "Lantern"
+     },
+     {
+      "title": "Notice"
+     },
+     {
+      "title": "Grove"
+     },
+     {
+      "title": "Cinder"
+     },
+     {
+      "title": "Harvest"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Ledger steer signal grove",
+      "href": "https://www.linkedin.com/company/cadmus-io",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Marble sprout sprout trace",
+      "href": "https://x.com/cadmus_io",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Sprout delta kettle bundle",
+      "href": "https://www.facebook.com/cadmus.io",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Thistle linen quarry falcon",
+      "href": "https://lovework.studio",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Current ribbon bundle tidal",
+      "href": "/product-overview",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Juniper lumen atlas lumen",
+      "href": "/product/assignments",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Signal juniper steer quarry",
+      "href": "/product/exams",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Ribbon summit grove quarry",
+      "href": "/product/group-work",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Lumen trace trace copper",
+      "href": "/product/marking-feedback",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Sprout shape orbit orbit grove",
+      "href": "/product/learning-analytics",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Notice sketch sprout lantern",
+      "href": "/product/oral_assessment",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Grove ledger juniper marble",
+      "href": "/pricing",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Share notice grove lumen",
+      "href": "/solutions/universities",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Copper copper current cedar",
+      "href": "/solutions/educators",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Gather refine steer sprout",
+      "href": "/solutions/students",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Cobalt anchor plan fjord shape",
+      "href": "/case-studies",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Grove rowan horizon velvet",
+      "href": "/news",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Horizon cedar basil juniper",
+      "href": "/teacher-guides",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Willow atlas sprout saffron",
+      "href": "/video-tutorials",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Fjord tidy weigh ripple",
+      "href": "/request-demo",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Sort thistle horizon mosaic",
+      "href": "https://support.cadmus.io/kb-tickets/new",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Prism current signal saffron",
+      "href": "https://support.cadmus.io",
+      "linkRole": "link.source-external"
+     },
+     {
+      "label": "Pebble quarry gather mosaic",
+      "href": "/about",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Grove weigh summit delta",
+      "href": "/careers",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Nimbus cobalt fjord quarry",
+      "href": "/information/privacy-policy-au",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Willow lumen juniper sort",
+      "href": "/trust-centre",
+      "linkRole": "link.site-route"
+     },
+     {
+      "label": "Summit anchor plan harvest",
+      "href": "/",
+      "linkRole": "link.site-route"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.wordmark",
+      "ref": "inline:logo--footer"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

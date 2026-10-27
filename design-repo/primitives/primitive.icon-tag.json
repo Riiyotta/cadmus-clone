@@ -1,0 +1,19 @@
+{
+ "id": "primitive.icon-tag",
+ "kind": "primitive",
+ "title": "Icon tag",
+ "purpose": "Off-white pill holding a 25px icon and a 12px uppercase label (hero cards, row tags).",
+ "source": {
+  "file": "src/components/TwoColumnRows.jsx",
+  "lines": "65-65",
+  "anchor": "icon-tag flex items-center gap-[10px]",
+  "anchorLine": 65
+ },
+ "props": {
+  "small": "boolean"
+ },
+ "tokens": [
+  "elevation.tag",
+  "radius.btn"
+ ]
+}

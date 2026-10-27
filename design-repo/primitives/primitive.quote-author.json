@@ -1,0 +1,16 @@
+{
+ "id": "primitive.quote-author",
+ "kind": "primitive",
+ "title": "Quote author",
+ "purpose": "Author and role lines with a 2px maroon left rule.",
+ "source": {
+  "file": "src/index.css",
+  "lines": "376-376",
+  "anchor": "  .quote-author {",
+  "anchorLine": 376
+ },
+ "props": {},
+ "tokens": [
+  "color.maroon"
+ ]
+}

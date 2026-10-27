@@ -1,0 +1,17 @@
+{
+ "id": "primitive.image",
+ "kind": "primitive",
+ "title": "Image",
+ "purpose": "Image element that reserves its box from the recorded intrinsic size.",
+ "source": {
+  "file": "src/components/Img.jsx",
+  "lines": "10-13",
+  "anchor": "export default function Img",
+  "anchorLine": 10
+ },
+ "props": {
+  "src": "asset reference",
+  "loading": "lazy | eager"
+ },
+ "tokens": []
+}

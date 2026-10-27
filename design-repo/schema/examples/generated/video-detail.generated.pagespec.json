@@ -1,0 +1,138 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.video-detail",
+ "route": "/video-detail-nimbus",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Ripple"
+     },
+     {
+      "title": "Field"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Nimbus kettle",
+      "href": "https://fernhollow.example/harbor",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Bundle cinder",
+      "href": "https://fernhollow.example/juniper",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:cinder-marble-velvet",
+      "alt": "Ledger"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "article.video-detail",
+   "variant": "default",
+   "content": {
+    "eyebrow": "Cinder ripple sort walnut willow",
+    "heading": "Lumen falcon ribbon juniper meadow orbit tidy tidy",
+    "lead": "Summit horizon orchard tidal orbit willow ripple measure",
+    "items": [
+     {
+      "title": "Cinder saffron rowan tidy harvest"
+     },
+     {
+      "title": "Steer prism gather falcon velvet"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Tidy velvet grove ripple refine",
+      "href": "https://fernhollow.example/tidy",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Cedar steer pillar ribbon sketch",
+      "href": "https://fernhollow.example/compass",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "video.placeholder-poster",
+      "ref": "generate:map-horizon-grove",
+      "alt": "Juniper walnut measure marble trace"
+     },
+     {
+      "assetRole": "video.placeholder-poster",
+      "ref": "generate:harbor-falcon-copper",
+      "alt": "Fjord bundle tidy harvest steer"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "media.click-to-play",
+    "reducedMotionFallback": "poster-with-controls"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Meadow atlas steer",
+    "items": [
+     {
+      "title": "Compass"
+     },
+     {
+      "title": "Cinder"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Current marble cedar",
+      "href": "https://fernhollow.example/pillar",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Ledger tidal refine",
+      "href": "https://fernhollow.example/kettle",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:current-weigh-refine",
+      "alt": "Sketch"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:fjord-orchard-signal",
+      "alt": "Kettle"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

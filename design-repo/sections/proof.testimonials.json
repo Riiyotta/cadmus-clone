@@ -1,0 +1,144 @@
+{
+ "id": "proof.testimonials",
+ "title": "Testimonial grid",
+ "semantic": {
+  "id": "proof.testimonials",
+  "category": "PROOF"
+ },
+ "source": {
+  "id": "Testimonials:div@10",
+  "file": "src/pages/product/sections/Testimonials.jsx",
+  "tag": "div",
+  "lines": "8-25",
+  "tagLine": 10,
+  "tagLineSha1": "a401d71d1ae7a0ab",
+  "anchor": "export default function Testimonials",
+  "anchorLine": 8
+ },
+ "additionalSources": [],
+ "purpose": "Left-aligned heading over a grid of cards with a name, an institution and a quote.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/pricing"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "items"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 27,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 5,
+    "maxChars": 33,
+    "observedIn": 1,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 46,
+    "maxChars": 306,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    6
+   ]
+  }
+ },
+ "assets": {
+  "fields": {},
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=768",
+   "behavior": "gap changes",
+   "cite": "src/pages/product/sections/Testimonials.jsx:14"
+  },
+  {
+   "range": "<=768",
+   "behavior": "grid collapses to one column",
+   "cite": "src/pages/product/sections/Testimonials.jsx:14"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/product/sections/Testimonials.jsx:10"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 771,
+   "maxPx": 771,
+   "medianPx": 771,
+   "sample": {
+    "/pricing": 771
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 1378,
+   "maxPx": 1378,
+   "medianPx": 1378,
+   "sample": {
+    "/pricing": 1378
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 1870,
+   "maxPx": 1870,
+   "medianPx": 1870,
+   "sample": {
+    "/pricing": 1870
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.pricing"
+ ],
+ "evidence": [
+  "src/pages/product/sections/Testimonials.jsx:8-25"
+ ]
+}

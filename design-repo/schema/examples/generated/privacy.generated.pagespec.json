@@ -1,0 +1,123 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.privacy",
+ "route": "/legal-notice",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Walnut"
+     },
+     {
+      "title": "Ember"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Share horizon",
+      "href": "https://fernhollow.example/willow",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Ripple current",
+      "href": "https://fernhollow.example/share",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:signal-marble-kettle",
+      "alt": "Ribbon"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.small-banner",
+   "variant": "default",
+   "content": {
+    "heading": "Ripple horizon"
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "article.policy-section",
+   "variant": "default",
+   "content": {
+    "heading": "Linen cedar mosaic meadow",
+    "items": [
+     {
+      "text": "Bundle harvest field velvet mosaic tidy willow map"
+     },
+     {
+      "text": "Linen summit orchard thread fjord prism ribbon harbor"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Tidal kettle pebble",
+    "items": [
+     {
+      "title": "Harbor"
+     },
+     {
+      "title": "Willow"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Anchor cinder walnut",
+      "href": "https://fernhollow.example/walnut",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Signal velvet basil",
+      "href": "https://fernhollow.example/lantern",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:summit-quarry-harvest",
+      "alt": "Falcon"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:steer-signal-pebble",
+      "alt": "Juniper"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "id": "content.why-choose",
+ "title": "Benefit grid",
+ "semantic": {
+  "id": "content.why-choose",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "WhyChoose:div@69",
+  "file": "src/components/WhyChoose.jsx",
+  "tag": "div",
+  "lines": "53-91",
+  "tagLine": 69,
+  "tagLineSha1": "19ae356af9c9c47a",
+  "anchor": "export default function WhyChoose",
+  "anchorLine": 53
+ },
+ "additionalSources": [],
+ "purpose": "Section title over a row of icon plus short statement cards.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/",
+    "/contact",
+    "/solutions/educators",
+    "/solutions/students"
+   ],
+   "observedOnCount": 5
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "items",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 64,
+    "observedIn": 5,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 64,
+    "observedIn": 5,
+    "basis": "max over measured units: title"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 12,
+    "maxChars": 94,
+    "observedIn": 5,
+    "basis": "max over measured units: paragraphs"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 8,
+    "maxChars": 64,
+    "observedIn": 5,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    4
+   ],
+   "media": [
+    1,
+    4
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "icon.source"
+    ],
+    "generatedRoles": [
+     "icon.generic"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "icon.generic"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=990",
+   "behavior": "grid collapses to one column",
+   "cite": "src/components/WhyChoose.jsx:79"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/components/WhyChoose.jsx:77"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/components/WhyChoose.jsx:69"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 5,
+   "minPx": 451,
+   "maxPx": 470,
+   "medianPx": 470,
+   "sample": {
+    "/": 470,
+    "/solutions/universities": 470,
+    "/solutions/educators": 451
+   }
+  },
+  "768": {
+   "nodes": 5,
+   "minPx": 764,
+   "maxPx": 843,
+   "medianPx": 806,
+   "sample": {
+    "/": 823,
+    "/solutions/universities": 806,
+    "/solutions/educators": 804
+   }
+  },
+  "390": {
+   "nodes": 5,
+   "minPx": 853,
+   "maxPx": 883,
+   "medianPx": 873,
+   "sample": {
+    "/": 873,
+    "/solutions/universities": 876,
+    "/solutions/educators": 883
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.contact",
+  "template.home",
+  "template.solutions-educators",
+  "template.solutions-students",
+  "template.solutions-universities"
+ ],
+ "evidence": [
+  "src/components/WhyChoose.jsx:53-91"
+ ]
+}

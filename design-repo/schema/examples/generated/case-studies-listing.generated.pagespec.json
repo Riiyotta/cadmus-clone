@@ -1,0 +1,205 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "template.case-studies-listing",
+ "route": "/listing-copper",
+ "theme": "light",
+ "brand": {
+  "name": "Fernhollow Studio"
+ },
+ "copyRole": "copy.original",
+ "nodes": [
+  {
+   "section": "shell.header",
+   "variant": "fixed",
+   "content": {
+    "items": [
+     {
+      "title": "Orbit"
+     },
+     {
+      "title": "Summit"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Meadow tidal",
+      "href": "https://fernhollow.example/juniper",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Saffron walnut",
+      "href": "https://fernhollow.example/harvest",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:harbor-basil-pillar",
+      "alt": "Gather"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "hero.listing-photo-card",
+   "variant": "default",
+   "content": {
+    "heading": "Cinder",
+    "lead": "Pebble cinder notice ripple anchor juniper measure trace",
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:lantern-plan-tidy",
+      "alt": "Share"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "listing.category-filter",
+   "variant": "default",
+   "content": {
+    "bullets": [
+     "Tidal kettle willow orchard velvet juniper mosaic marble",
+     "Tidal falcon trace anchor sketch orbit steer nimbus"
+    ],
+    "actions": [
+     {
+      "label": "Steer grove pillar lumen current ribbon field horizon",
+      "href": "https://fernhollow.example/field",
+      "linkRole": "link.placeholder"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "listing.study-grid",
+   "variant": "default",
+   "content": {
+    "items": [
+     {
+      "title": "Map nimbus ripple ripple willow mosaic ribbon",
+      "text": "Sort field sketch harvest thread harbor pillar map"
+     },
+     {
+      "title": "Harbor fjord pebble falcon harvest cinder nimbus",
+      "text": "Compass map steer horizon quarry measure willow sketch"
+     }
+    ],
+    "bullets": [
+     "Steer saffron atlas kettle willow thistle cinder falcon"
+    ],
+    "actions": [
+     {
+      "label": "Weigh",
+      "href": "https://fernhollow.example/steer",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:quarry-ledger-juniper",
+      "alt": "Weigh"
+     },
+     {
+      "assetRole": "photo.generated-scene",
+      "ref": "generate:sprout-mosaic-mosaic",
+      "alt": "Current"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "conversion.image-cta-band",
+   "variant": "default",
+   "content": {
+    "heading": "Field beacon gather",
+    "actions": [
+     {
+      "label": "Signal sort",
+      "href": "https://fernhollow.example/pebble",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Cobalt orchard",
+      "href": "https://fernhollow.example/copper",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "product.generated-visual",
+      "ref": "generate:harvest-measure-share",
+      "alt": "Cedar meadow thistle"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  },
+  {
+   "section": "shell.footer",
+   "variant": "default",
+   "content": {
+    "note": "Plan ribbon anchor",
+    "items": [
+     {
+      "title": "Mosaic"
+     },
+     {
+      "title": "Walnut"
+     }
+    ],
+    "actions": [
+     {
+      "label": "Grove linen nimbus",
+      "href": "https://fernhollow.example/cinder",
+      "linkRole": "link.placeholder"
+     },
+     {
+      "label": "Willow thistle pillar",
+      "href": "https://fernhollow.example/sketch",
+      "linkRole": "link.placeholder"
+     }
+    ],
+    "media": [
+     {
+      "assetRole": "brand.placeholder-mark",
+      "ref": "generate:quarry-cobalt-cobalt",
+      "alt": "Copper"
+     },
+     {
+      "assetRole": "brand.user-supplied-mark",
+      "ref": "generate:ripple-orchard-harbor",
+      "alt": "Cobalt"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "static",
+    "reducedMotionFallback": "none-needed"
+   }
+  }
+ ]
+}

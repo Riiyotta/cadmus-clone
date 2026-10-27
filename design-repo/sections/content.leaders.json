@@ -1,0 +1,175 @@
+{
+ "id": "content.leaders",
+ "title": "Leadership grid",
+ "semantic": {
+  "id": "content.leaders",
+  "category": "CONTENT"
+ },
+ "source": {
+  "id": "Leaders:div@10",
+  "file": "src/pages/company/sections/Leaders.jsx",
+  "tag": "div",
+  "lines": "8-45",
+  "tagLine": 10,
+  "tagLineSha1": "167d226bdfca19fa",
+  "anchor": "export default function Leaders",
+  "anchorLine": 8
+ },
+ "additionalSources": [],
+ "purpose": "Leadership intro plus a two-column grid of photo, name, role and short bio.",
+ "retrievalEligible": true,
+ "placement": "main",
+ "variants": {
+  "default": {
+   "description": "single observed variant",
+   "requiredFields": [],
+   "forbiddenFields": [],
+   "observedOn": [
+    "/careers"
+   ]
+  }
+ },
+ "content": {
+  "budgetRule": "Budgets are COUNTS measured from the rendered clone at 1440px (extraction/measured-values.json copyBudgets); copy itself is never stored. maxWords/maxChars = the maximum observed across every route that renders this section; list sizes = observed min/max. Shorter is allowed; longer is rejected.",
+  "requiredFields": [
+   "heading",
+   "items",
+   "media"
+  ],
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 9,
+    "maxChars": 44,
+    "observedIn": 1,
+    "basis": "max over measured units: title",
+    "maxLines1440": 1
+   },
+   "lead": {
+    "type": "text",
+    "maxWords": 94,
+    "maxChars": 662,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "items[].title": {
+    "type": "text",
+    "maxWords": 3,
+    "maxChars": 18,
+    "observedIn": 1,
+    "basis": "max over measured units: secondaryHeadings"
+   },
+   "items[].text": {
+    "type": "text",
+    "maxWords": 94,
+    "maxChars": 662,
+    "observedIn": 1,
+    "basis": "max over measured units: paragraphs"
+   },
+   "media[].alt": {
+    "type": "text",
+    "maxWords": 9,
+    "maxChars": 44,
+    "observedIn": 1,
+    "basis": "max over measured units: title"
+   }
+  },
+  "listSizes": {
+   "items": [
+    1,
+    2
+   ],
+   "media": [
+    1,
+    2
+   ]
+  }
+ },
+ "assets": {
+  "fields": {
+   "media[]": {
+    "type": "asset",
+    "referenceRoles": [
+     "person.photo"
+    ],
+    "generatedRoles": [
+     "person.fictional-avatar"
+    ]
+   }
+  },
+  "note": "reference mode may use referenceRoles (evidence); generated mode must use generatedRoles (generation-safe only, pinned in code). See assets/asset-roles.json."
+ },
+ "generatedAssetRoles": [
+  "person.fictional-avatar"
+ ],
+ "style": {
+  "props": {},
+  "note": "token props take token-catalog names only (tokens/llm/token-catalog.json); allowed values per section are listed in tokens/llm/token-policy.json styleProps."
+ },
+ "constraints": {
+  "maxPerPage": 1,
+  "consecutiveVariants": []
+ },
+ "motion": {
+  "allowedPatterns": [
+   "static"
+  ],
+  "requiredPatterns": [],
+  "reducedMotionFallback": {
+   "static": "none-needed"
+  }
+ },
+ "responsive": [
+  {
+   "range": "<=990",
+   "behavior": "grid collapses to one column",
+   "cite": "src/pages/company/sections/Leaders.jsx:20"
+  },
+  {
+   "range": "<=768",
+   "behavior": "margin changes",
+   "cite": "src/pages/company/sections/Leaders.jsx:35"
+  },
+  {
+   "range": "<=768",
+   "behavior": "padding changes",
+   "cite": "src/pages/company/sections/Leaders.jsx:10"
+  }
+ ],
+ "runtimeUi": [],
+ "measuredHeightsPx": {
+  "1440": {
+   "nodes": 1,
+   "minPx": 1091,
+   "maxPx": 1091,
+   "medianPx": 1091,
+   "sample": {
+    "/careers": 1091
+   }
+  },
+  "768": {
+   "nodes": 1,
+   "minPx": 1704,
+   "maxPx": 1704,
+   "medianPx": 1704,
+   "sample": {
+    "/careers": 1704
+   }
+  },
+  "390": {
+   "nodes": 1,
+   "minPx": 1602,
+   "maxPx": 1602,
+   "medianPx": 1602,
+   "sample": {
+    "/careers": 1602
+   }
+  }
+ },
+ "usedByTemplates": [
+  "template.careers"
+ ],
+ "evidence": [
+  "src/pages/company/sections/Leaders.jsx:8-45"
+ ]
+}
